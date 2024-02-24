@@ -1,0 +1,48 @@
+@import "./header";
+@import "./textOne";
+@import "./textTwo";
+@import "./form";
+@import "./textThree";
+@import "./footer";
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.aside-content {
+    max-width: 290px;
+}
+
+%color {
+    padding: 20px;
+    background-color: cadetblue;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.main-text {
+    @extend %color;
+}
+
+.aside-content {
+    @extend %color;
+}
+
+.foot {
+    @extend %color;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.man-context {
+    margin-bottom: 20px;
+}
+
