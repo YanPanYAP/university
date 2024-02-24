@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lab 5/third.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h3>Регистрация постоянного клиента</h3>
+        <div>
+            <label for="lastname">Фамилия:</label>
+            <input type="text" name="lastname" required id="lastname">
+        </div>
+        <div>
+            <label for="name">Имя:</label>
+            <input type="text" name="name" required id="name">
+        </div>
+        <div>
+            <label for="surname">Отчество:</label>
+            <input type="text" name="surname" required id="surname">
+        </div>
+        <div>
+            <label for="age">Ваш возраст:</label>
+            <input type="age" name="age" required id="age">
+        </div>
+        <div>
+            <label for="sex">Пол:</label>
+            <input type="radio" name="sex" required id="sex" class="sex"> Мужской
+            <input type="radio" name="sex" required id="sex" class="sex"> Женский
+        </div>
+        <div>
+            <label for="email" class="email">Email:</label>
+            <input type="email" name="email" required id="email">
+        </div>
+        <div>
+            <label for="country">Страна проживания:</label>
+            <input type="text" name="country" required id="country">
+        </div>
+        <div>
+            <label for="add">Откуда вы узнали о нас?</label>
+            <select name="add" id="add" required class="add">
+                <option value="option">Выберете вариант</option>
+                <option value="here">Здесь</option>
+                <option value="there">Там</option>
+            </select>
+        </div>
+        <div>
+            <label for="date">Дата заполнения</label>
+            <input type="date" name="date" required id="date" class="date">
+        </div>
+        <div class="button">
+            <input type="submit" value="Регистрация" class="submit">
+            <input type="reset" value="Отмена" class="reset">
+        </div>
+    </form>
+</body>
+</html>

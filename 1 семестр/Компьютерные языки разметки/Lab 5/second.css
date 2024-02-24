@@ -1,0 +1,33 @@
+table {
+    empty-cells: hide;
+    border-spacing: 0px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+td {
+    border: 2px solid gray;
+}
+
+table td:nth-child(2n) {
+    background-color: #005BFF;
+    color: white;
+}
+
+table td:nth-child(3n) {
+    background-color: purple;
+    color: white;
+}
+
+table td:last-child {
+    background-color: green;
+    color: white;
+}
+
+.H td {
+    background-color: darkblue;
+}
