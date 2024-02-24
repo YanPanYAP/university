@@ -1,0 +1,148 @@
+.space {
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  margin-right: 40px;
+}
+.logo-image img {
+  width: 136px;
+}
+
+button {
+  padding: 16px 32px;
+  border: 2px solid black;
+  background: #FFE249;
+}
+
+.menu {
+  list-style-type: none;
+}
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  background: #FFE249;
+  display: inline-block;
+  padding: 16px 32px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.header-link nav {
+  margin: 23px 0;
+}
+
+.textOne .about-box div {
+  width: 210px;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.textOne {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.textOne h3 {
+  text-align: center;
+}
+.textOne .about-box {
+  display: flex;
+  justify-content: space-around;
+}
+.textOne .about-box .about-text {
+  text-align: center;
+  background: #FFE249;
+}
+.textOne .about-box .about-text p {
+  padding: 0 10px;
+}
+
+.main-text {
+  width: 800px;
+}
+
+.textTwo {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.textTwo h3 {
+  text-align: center;
+}
+.textTwo .gif {
+  display: flex;
+  justify-content: space-between;
+}
+.textTwo .gif img {
+  width: 170px;
+}
+
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 230px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #FFE249;
+}
+
+form {
+  justify-content: space-around;
+  width: 300px;
+}
+
+.textThree {
+  text-align: center;
+}
+.textThree img {
+  width: 100px;
+  float: left;
+}
+
+.foot p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  color: wheat;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.aside-content {
+  max-width: 290px;
+}
+
+.foot, .aside-content, .main-text {
+  padding: 20px;
+  background-color: cadetblue;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.man-context {
+  margin-bottom: 20px;
+}

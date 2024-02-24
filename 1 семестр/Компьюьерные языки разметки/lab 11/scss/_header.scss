@@ -1,0 +1,48 @@
+$yellow: #FFE249;
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    margin-right: 40px;
+
+    img {
+        width: 136px;
+    }
+}
+
+button {
+    padding: 16px 32px;
+    border: 2px solid black;
+    background: $yellow;
+}
+
+.menu {
+    list-style-type: none;
+
+    li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        background: $yellow;
+        display: inline-block;
+        padding: 16px 32px;
+        border: 2px solid black;
+        border-radius: 50px;
+    }
+}
+
+.header-link nav {
+    margin: 23px 0;
+}

@@ -1,0 +1,22 @@
+figcaption {
+    color: green;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 225px);
+}
+
+.photo {
+    width: 200px;
+}
+
+div {
+    display: flex;
+}
+
+figure {
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+}

@@ -1,0 +1,149 @@
+* body {
+  background-color: #BDB76B;
+}
+
+.p1 {
+  color: blue;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+table tr {
+  background-color: aqua;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  font-family: Rubik-Regular, sans-serif;
+  margin: 0;
+}
+
+#header {
+  padding: 50px 0px;
+  background: aqua;
+  text-align: center;
+}
+
+#menu {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+span {
+  color: aqua;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: plum;
+  text-align: center;
+  font-family: Monotype, sans-serif;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td, th {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.p1 {
+  color: brown;
+  font-family: Molot, sans-serif;
+}
+
+.p2 {
+  color: blueviolet;
+}
+
+#information {
+  margin-right: 20px;
+  text-align: right;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  width: 200px;
+  display: block;
+  float: left;
+  margin: 0;
+  text-align: right;
+  margin-right: 15px;
+}
+
+#info {
+  margin-bottom: 0px;
+}
+
+#button {
+  margin-top: 20px;
+}
+
+#footer {
+  margin-top: 50px;
+  padding: 50px 0px;
+  background: aqua;
+  text-align: center;
+}
+
+#image {
+  width: 1120px;
+}
+
+aside {
+  width: 40%;
+  padding-left: 50px;
+  margin-left: 20px;
+  float: right;
+  font-style: italic;
+  color: #00ff66;
+}
+
+.ul1 {
+  color: red;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+}
+
+.ul2 {
+  color: yellow;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.ul3 {
+  color: green;
+  font-family: "Times New Roman", serif;
+  font-size: 22px;
+}
+
+div h3 {
+  color: yellow;
+}
+
+div > h2 {
+  color: rgb(0, 250, 154);
+}
+
+#firstspan {
+  text-decoration: underline;
+}

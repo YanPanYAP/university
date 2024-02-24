@@ -1,0 +1,17 @@
+body {
+    display: flex;
+}
+
+img{
+    width:200px;
+    height: 200px;
+    margin: 5px;
+}
+
+figcaption{
+    width: 200px;
+}
+
+.fig {
+    display: none;
+}
