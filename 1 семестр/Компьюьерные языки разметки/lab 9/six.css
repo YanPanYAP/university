@@ -1,0 +1,68 @@
+div[class*="columns"] {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 242, 254);
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+div[class*="row"] {
+    margin: 10px ;
+}
+
+.row1 {
+    height: 100px;
+}
+
+.row2 {
+    height: 80px;
+}
+
+.row3 {
+    height: 340px;
+}
+
+.row1 div {
+    border:none;
+    background-color: white;
+    height: 100px;
+}
+
+.row2 div {
+    height: 80px;
+    font-style: italic;
+}
+
+.row2 div:nth-child(even) {
+    padding-top: 23px;;
+}
+
+.row3 div {
+    height: 360px;
+    text-align: justify;
+    font-size: 14px;
+    padding: 7px;
+}
+
+img {
+    width: 90px;
+    height: 96px;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    display: inline-block; 
+    padding: 35px 27px 35px 30px;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(249, 255, 191, 0.433);
+    color:rgb(0, 0, 0);
+}

@@ -1,0 +1,148 @@
+.box {
+    margin: 15px;
+}
+
+.border1 {
+    border: 10px solid;
+    border-left-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-right-color: rgb(165, 42, 42);
+    border-bottom-color: rgb(165, 42, 42);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.border2 {
+    border: 10px dashed rgb(173, 255, 47);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.border3 {
+    border: 10px dotted rgb(0, 0, 255);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.border4 {
+    border: 10px double rgb(0, 255, 255);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.border5 {
+    border: 10px groove rgb(222, 87, 222);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.border6 {
+    border: 10px solid;
+    border-left-color: rgb(189, 183, 107);
+    border-top-color: rgb(189, 183, 107);
+    border-right-color: rgb(255, 255, 0);
+    border-bottom-color: rgb(255, 255, 0);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.border7 {
+    border: 10px solid rgb(0, 0, 0);
+    width: 40px;
+    margin-left: 10px;
+}
+
+.firstSection {
+    display: flex;
+    margin-top: 10px;
+}
+
+span {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #FFA500;
+    border: 1px solid #FF4500;
+}
+
+.firrstp {
+    width: 400px;
+    text-align: center;
+    border: 1px solid #FF7F50;
+}
+
+.secondp {
+    border: 5px solid red;
+    border-radius: 20px/40px;
+    box-shadow: inset 2px -2px 8px 8px rgba(0,0,0,.5);
+    overflow: auto;
+}
+
+.thirdp {
+    border: 1px solid  #FF6347;
+}
+
+.p1 {
+    border: 5px solid;
+    border-left-color: brown;
+    border-top-color: orange;
+    border-right-color: rgb(0, 0, 87);
+    border-bottom-color: yellow;
+}
+
+.p2 {
+    width: 750px;
+}
+
+.line {
+    display: flex;
+}
+
+.hr1 {
+    background-color: #007BA7;
+    height: 2px;
+    width: 100%;
+    border: none;
+}
+
+.p3 {
+    border: dashed aqua;
+    border-top-style: solid;
+    border-top-color: rgb(229, 43, 80);
+}
+
+.p4 {
+    border: 1px dotted orange;
+}
+
+.p5 {
+    border: 2px solid rgb(0, 0, 72);
+    border-right-style: dashed;
+    border-left-style: dashed;
+    border-right-color: brown;
+    border-left-color: brown;
+}
+
+.p6 {
+    border: 4px double #B3446C;
+}
+
+.p7 {
+    border-top: 1px dashed #808000;
+    border-bottom: 3px solid #FF7518;
+}
+
+.p8 {
+    border-left: 3px double #CC7722;
+    border-bottom: 3px double #CC7722;
+}
+
+.p9 {
+    border-top: 5px ridge #B5A642;
+    border-right: 5px ridge #B5A642;
+}
+
+.p10 {
+    border: 5px dotted rgb(0, 40,0);
+    border-top: none;
+}
