@@ -1,0 +1,33 @@
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo-view {
+    display: flex;
+    align-items: center;
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .logo-image {
+        width: 30px;
+        padding-top: 7px;
+    }
+}
+
+.navigation {
+    a {
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        padding: 5px 0;
+
+        &:hover {
+            border-bottom: solid orange 3px;
+        }
+    }
+}

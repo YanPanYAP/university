@@ -1,0 +1,27 @@
+@import "./fonts";
+@import "./header";
+@import "./footer";
+@import "./main-content";
+@import "./about";
+@import "./nft";
+@import "./form";
+@import "./accaunt";
+@import "./pay";
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Furore', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

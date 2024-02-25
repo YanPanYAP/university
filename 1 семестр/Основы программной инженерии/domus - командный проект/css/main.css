@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "Furore";
+  src: url("../fonts/Furore.otf");
+}
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.logo-view {
+  display: flex;
+  align-items: center;
+}
+.logo-view .logo {
+  margin-right: 10px;
+}
+.logo-view .logo-image {
+  width: 30px;
+  padding-top: 7px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  padding: 5px 0;
+}
+.navigation a:hover {
+  border-bottom: solid orange 3px;
+}
+
+.main-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.main-content {
+  width: 50%;
+}
+.main-content .main-text {
+  font-size: 35px;
+}
+
+.main-button {
+  background: none;
+  text-decoration: none;
+  border: solid 3px rgb(81, 53, 0);
+  border-radius: 50px;
+  color: white;
+  font-family: "Furore", sans-serif;
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+}
+.main-button:hover {
+  border: solid 3px orange;
+}
+
+.main-image {
+  position: relative;
+  right: 100px;
+  width: 400px;
+}
+
+.main-image-container {
+  margin: 0 auto;
+}
+
+.about {
+  margin-top: 80px;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.about-item {
+  width: 320px;
+  height: 320px;
+  padding: 20px;
+  border: solid 3px rgb(81, 53, 0);
+  border-radius: 50px;
+  text-align: justify;
+}
+.about-item:hover {
+  border: solid 3px orange;
+}
+
+#img2 {
+  background-image: url("../images/house2.png");
+}
+
+#img3 {
+  background-image: url("../images/house3.png");
+}
+
+#img4 {
+  background-image: url("../images/house4.png");
+}
+
+#img5 {
+  background-image: url("../images/house5.png");
+}
+
+#img6 {
+  background-image: url("../images/house6.png");
+}
+
+.nft {
+  margin-top: 80px;
+}
+
+.nft-items {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.nft-fill {
+  width: 360px;
+  height: 360px;
+  border-radius: 50px;
+  background-color: black;
+  opacity: 0%;
+  visibility: hidden;
+}
+
+.nft-item {
+  width: 360px;
+  height: 360px;
+  background-image: url("../images/house.png");
+  border: solid 3px rgb(81, 53, 0);
+  border-radius: 50px;
+}
+.nft-item .nft-discription {
+  visibility: hidden;
+}
+.nft-item:hover {
+  border: solid 3px orange;
+}
+.nft-item:hover .nft-discription {
+  position: absolute;
+  visibility: visible;
+  z-index: 1;
+  padding: 40px 0 0 20px;
+}
+.nft-item:hover .nft-fill {
+  opacity: 70%;
+  z-index: 0;
+  visibility: visible;
+}
+
+.nft-text {
+  font-size: 18px;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.domus-image {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  background: none;
+  text-decoration: none;
+  direction: none;
+  outline: none;
+  color: white;
+  font-family: "Furore", sans-serif;
+  padding: 20px;
+  width: 320px;
+  border: solid 3px rgb(81, 53, 0);
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+input:focus {
+  border: solid 3px orange;
+}
+
+.form-content {
+  margin: 80px auto;
+}
+
+.submit {
+  width: 360px;
+}
+
+.alredyRegistrated {
+  font-size: 10px;
+  color: gray;
+}
+
+.accaunt {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accaunt-nft-item {
+  width: 700px;
+  height: 250px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid 3px orange;
+  border-radius: 50px;
+  justify-content: space-between;
+  display: flex;
+}
+.accaunt-nft-item .accaunt-nft-image1 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/house.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.accaunt-nft-item .accaunt-nft-image2 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/house2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.accaunt-nft-item .accaunt-nft-image3 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/house3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.accaunt-nft-item .accaunt-nft-image4 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/house4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.accaunt-nft-item .accaunt-nft-image5 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/house5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.accaunt-nft-item .accaunt-nft-image6 {
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/house6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.countdown-title {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.countdown {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown2 {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown3 {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown4 {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown5 {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown6 {
+  display: block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown-number {
+  padding: 10px;
+  border-radius: 3px;
+  background: orange;
+  display: inline-block;
+}
+
+.countdown-time {
+  padding: 15px;
+  border-radius: 3px;
+  background: rgb(81, 53, 0);
+  display: inline-block;
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.profile {
+  margin-top: 83px;
+  padding: 20px;
+  width: 350px;
+  height: 380px;
+  border: solid 3px orange;
+  border-radius: 50px;
+}
+.profile div {
+  margin: 0 auto 20px auto;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/logo.svg");
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#item6, #item5, #item4 {
+  opacity: 30%;
+}
+
+.qr-image {
+  width: 200px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.pay-items {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+.offer {
+  display: flex;
+}
+.offer .hesh {
+  width: 500px;
+  margin-right: 20px;
+}
+.offer .submit2 {
+  width: 150px;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Furore", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

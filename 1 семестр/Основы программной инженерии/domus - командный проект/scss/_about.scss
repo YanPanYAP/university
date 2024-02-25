@@ -1,0 +1,22 @@
+.about {
+    margin-top: 80px;
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.about-item {
+    width: 320px;
+    height: 320px;
+    padding: 20px;
+    border: solid 3px rgb(81, 53, 0);
+    border-radius: 50px;
+    text-align: justify;
+
+    &:hover {
+        border: solid 3px orange;
+    }
+}

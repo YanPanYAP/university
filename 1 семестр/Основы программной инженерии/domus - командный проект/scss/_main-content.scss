@@ -1,0 +1,40 @@
+.main-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-content {
+    width: 50%;
+
+    .main-text {
+        font-size: 35px;
+    }
+}
+
+.main-button {
+    background: none;
+    text-decoration: none;
+    border: solid 3px rgb(81, 53, 0);
+    border-radius: 50px;
+    color: white;
+    font-family: 'Furore', sans-serif;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+
+    &:hover {
+        border: solid 3px orange;
+    }
+}
+
+.main-image {
+    position: relative;
+    right: 100px;
+    width: 400px;
+}
+
+.main-image-container {
+    margin: 0 auto;
+}

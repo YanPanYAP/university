@@ -1,0 +1,86 @@
+#img2 {
+    background-image: url("../images/house2.png");
+}
+
+#img3 {
+    background-image: url("../images/house3.png");
+}
+
+#img4 {
+    background-image: url("../images/house4.png");
+}
+
+#img5 {
+    background-image: url("../images/house5.png");
+}
+
+#img6 {
+    background-image: url("../images/house6.png");
+}
+
+
+.nft {
+    margin-top: 80px;
+}
+
+.nft-items {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nft-fill {
+    width: 360px;
+    height: 360px;
+    border-radius: 50px;
+    background-color: black;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.nft-item {
+    width: 360px;
+    height: 360px;
+    background-image: url("../images/house.png");
+    border: solid 3px rgb(81, 53, 0);
+    border-radius: 50px;
+
+    .nft-discription {
+        visibility: hidden;
+    }
+
+    &:hover {
+        border: solid 3px orange;
+
+        .nft-discription {
+            position: absolute;
+            visibility: visible;
+            z-index: 1;
+            padding: 40px 0 0 20px;
+        }
+
+        .nft-fill {
+            opacity: 70%;
+            z-index: 0;
+            visibility: visible;
+        }
+    }
+}
+
+.nft-text {
+    font-size: 18px;
+}
+
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.domus-image {
+    width: 30px;
+    margin-right: 10px;
+}
+

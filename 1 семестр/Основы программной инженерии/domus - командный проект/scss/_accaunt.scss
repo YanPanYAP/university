@@ -1,0 +1,158 @@
+.accaunt {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accaunt-nft-item {
+    width: 700px;
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: solid 3px orange;
+    border-radius: 50px;
+    justify-content: space-between;
+    display: flex;
+
+    .accaunt-nft-image1 {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/house.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .accaunt-nft-image2  {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/house2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .accaunt-nft-image3  {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/house3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .accaunt-nft-image4  {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/house4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .accaunt-nft-image5  {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/house5.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .accaunt-nft-image6  {
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/house6.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+  
+.countdown-title {
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+
+.countdown {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown2 {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown3 {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown4 {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown5 {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown6 {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: orange;
+    display: inline-block;
+}
+
+.countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(81, 53, 0);
+    display: inline-block;
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.profile {
+    margin-top: 83px;
+    padding: 20px;
+    width: 350px;
+    height: 380px;
+    border: solid 3px orange;
+    border-radius: 50px;
+
+    div {
+        margin: 0 auto 20px auto;
+    }
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/logo.svg");
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#item6, #item5, #item4 {
+    opacity: 30%;
+}

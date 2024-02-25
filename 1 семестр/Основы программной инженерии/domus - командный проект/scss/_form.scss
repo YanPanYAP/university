@@ -1,0 +1,41 @@
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    background: none;
+    text-decoration: none;
+    direction: none;
+    outline: none;
+    color: white;
+    font-family: 'Furore', sans-serif;
+    padding: 20px;
+    width: 320px;
+    border: solid 3px rgb(81, 53, 0);
+    border-radius: 50px;
+    margin-bottom: 20px;
+
+    &:focus {
+        border: solid 3px orange;
+    }
+}
+
+.form-content {
+    margin: 80px auto;
+}
+
+.submit {
+    width: 360px;
+}
+
+.alredyRegistrated {
+    font-size: 10px;
+    color: gray;
+}
