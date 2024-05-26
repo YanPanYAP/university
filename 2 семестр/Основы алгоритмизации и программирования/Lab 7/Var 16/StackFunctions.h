@@ -1,0 +1,32 @@
+#pragma once
+
+#include <iostream>
+#include <fstream>
+#include <Windows.h>
+using namespace std;
+
+template<typename T>
+struct Node {
+    T data;
+    Node<T>* next;
+    Node(T val) : data(val), next(nullptr) {}
+};
+
+template<typename T>
+class Stack {
+private:
+    Node<T>* top;
+
+public:
+    Stack();
+    ~Stack();
+    void push(T val);
+    void pop();
+    T peek();
+    bool isEmpty();
+    void clear();
+    void saveToFile(const string& filename);
+    void readFromFile(const string& filename);
+    void removeFirstDuplicate();
+    void print();
+};
