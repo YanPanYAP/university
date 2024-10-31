@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 1</title>
+</head>
+<body>
+    <script>
+        //задание 5
+        let userName = prompt("Введите ваше имя");
+        let teacherName = "Ян";
+
+        if (userName.toLowerCase().includes(teacherName.toLowerCase())) {
+            alert("Введенные пользователем данные верные");
+        } else {
+            alert("Имя не совпало");
+        }
+        //задание 9
+        let days = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+        let dayNumber = parseInt(prompt("Введите номер дня недели (1-7):"));
+
+        alert(days[dayNumber - 1] || "Неверный номер дня");
+
+        let daysObj = {
+            1: "пн",
+            2: "вт",
+            3: "ср",
+            4: "чт",
+            5: "пт",
+            6: "сб",
+            7: "вс"
+        };
+
+        alert(daysObj[dayNumber] || "Неверный номер дня");
+
+        //задание 10
+        function exampleFunc(param1 = "just", param2 = "do", param3 = prompt("Введите третий параметр")) {
+            return `${param1}, ${param2}, ${param3}`;
+        }
+
+        alert(exampleFunc("first"));
+
+        
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
