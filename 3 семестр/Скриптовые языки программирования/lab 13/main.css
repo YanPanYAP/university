@@ -1,0 +1,112 @@
+@font-face {
+    font-family: RubikBlack;
+    src: url("./Rubik-Black.ttf");
+}
+
+@font-face {
+    font-family: RubikLight;
+    src: url("./Rubik-Light.ttf");
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: RubikLight;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-width: 3px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+}
+
+.toDoContainer {
+    max-width: 600px;
+    margin: 200px auto;
+
+    div {
+        margin: 20px 0;
+    }
+}
+
+.mainText {
+    text-align: center;
+    font-family: RubikBlack;
+}
+
+.addTaskContainer {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        width: 400px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 0 20px;
+        border: 1px solid gray;
+        background-color: transparent;
+        color: white;
+    }
+
+    input:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+
+    button {
+        border: 1px solid green;
+    }
+}
+
+.sortContainer {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        border: 1px solid gray;
+    }
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.task-item button {
+    margin-left: 5px;
+}
+
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item span {
+    flex-grow: 1;
+    word-break: break-word;
+    max-width: 40%;
+    white-space: normal;
+    margin-right: 10px;
+}
+
+.sortContainer button {
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sortContainer button.active {
+    border: 1px solid green;
+    background-color: rgba(0, 128, 0, 0.2);
+}

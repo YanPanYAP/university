@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>lab 15</title>
+</head>
+<body>
+    <section class="formSection">
+        <form action="" method="get" class="myform" id="myForm">
+            <div class="formBlok">
+                <p class="mainText">Заполните форму</p>
+            </div>
+            <div class="formBlok">
+                <label for="lastName">Фамилия</label>
+                <input name="lastName" id="lastName" required>
+            </div>
+            <div class="formBlok">
+                <label for="name">Имя</label>
+                <input name="name" id="name" required>
+            </div>
+            <div class="formBlok">
+                <label for="email">E-mail</label>
+                <input name="email" id="email" required>
+            </div>
+            <div class="formBlok">
+                <label for="number">Телефон</label>
+                <input name="number" id="number" required>
+            </div>
+            <div class="formBlok">
+                <label for="city">Город</label>
+                <select name="city" id="city" required>
+                    <option value="" disabled selected>Город</option>
+                    <option value="minsk">Минск</option>
+                    <option value="vitebsk">Витебск</option>
+                    <option value="grodno">Гродно</option>
+                    <option value="brest">Брест</option>
+                    <option value="mogilev">Могилев</option>
+                </select>
+            </div>            
+            <div class="formBlok">
+                <label for="bstu">БГТУ</label>
+                <input type="checkbox" name="bstu" id="bstu">
+            </div>
+            <div class="formBlok">
+                <label for="number">Курс</label>
+                <div class="radioKurs">
+                    <input type="radio" name="bstu" id="bstu1" required>1
+                    <input type="radio" name="bstu" id="bstu2">2
+                    <input type="radio" name="bstu" id="bstu3">3
+                    <input type="radio" name="bstu" id="bstu4">4
+                </div>
+            </div>
+            <div class="formBlok">
+                <label for="bstu">О себе</label>
+                <textarea name="about" id="about" rows="3" required></textarea>
+            </div>
+            <div class="formBlok">
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
