@@ -1,0 +1,48 @@
+﻿
+@page
+@inject DAL_Celebrity_MSSQL.IRepository Repository
+
+@{
+    var celebrities = Repository.GetAllCelebrities();
+    Layout = null;
+}
+
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .gallery img {
+            width: 150px;
+            height: 180px; /* Задаём одинаковую высоту */
+            object-fit: cover; /* Обрезает изображение, чтобы вписалось */
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .gallery img:hover {
+                transform: scale(1.05);
+            }
+</style>
+
+<h1 style="text-align:center;">Знаменитости</h1>
+
+<div style="text-align: center; margin-bottom: 20px;">
+    <a href="/0">
+        <img src="/Photos/diamond.jpg" alt="Добавить" style="width:50px" />
+    </a>
+</div>
+
+<div class="gallery">
+    @foreach (var celeb in celebrities)
+    {
+        <a href="/Celebrity/@celeb.Id">
+            <img src="/Photos/@celeb.ReqPhotoPath" alt="@celeb.FullName" />
+        </a>
+    }
+</div>

@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model ASPA007_1.Pages.CelebrityModel
+@{
+    Layout = null;
+}
+
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+@if (Model.Celeb != null)
+{
+    <div style="text-align:center;">
+        <h2>@Model.Celeb.FullName</h2>
+        <p>@Model.Celeb.Nationality</p>
+        <img src="/Photos/@Model.Celeb.ReqPhotoPath" width="300" style="border-radius: 10px;" />
+    </div>
+}
+else
+{
+    <p>Знаменитость не найдена.</p>
+}
