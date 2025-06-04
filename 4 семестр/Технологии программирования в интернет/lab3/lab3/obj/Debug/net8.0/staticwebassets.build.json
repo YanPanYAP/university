@@ -1,0 +1,1670 @@
+{
+  "Version": 1,
+  "Hash": "ySRMgtbD9RP+b5EsUraMdE8L/52n4+3PDyixaX9sCpI=",
+  "Source": "lab3",
+  "BasePath": "_content/lab3",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "lab3\\wwwroot",
+      "Source": "lab3",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Berners-Lee.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Berners-Lee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ghylf66df4",
+      "Integrity": "1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Berners-Lee.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Celebrities.json",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Celebrities#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d19cqlvu0w",
+      "Integrity": "wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Celebrities.json"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Chomsky.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Chomsky#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwr7g8yuir",
+      "Integrity": "BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Chomsky.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Codd.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Codd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y3byutqfvn",
+      "Integrity": "vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Codd.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Dijkstra.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Dijkstra#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z99tytpe7c",
+      "Integrity": "N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Dijkstra.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Knuth.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Knuth#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "01sq119lgw",
+      "Integrity": "nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Knuth.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Linus.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Linus#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "256v6bxvfj",
+      "Integrity": "Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Linus.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Neumann.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Celebrities/download/Neumann#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7op20yuh95",
+      "Integrity": "d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Celebrities\\download\\Neumann.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Berners-Lee.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Berners-Lee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ghylf66df4",
+      "Integrity": "1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Berners-Lee.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Celebrities.json",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Celebrities#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d19cqlvu0w",
+      "Integrity": "wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Celebrities.json"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Chomsky.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Chomsky#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwr7g8yuir",
+      "Integrity": "BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Chomsky.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Codd.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Codd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y3byutqfvn",
+      "Integrity": "vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Codd.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Dijkstra.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Dijkstra#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z99tytpe7c",
+      "Integrity": "N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Dijkstra.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Knuth.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Knuth#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "01sq119lgw",
+      "Integrity": "nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Knuth.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Linus.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Linus#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "256v6bxvfj",
+      "Integrity": "Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Linus.jpg"
+    },
+    {
+      "Identity": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Neumann.jpg",
+      "SourceId": "lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\",
+      "BasePath": "_content/lab3",
+      "RelativePath": "Photo/Neumann#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7op20yuh95",
+      "Integrity": "d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photo\\Neumann.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Celebrities/download/Berners-Lee.ghylf66df4.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Berners-Lee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ghylf66df4"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Berners-Lee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Berners-Lee.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Berners-Lee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Celebrities.d19cqlvu0w.json",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Celebrities.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d19cqlvu0w"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Celebrities.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Celebrities.json",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Celebrities.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Chomsky.cwr7g8yuir.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Chomsky.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwr7g8yuir"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Chomsky.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Chomsky.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Chomsky.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Codd.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Codd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Codd.y3byutqfvn.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Codd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3byutqfvn"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Codd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Dijkstra.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Dijkstra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Dijkstra.z99tytpe7c.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Dijkstra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z99tytpe7c"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Dijkstra.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Knuth.01sq119lgw.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Knuth.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "01sq119lgw"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Knuth.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Knuth.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Knuth.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Linus.256v6bxvfj.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Linus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "256v6bxvfj"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Linus.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Linus.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Linus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Neumann.7op20yuh95.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Neumann.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7op20yuh95"
+        },
+        {
+          "Name": "label",
+          "Value": "Celebrities/download/Neumann.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc="
+        }
+      ]
+    },
+    {
+      "Route": "Celebrities/download/Neumann.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Neumann.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Berners-Lee.ghylf66df4.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Berners-Lee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ghylf66df4"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Berners-Lee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Berners-Lee.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Berners-Lee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Igy/Gla+kRHeVg8yXkuR8b+9gTU/gmyVHgmsuLkkNs="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Celebrities.d19cqlvu0w.json",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Celebrities.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d19cqlvu0w"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Celebrities.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Celebrities.json",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Celebrities.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wfYQ/g4mYNN2yjPMCjL85Y7cYaTAfyIUdCrAEnja+/o="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Chomsky.cwr7g8yuir.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Chomsky.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwr7g8yuir"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Chomsky.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Chomsky.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Chomsky.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BKdBuQPv+kan4tu7YJn2YzBecd+QAHuaVcL9VV+w8UA="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Codd.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Codd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Codd.y3byutqfvn.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Codd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y3byutqfvn"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Codd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vj72eOwHjtcBs8uQitLkr/dKUQdMtTadgPaulOyMlx8="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Dijkstra.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Dijkstra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Dijkstra.z99tytpe7c.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Dijkstra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z99tytpe7c"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Dijkstra.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N9oXtGDsh5hQr/nta/2lScoreWJtYNCJNyKWsBh9PIM="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Knuth.01sq119lgw.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Knuth.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "01sq119lgw"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Knuth.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Knuth.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Knuth.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44880"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNpFdtr+iurtYF8Qs4Qrav+f4EpQHPun96KIw/fbjUg="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Linus.256v6bxvfj.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Linus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "256v6bxvfj"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Linus.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Linus.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Linus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ki2V0KJZacSYlQQE7sBuJMSI/pbOt0J3tz6Keqp3cmw="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Neumann.7op20yuh95.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Neumann.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7op20yuh95"
+        },
+        {
+          "Name": "label",
+          "Value": "Photo/Neumann.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc="
+        }
+      ]
+    },
+    {
+      "Route": "Photo/Neumann.jpg",
+      "AssetFile": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Neumann.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 09:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d9auynvsm0xY/uBSJUQCJW/CXkw9hg9unbdmvmzGtXc="
+        }
+      ]
+    }
+  ]
+}

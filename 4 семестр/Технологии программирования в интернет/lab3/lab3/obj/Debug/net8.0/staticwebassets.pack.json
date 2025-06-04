@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Berners-Lee.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Berners-Lee.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Celebrities.json",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Celebrities.json"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Chomsky.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Chomsky.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Codd.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Codd.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Dijkstra.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Dijkstra.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Knuth.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Knuth.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Linus.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Linus.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Celebrities\\download\\Neumann.jpg",
+      "PackagePath": "staticwebassets\\Celebrities\\download\\Neumann.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Berners-Lee.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Berners-Lee.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Celebrities.json",
+      "PackagePath": "staticwebassets\\Photo\\Celebrities.json"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Chomsky.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Chomsky.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Codd.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Codd.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Dijkstra.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Dijkstra.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Knuth.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Knuth.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Linus.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Linus.jpg"
+    },
+    {
+      "Id": "C:\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 3\\lab3\\lab3\\wwwroot\\Photo\\Neumann.jpg",
+      "PackagePath": "staticwebassets\\Photo\\Neumann.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.lab3.props",
+      "PackagePath": "build\\lab3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.lab3.props",
+      "PackagePath": "buildMultiTargeting\\lab3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.lab3.props",
+      "PackagePath": "buildTransitive\\lab3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.lab3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.lab3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
