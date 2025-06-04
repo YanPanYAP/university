@@ -1,0 +1,23 @@
+{
+  "FullName": "\u0410\u0430 \u0410 \u0410\u0430",
+  "Age": 19,
+  "Specialty": "\u0442\u0438\u043Cffdfdfd",
+  "BirthDate": "2006-02-16T15:45:06",
+  "Course": 1,
+  "Group": "1",
+  "AverageGrade": 5,
+  "Gender": "\u041C\u0443\u0436\u0441\u043A\u043E\u0439",
+  "Address": {
+    "City": "\u0440\u043F\u0430\u0432",
+    "Index": "432113",
+    "Street": "\u0430\u0432",
+    "House": "43",
+    "Apartment": "543"
+  },
+  "Workplace": {
+    "Company": "\u043A\u0446\u0443\u0432\u044B",
+    "Position": "\u0435\u043A\u0430\u0443\u0446\u0432\u044B",
+    "Experience": 3
+  },
+  "WriteDate": "2025-03-04T00:00:00+03:00"
+}
