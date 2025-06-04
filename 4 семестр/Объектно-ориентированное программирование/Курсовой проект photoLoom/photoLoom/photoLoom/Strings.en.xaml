@@ -1,0 +1,102 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <sys:String x:Key="Language">En</sys:String>
+
+    <sys:String x:Key="Home">Home</sys:String>
+    <sys:String x:Key="Studios">Studios</sys:String>
+    <sys:String x:Key="Photographers">Photographers</sys:String>
+    <sys:String x:Key="Account">Account</sys:String>
+    <sys:String x:Key="SloganTitle">ENHANCE YOUR PHOTOS WITH PHOTOLOOM</sys:String>
+    <sys:String x:Key="SloganText">Discover the world of photography in photo studios PhotoLoom.com where imagination is combined with reality. Get to know us and take advantage of the exclusive offers.</sys:String>
+    <sys:String x:Key="Stat1Title">20 +</sys:String>
+    <sys:String x:Key="Stat1Subtitle">Photo studios</sys:String>
+    <sys:String x:Key="Stat2Title">5 +</sys:String>
+    <sys:String x:Key="Stat2Subtitle">Full-time photographers</sys:String>
+    <sys:String x:Key="Stat3Title">98%</sys:String>
+    <sys:String x:Key="Stat3Subtitle">Satisfied customers</sys:String>
+    <sys:String x:Key="Stat4Title">720 +</sys:String>
+    <sys:String x:Key="Stat4Subtitle">Positive reviews</sys:String>
+
+    <sys:String x:Key="Filter">Filter</sys:String>
+    <sys:String x:Key="PriceAsc">Price ↑</sys:String>
+    <sys:String x:Key="PriceDesc">Price ↓</sys:String>
+    <sys:String x:Key="SquareAsc">Square ↑</sys:String>
+    <sys:String x:Key="SquareDesc">Square ↓</sys:String>
+    <sys:String x:Key="From">From:</sys:String>
+    <sys:String x:Key="To">To:</sys:String>
+    <sys:String x:Key="ApplyRange">Apply range</sys:String>
+
+    <sys:String x:Key="Back">← Back</sys:String>
+    <sys:String x:Key="AppName">Photo.Loom</sys:String>
+    <sys:String x:Key="Login">Login</sys:String>
+
+    <sys:String x:Key="Password">Password</sys:String>
+    <sys:String x:Key="Email">Email</sys:String>
+    <sys:String x:Key="LetsGo">Let's go</sys:String>
+
+    <sys:String x:Key="PriceLabel">Price</sys:String>
+    <sys:String x:Key="SquareLabel">Square</sys:String>
+    <sys:String x:Key="TakeItButton">Take it →</sys:String>
+
+    <sys:String x:Key="ChangePasswordTitle">Change password</sys:String>
+    <sys:String x:Key="OldPassword">Old password</sys:String>
+    <sys:String x:Key="NewPassword">New password</sys:String>
+    <sys:String x:Key="ConfirmPassword">Confirm</sys:String>
+    <sys:String x:Key="Change">Change</sys:String>
+
+    <sys:String x:Key="DeleteAccaunt">Delete accaunt</sys:String>
+    <sys:String x:Key="ChangeEmailTitle">Change email</sys:String>
+    <sys:String x:Key="ChangeNameTitle">Change name</sys:String>
+    <sys:String x:Key="CancelText">← Cancel</sys:String>
+    <sys:String x:Key="StudioName">Studio</sys:String>
+    <sys:String x:Key="DateLabel">Date</sys:String>
+    <sys:String x:Key="From2">From</sys:String>
+    <sys:String x:Key="To2">To</sys:String>
+    <sys:String x:Key="Price">Price</sys:String>
+    <sys:String x:Key="Status">Status</sys:String>
+    <sys:String x:Key="Delete">Delete</sys:String>
+    <sys:String x:Key="Review">Review</sys:String>
+
+    <sys:String x:Key="Send">Send</sys:String>
+
+    <sys:String x:Key="NewNameText">New name</sys:String>
+    <sys:String x:Key="NewEmailText">New email</sys:String>
+
+    <sys:String x:Key="CreateNameText">Name en</sys:String>
+    <sys:String x:Key="CreateDescriptionText">Description en</sys:String>
+    <sys:String x:Key="CreatePathText">Path</sys:String>
+    <sys:String x:Key="CreatePriceText">Price</sys:String>
+    <sys:String x:Key="CreateSquareText">Square</sys:String>
+    <sys:String x:Key="CreateNameRuText">Name ru</sys:String>
+    <sys:String x:Key="CreateDescriptionRuText">Description ru</sys:String>
+    <sys:String x:Key="CreateButton">Create</sys:String>
+    <sys:String x:Key="Timetable">Timetable</sys:String>
+    <sys:String x:Key="Rent">Rent</sys:String>
+
+    <sys:String x:Key="ChoseTimeLabel">Rent time</sys:String>
+    <sys:String x:Key="RentButton">Rent it</sys:String>
+    <sys:String x:Key="RentCoast">Amount:</sys:String>
+
+    <sys:String x:Key="DayMonday">Monday</sys:String>
+    <sys:String x:Key="DayTuesday">Tuesday</sys:String>
+    <sys:String x:Key="DayWednesday">Wednesday</sys:String>
+    <sys:String x:Key="DayThursday">Thursday</sys:String>
+    <sys:String x:Key="DayFriday">Friday</sys:String>
+    <sys:String x:Key="DaySaturday">Saturday</sys:String>
+    <sys:String x:Key="DaySunday">Sunday</sys:String>
+
+    <sys:String x:Key="Exit">Log out</sys:String>
+
+    <sys:String x:Key="NameStudio">Studio name</sys:String>
+    <sys:String x:Key="Views">Views</sys:String>
+    <sys:String x:Key="Rents">Rents</sys:String>
+    <sys:String x:Key="Money">Money</sys:String>
+
+    <sys:String x:Key="Save">Save</sys:String>
+    <sys:String x:Key="Mail">Mail</sys:String>
+
+    <sys:String x:Key="NoResualt">No Resualts</sys:String>
+    <sys:String x:Key="NoReviews">No Reviews</sys:String>
+</ResourceDictionary>

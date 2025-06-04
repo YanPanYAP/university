@@ -1,0 +1,59 @@
+﻿<Page x:Class="photoLoom.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:photoLoom"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="AuthPage">
+
+    <Grid Background="#FF0F0F0F">
+        <Border Height="500" VerticalAlignment="Center" Width="500" Padding="40" CornerRadius="20">
+            <StackPanel>
+                <Button Content="{DynamicResource Back}"
+                    Style="{StaticResource FlatNavButtonStyle}"
+                    HorizontalAlignment="Left"
+                    Click="BackButton_Click"/>
+
+                <TextBlock Text="{DynamicResource AppName}"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="12"/>
+
+                <TextBox x:Name="textBoxLogin"
+                     Style="{StaticResource FloatingHintTextBoxStyle}"
+                     Tag="{DynamicResource Login}"
+                     FontSize="18"
+                     Margin="0,30,0,0"
+                     Height="30"/>
+
+                <PasswordBox x:Name="textBoxPass"
+                         Style="{StaticResource FloatingHintPasswordBoxStyle}"
+                         Tag="{DynamicResource Password}"
+                         FontSize="18"
+                         Margin="0,30,0,0"
+                         Height="30"/>
+
+                <TextBox x:Name="textBoxEmail"
+                     Style="{StaticResource FloatingHintTextBoxStyle}"
+                     Tag="{DynamicResource Email}"
+                     FontSize="18"
+                     Margin="0,30,0,0"
+                     Height="30"/>
+
+                <Grid>
+                    <Button HorizontalAlignment="Center"
+                        Content="{DynamicResource LetsGo}"
+                        Style="{StaticResource HighlightButtonStyle}"
+                        Margin="20"
+                        Click="Button_Reg_Click"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Page>

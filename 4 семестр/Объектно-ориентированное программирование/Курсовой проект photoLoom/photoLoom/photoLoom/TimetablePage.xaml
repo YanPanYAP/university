@@ -1,0 +1,34 @@
+﻿<Page x:Class="photoLoom.TimetablePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:photoLoom"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="1000"
+      Title="TimetablePage">
+    <Grid Background="#FF0F0F0F">
+        <Frame x:Name="TimetablePageFrame" NavigationUIVisibility="Hidden"/>
+        <Grid x:Name="TimetablePageContent">
+        
+        <Grid Margin="80" VerticalAlignment="Top" >
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Button Content="{DynamicResource Back}" Style="{StaticResource FlatNavButtonStyle}" HorizontalAlignment="Left" Click="BackButton_Click" Margin="0,0,10,0"/>
+                <Button x:Name="StudiosButton2" Content="{DynamicResource Studios}" Style="{StaticResource FlatNavButtonStyle}" Margin="0,0,10,0" Click="StudiosButton" Tag="null" />
+                <Button x:Name="TimetableButton2" Content="{DynamicResource Timetable}" Style="{StaticResource FlatNavButtonStyle}" Margin="0,0,10,0" Click="TimetableButton" Tag="Active"/>
+                <Button x:Name="StatusButton2" Content="{DynamicResource Status}" Style="{StaticResource FlatNavButtonStyle}" Click="StatusButton" Margin="0,0,10,0" Tag="null"/>
+                    <Button x:Name="ReviewButton2" Content="{DynamicResource Review}" Style="{StaticResource FlatNavButtonStyle}" Click="ReviewButton" Margin="0,0,10,0" Tag="null"/>
+                    <Button x:Name="RentButton2" Content="{DynamicResource Rent}" Style="{StaticResource FlatNavButtonStyle}" Click="RentButton" Tag="null"/>
+                </StackPanel>
+        </Grid>
+
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="20,150,20,20">
+            <StackPanel x:Name="TimetablePanel" Orientation="Vertical" HorizontalAlignment="Center"/>
+
+        </ScrollViewer>
+    </Grid>
+    </Grid>
+</Page>

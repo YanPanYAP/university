@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="NavButtonForegroundBrush" Color="#E0E0E0"/>
+    <SolidColorBrush x:Key="NavButtonBorderBrush" Color="#30FFFFFF"/>
+    <SolidColorBrush x:Key="NavButtonActiveBackgroundBrush" Color="#E0E0E0"/>
+    <SolidColorBrush x:Key="NavButtonActiveForegroundBrush" Color="#000000"/>
+    <SolidColorBrush x:Key="NavButtonActiveBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="HighlightButtonBackgroundBrush" Color="#D9B08C"/>
+    <SolidColorBrush x:Key="TextColor" Color="White"/>
+    <SolidColorBrush x:Key="HintBorderBrush" Color="#7FFFFFFF"/>
+    <SolidColorBrush x:Key="TextBoxForegroundBrush" Color="White"/>
+    <SolidColorBrush x:Key="HoverBorderBrush" Color="#FFFFFF"/>
+     <SolidColorBrush x:Key="HintTextBrush" Color="#7FFFFFFF"/>
+
+
+
+
+
+</ResourceDictionary>
