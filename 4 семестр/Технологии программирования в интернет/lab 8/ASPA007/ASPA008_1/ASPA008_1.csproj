@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Photos\Babbage.jpg" />
+    <Content Remove="wwwroot\Photos\Berners-Lee.jpg" />
+    <Content Remove="wwwroot\Photos\Chomsky.jpg" />
+    <Content Remove="wwwroot\Photos\Codd.jpg" />
+    <Content Remove="wwwroot\Photos\diamond.jpg" />
+    <Content Remove="wwwroot\Photos\Dijkstra.jpg" />
+    <Content Remove="wwwroot\Photos\Einstein.jpg" />
+    <Content Remove="wwwroot\Photos\Ershov.jpg" />
+    <Content Remove="wwwroot\Photos\Huntington.jpg" />
+    <Content Remove="wwwroot\Photos\Knuth.jpg" />
+    <Content Remove="wwwroot\Photos\Linus.jpg" />
+    <Content Remove="wwwroot\Photos\Lovelace.jpg" />
+    <Content Remove="wwwroot\Photos\Neumann.jpg" />
+    <Content Remove="wwwroot\Photos\Tanenbaum.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Downloads\ASPA_006\DAL_Celebrity\DAL_Celebrity.csproj" />
+    <ProjectReference Include="..\..\..\..\..\..\Downloads\ASPA_006\DAL_Celebrity_MSSQL\DAL_Celebrity_MSSQL.csproj" />
+    <ProjectReference Include="..\ANC25_WEBAPI_DLL\ANC25_WEBAPI_DLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Photos\Babbage.jpg" />
+    <None Include="wwwroot\Photos\Berners-Lee.jpg" />
+    <None Include="wwwroot\Photos\Chomsky.jpg" />
+    <None Include="wwwroot\Photos\Codd.jpg" />
+    <None Include="wwwroot\Photos\diamond.jpg" />
+    <None Include="wwwroot\Photos\Dijkstra.jpg" />
+    <None Include="wwwroot\Photos\Einstein.jpg" />
+    <None Include="wwwroot\Photos\Ershov.jpg" />
+    <None Include="wwwroot\Photos\Huntington.jpg" />
+    <None Include="wwwroot\Photos\Knuth.jpg" />
+    <None Include="wwwroot\Photos\Linus.jpg" />
+    <None Include="wwwroot\Photos\Lovelace.jpg" />
+    <None Include="wwwroot\Photos\Neumann.jpg" />
+    <None Include="wwwroot\Photos\Tanenbaum.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\Photos\Celeberities.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

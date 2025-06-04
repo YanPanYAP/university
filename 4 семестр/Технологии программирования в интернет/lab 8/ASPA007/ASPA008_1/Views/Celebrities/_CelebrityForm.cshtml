@@ -1,0 +1,47 @@
+﻿@model DAL_Celebrity_MSSQL.Celebrity
+@inject ANC25_WEBAPI_DLL.CelebritiesConfig.CountryCodes CountryCodesService
+
+@{
+    var countries = CountryCodesService.Codes.Select(c => new SelectListItem
+            {
+                Value = c.code,
+                Text = c.countryLabel, 
+                Selected = (Model.Nationality == c.code) 
+            }).ToList();
+}
+
+@using (Html.BeginForm(Model.Id == 0 ? "Create" : "Edit", "Celebrities", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    @if (Model.Id != 0)
+    {
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.ReqPhotoPath)
+    }
+
+    <div class="form-group">
+        <label asp-for="FullName" class="control-label"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Nationality" class="control-label"></label>
+        @Html.DropDownListFor(model => model.Nationality, countries, "Выберите страну", new { @class = "form-control" })
+        <span asp-validation-for="Nationality" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ReqPhotoPath" class="control-label">Фото</label>
+        <input type="file" name="photoFile" class="form-control" />
+        @if (!string.IsNullOrEmpty(Model.ReqPhotoPath))
+        {
+            <p>Текущее фото: @Html.CelebrityFoto(Model, 100, 100)</p>
+        }
+        <span asp-validation-for="ReqPhotoPath" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group">
+        <input type="submit" value="@(Model.Id == 0 ? "Добавить" : "Сохранить")" class="btn btn-primary" />
+    </div>
+}

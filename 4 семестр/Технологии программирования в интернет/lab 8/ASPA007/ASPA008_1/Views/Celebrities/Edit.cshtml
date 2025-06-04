@@ -1,0 +1,17 @@
+﻿@model DAL_Celebrity_MSSQL.Celebrity
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Добавить знаменитость" : "Редактировать знаменитость";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @await Html.PartialAsync("_CelebrityForm", Model)
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Вернуться к списку</a>
+</div>

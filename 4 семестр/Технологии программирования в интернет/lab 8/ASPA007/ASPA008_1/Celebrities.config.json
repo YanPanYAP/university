@@ -1,0 +1,8 @@
+﻿{
+  "Celebrities": {
+    "PhotosRequeestPath": "/Photos",
+    "PhotosFolder": "wwwroot/Photos",
+    "ConnectionString": "Server=172.20.10.2,1433; Database=Lab6_Db; User Id=sa; Password=YourStrong@Passw0rd; TrustServerCertificate=True",
+    "IS03166alpha2Path": "\\\\Mac\\Home\\Documents\\fit\\ТПвИ\\7-8(ASPA)\\ASPA007\\ASPA008_1\\CountryCodes\\Лабораторная_08__iso3166-1-alpha2-country-codes.json"
+  }
+  }

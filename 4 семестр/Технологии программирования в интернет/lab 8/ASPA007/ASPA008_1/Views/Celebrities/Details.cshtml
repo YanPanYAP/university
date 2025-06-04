@@ -1,0 +1,46 @@
+﻿@model DAL_Celebrity_MSSQL.Celebrity
+@{
+    ViewData["Title"] = Model.FullName;
+}
+
+<h1>@Model.FullName</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Фото
+        </dt>
+        <dd class="col-sm-10">
+            @Html.CelebrityFoto(Model, 200, 200)
+        </dd>
+        <dt class="col-sm-2">
+            Имя
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FullName
+        </dd>
+        <dt class="col-sm-2">
+            Национальность
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Nationality
+        </dd>
+    </dl>
+
+    @if (ViewData["WikipediaLinks"] is List<string> wikipediaLinks)
+    {
+        <h4>Ссылки на Wikipedia:</h4>
+        <ul>
+            @foreach (var link in wikipediaLinks)
+            {
+                <li><a href="@link" target="_blank">@Model.FullName на Wikipedia</a></li>
+            }
+        </ul>
+    }
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Редактировать</a> |
+    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Удалить</a> |
+    <a asp-action="Index" class="btn btn-secondary">Вернуться к списку</a>
+</div>

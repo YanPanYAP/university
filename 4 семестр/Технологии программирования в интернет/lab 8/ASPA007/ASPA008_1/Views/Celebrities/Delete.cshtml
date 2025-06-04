@@ -1,0 +1,37 @@
+﻿@model DAL_Celebrity_MSSQL.Celebrity
+@{
+    ViewData["Title"] = "Удалить знаменитость";
+}
+
+<h1>Удалить знаменитость</h1>
+
+<h3>Вы уверены, что хотите удалить эту знаменитость?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Фото
+        </dt>
+        <dd class="col-sm-10">
+            @Html.CelebrityFoto(Model, 150, 150)
+        </dd>
+        <dt class="col-sm-2">
+            Имя
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FullName
+        </dd>
+        <dt class="col-sm-2">
+            Национальность
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Nationality
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Вернуться к списку</a>
+    </form>
+</div>
