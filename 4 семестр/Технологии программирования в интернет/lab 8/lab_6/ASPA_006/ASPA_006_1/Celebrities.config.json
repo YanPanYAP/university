@@ -1,0 +1,7 @@
+﻿{
+  "Celebrities": {
+    "PhotosFolder": "C:\\Users\\hp\\Desktop\\lab_6\\ASPA_006\\Celebrities_Photos",
+    "ConnectionString": "Server=DESKTOP-2R6BPTL; Database=Lab6_Db; Trusted_Connection=true; TrustServerCertificate=Yes"
+  }
+
+}
