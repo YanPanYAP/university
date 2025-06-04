@@ -1,0 +1,9 @@
+﻿  Levenshtein.cpp
+  LevenshteinDistance.cpp
+\\mac\Home\Documents\fit\МП\lab 4\LevenshteinDistance\LevenshteinDistance\LevenshteinDistance.cpp(88,20): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  lcs.cpp
+\\mac\Home\Documents\fit\МП\lab 4\LevenshteinDistance\LevenshteinDistance\lcs.cpp(44,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+\\mac\Home\Documents\fit\МП\lab 4\LevenshteinDistance\LevenshteinDistance\lcs.cpp(44,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+\\mac\Home\Documents\fit\МП\lab 4\LevenshteinDistance\LevenshteinDistance\lcs.cpp(43,6): warning C4101: n: неиспользованная локальная переменная
+  Создание кода...
+  LevenshteinDistance.vcxproj -> \\Mac\Home\Documents\fit\МП\lab 4\LevenshteinDistance\x64\Debug\LevenshteinDistance.exe
