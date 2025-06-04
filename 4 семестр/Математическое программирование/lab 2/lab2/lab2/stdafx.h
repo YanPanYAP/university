@@ -1,0 +1,9 @@
+#pragma once 
+#include <iostream>
+#include "Combi.h"
+#include <time.h>
+#include <iomanip> 
+#include "Knapsack.h"
+#include "Boat.h"
+#include "Auxil.h"
+#include "Salesman.h"

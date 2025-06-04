@@ -1,0 +1,12 @@
+﻿  Algorithms.cpp
+  Auxil.cpp
+  Boat.cpp
+  Combi.cpp
+C:\Mac\Home\Documents\fit\МП\lab 2\lab2\lab2\Algorithms.cpp(25,42): error C2143: синтаксическая ошибка: отсутствие ";" перед "<<"
+C:\Mac\Home\Documents\fit\МП\lab 2\lab2\lab2\Algorithms.cpp(25,42): error C2059: синтаксическая ошибка: <<
+C:\Mac\Home\Documents\fit\МП\lab 2\lab2\lab2\Combi.cpp(49,37): warning C4334: <<: результат 32-разрядного смещения неявно преобразуется в 64-разрядное значение (предполагалось 64-разрядное смещение?)
+  Knapsack.cpp
+  Salesman.cpp
+C:\Mac\Home\Documents\fit\МП\lab 2\lab2\lab2\Salesman.cpp(40,11): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+C:\Mac\Home\Documents\fit\МП\lab 2\lab2\lab2\Salesman.cpp(48,22): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  Создание кода...
