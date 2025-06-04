@@ -1,0 +1,238 @@
+﻿<Window x:Class="photoLoom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:photoLoom"
+        xmlns:controls="clr-namespace:photoLoom"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Icon="C:\Mac\Home\Documents\fit\ООП\photoLoom\photoLoom\resources\images\photoLoom.ico"
+        Title="Photo.Loom" Height="1500" MinWidth="1000" Width="1000" Background="#FF0F0F0F">
+
+    <Grid Background="#FF0F0F0F" Width="1000">
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Grid x:Name="MainContent">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <ScrollViewer.Resources>
+                    <Style TargetType="ScrollBar" BasedOn="{StaticResource CustomVerticalScrollBar}">
+                        <Setter Property="Orientation" Value="Vertical"/>
+                    </Style>
+                </ScrollViewer.Resources>
+                <StackPanel Background="#FF0F0F0F">
+                    <Grid Height="60" VerticalAlignment="Top" Margin="20,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <Button x:Name="HomeButton" Content="{DynamicResource Home}" Style="{StaticResource FlatNavButtonStyle}" Margin="0,0,10,0" Click="HomeButton_Click" Tag="Active" />
+                            <Button x:Name="StudiosButton" Content="{DynamicResource Studios}" Style="{StaticResource FlatNavButtonStyle}" Margin="0,0,10,0" Click="StudiosButton_Click" Tag="null"/>
+                        </StackPanel>
+
+                    <TextBlock Grid.Column="1" Text="Photo.Loom"
+                           Foreground="White"
+                           FontWeight="Bold"
+                           FontSize="18"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center" />
+
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                        <Button x:Name="ThemeToggleButton"
+                    Content="🌗"
+                    Click="ThemeButton_Click"
+                    Style="{StaticResource FlatNavButtonStyle}"
+                    Margin="0,0,10,0" />
+                        <Button x:Name="LanguageButton"
+                    Content="{DynamicResource Language}"
+                    Click="LanguageButton_Click"
+                    Style="{StaticResource FlatNavButtonStyle}"
+                    Margin="0,0,10,0"/>
+
+
+                        <Button x:Name="AccountButton" Content="{DynamicResource Account}" Style="{StaticResource HighlightButtonStyle}" Click="AccountButton_Click" />
+                    </StackPanel>
+                </Grid>
+
+                <Grid Margin="20,10,20,0" Height="600px" VerticalAlignment="Top">
+                    <StackPanel>
+                        <Grid>
+                            <Image Source="C:\Mac\Home\Documents\fit\ООП\photoLoom\photoLoom\resources\images\mainImageDesktop.png"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Top"
+                               Height="375"
+                               Width="Auto" />
+
+                            <Button Content="{DynamicResource Studios}" 
+                                Style="{StaticResource FlatNavButtonStyle}" 
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                Margin="0,365,0,0"
+                                Padding="18,10"
+                                FontSize="14"
+                                Tag="Active"
+                                Click="StudiosButton_Click"/>
+                        </Grid>
+
+                        <UniformGrid Columns="2" HorizontalAlignment="Center">
+                            <StackPanel Margin="0,0,40,0" Width="400" VerticalAlignment="Center">
+                                <TextBlock Text="{DynamicResource SloganTitle}" 
+                                       Style="{StaticResource ZoomOnHoverTextBlock}"
+                                       Foreground="White"
+                                       TextWrapping="Wrap"
+                                       FontSize="30" 
+                                       FontWeight="Bold" 
+                                       Margin="0,0,0,10"/>
+                                <TextBlock Text="{DynamicResource SloganText}" 
+                                       Foreground="#AAAAAA" 
+                                       TextWrapping="Wrap"
+                                       LineHeight="18"/>
+                            </StackPanel>
+
+                            <Grid VerticalAlignment="Center" Height="Auto" HorizontalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+
+                                <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" Margin="0,0,30,20">
+                                    <TextBlock Text="{DynamicResource Stat1Title}" 
+                                           Foreground="White" 
+                                           FontSize="30"
+                                           FontWeight="Bold" 
+                                           Margin="0,0,0,5"/>
+                                    <TextBlock Text="{DynamicResource Stat1Subtitle}" 
+                                           Foreground="#AAAAAA"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,0,20">
+                                    <TextBlock Text="{DynamicResource Stat2Title}" 
+                                           Foreground="White" 
+                                           FontSize="30"
+                                           FontWeight="Bold"
+                                           Margin="0,0,0,5"/>
+                                    <TextBlock Text="{DynamicResource Stat2Subtitle}" 
+                                           Foreground="#AAAAAA" 
+                                           TextWrapping="Wrap" 
+                                           Width="150"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                                    <TextBlock Text="{DynamicResource Stat3Title}" 
+                                           Foreground="White" 
+                                           FontSize="30"
+                                           FontWeight="Bold" 
+                                           Margin="0,0,0,5"/>
+                                    <TextBlock Text="{DynamicResource Stat3Subtitle}" 
+                                           Foreground="#AAAAAA"
+                                           TextWrapping="Wrap" 
+                                           TextAlignment="Center"/>
+                                </StackPanel>
+
+                                <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
+                                    <TextBlock Text="{DynamicResource Stat4Title}" 
+                                           Foreground="White" 
+                                           FontSize="30"
+                                           FontWeight="Bold"
+                                           Margin="0,0,0,5"/>
+                                    <TextBlock Text="{DynamicResource Stat4Subtitle}" 
+                                           Foreground="#AAAAAA" 
+                                           TextWrapping="Wrap" 
+                                           Width="150"/>
+                                </StackPanel>
+                            </Grid>
+                        </UniformGrid>
+                    </StackPanel>
+                </Grid>
+                <Grid Margin="20,10,20,0" Height="250" VerticalAlignment="Top">
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" CanContentScroll="False" Height="220">
+                    <ScrollViewer.Resources>
+                        <Style TargetType="ScrollBar" BasedOn="{StaticResource CustomHorizontalScrollBar}">
+                                <Setter Property="Orientation" Value="Horizontal"/>
+                            </Style>
+                        </ScrollViewer.Resources>
+
+                            <ItemsControl x:Name="ReviewsPanel">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel Orientation="Horizontal" Width="1800" />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Margin="5" Padding="10" CornerRadius="10" Background="#1A1A1A">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Ellipse Width="60" Height="60" Stroke="Gray" StrokeThickness="1" Margin="0,0,10,0">
+                                                    <Ellipse.Fill>
+                                                        <ImageBrush ImageSource="{Binding UserPhotoPath}" Stretch="UniformToFill"/>
+                                                    </Ellipse.Fill>
+                                                </Ellipse>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding UserLogin}" FontWeight="Bold" Foreground="White" Margin="0 0 0 2"/>
+                                                    <TextBlock Text="{Binding DateReviewText}" TextWrapping="Wrap" Width="200" Foreground="Gray" Margin="0 0 0 2"/>
+                                                    <TextBlock Text="{Binding ReviewText}" TextWrapping="Wrap" Width="200" Foreground="White"/>
+
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                                
+
+                            </ItemsControl>
+                        
+                        </ScrollViewer>
+                        <TextBlock x:Name="NoReviewsTextBlock"
+Text="{DynamicResource NoReviews}"
+Foreground="White"
+FontWeight="Bold"
+FontSize="80"
+Visibility="Collapsed"
+HorizontalAlignment="Center"
+VerticalAlignment="Center"
+TextWrapping="Wrap"/>
+                    </Grid>
+                    <Grid Margin="20,10,20,0" Height="250" VerticalAlignment="Top">
+                        <TextBlock Grid.Column="1" Text="Photo"
+       Foreground="White"
+       FontWeight="Bold"
+       FontSize="80"
+       VerticalAlignment="Center"
+       HorizontalAlignment="Left" Margin="40,0,0,0"/>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalAlignment="Center">
+                            <ItemsControl x:Name="ScheduleList" VerticalAlignment="Center">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5">
+
+                                            <TextBlock Text="{Binding DayName}" Width="120" FontWeight="Bold" Foreground="#AAAAAA" FontSize="16"/>
+                                            <TextBlock Text="{Binding TimeFromTo}" Foreground="#AAAAAA" FontSize="16"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                        <TextBlock Grid.Column="1" Text="Loom"
+       Foreground="White"
+       FontWeight="Bold"
+       FontSize="80"
+       VerticalAlignment="Center"
+       HorizontalAlignment="Right" Margin="0,0,40,0"/>
+                    </Grid>
+
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+                
+    </Grid>
+</Window>
