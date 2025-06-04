@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.auth-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.auth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.auth-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.close-btn {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 10px 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-fb {
+  background-color: #3b5998;
+}
+.social-vk {
+  background-color: #4c75a3;
+}
+.social-google {
+  background-color: #db4437;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 12px;
+  min-height: 60px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* пространство под кнопку */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input.error {
+  border-color: red;
+}
+
+.toggle-btn {
+  width: 35px;
+  height: 27px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+  z-index: 2;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8bc34a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-bottom: 8px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

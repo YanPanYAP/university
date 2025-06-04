@@ -1,0 +1,112 @@
+.item {
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3); /* по умолчанию синяя */
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  box-shadow: 0 2px 5px rgba(0, 204, 102, 0.5); /* зелёная тень */
+}
+
+.editing {
+  box-shadow: 0 2px 5px rgba(255, 215, 0, 0.5); /* жёлтая тень */
+}
+
+.blue {
+  background-color: #e6f0ff;
+}
+
+.green {
+  background-color: #e0ffe6;
+}
+
+.yellow {
+  background-color: #fffacc;
+}
+
+.content {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fullDescription {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.circleButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.view {
+  background-color: white;
+  box-shadow: 0 2px 5px #5e5e5e;
+}
+
+.edit {
+  background-color: white;
+  box-shadow: 0 2px 5px #ffd700;
+}
+
+.delete {
+  background-color: white;
+  box-shadow: 0 2px 5px #ff4d4d;
+}
+
+.toggle {
+  background-color: white;
+  box-shadow: 0 2px 5px #00cc66;
+}
+
+.toggleDone {
+  background-color: #00cc66;
+}
+
+.strike {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  width: 95%;
+  max-width: 95%;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-bottom: 2px solid #007bff;
+}

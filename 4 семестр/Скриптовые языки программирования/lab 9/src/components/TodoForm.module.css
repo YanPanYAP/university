@@ -1,0 +1,42 @@
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+.button {
+  width: 200px;
+  height: 30px;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+  background-color: none;
+  background: none;
+  border: 1px solid white;
+  border-radius: 50px;
+}

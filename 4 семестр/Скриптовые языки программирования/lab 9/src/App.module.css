@@ -1,0 +1,13 @@
+.container {
+  background-color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
