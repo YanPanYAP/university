@@ -1,0 +1,10 @@
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\bin\Debug\lab 1.exe.config
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\bin\Debug\lab 1.exe
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\bin\Debug\lab 1.pdb
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab 1.csproj.AssemblyReference.cache
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab_1.Form1.resources
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab_1.Properties.Resources.resources
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab 1.csproj.GenerateResource.cache
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab 1.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab 1.exe
+C:\Mac\Home\Documents\fit\ООП\lab 1\lab 1\lab 1\obj\Debug\lab 1.pdb
