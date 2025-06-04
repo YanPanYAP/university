@@ -1,0 +1,7 @@
+﻿{
+  "Celebrities": {
+    "PhotosFolder": "\\\\Mac\\Home\\Documents\\fit\\ТПвИ\\lab 7\\DAL_Celebrity\\ASPA_006_1\\wwwroot\\Celebrities\\",
+    "ConnectionString": "Server=192.168.1.111,1433; Database=Lab6_Db; User Id=sa; Password=YourStrong@Passw0rd; TrustServerCertificate=True"
+  }
+
+}

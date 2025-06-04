@@ -1,0 +1,91 @@
+###
+@hp=https://localhost:7055
+@capi=/api/Celebrities
+###
+
+###   ��� ������������
+###   celebrities.MapGet("/",
+GET {{hp}}{{capi}}
+
+
+### ������������ �� ID
+### MapGet("/{id:int:min(1)}"
+
+GET {{hp}}{{capi}}/7
+
+
+### ������������ �� ID �������
+### MapGet("/Lifeevents/{id:int:min(1)}")
+
+GET {{hp}}{{capi}}/Lifeevents/7
+
+
+### ������� ������������ �� ID
+
+###.MapDelete("/{id:int:min(1)}",
+
+DELETE {{hp}}{{capi}}/4
+
+
+### �������� ����� ������������
+### MapPost("/",
+
+POST {{hp}}{{capi}}
+Content-Type: application/json
+
+{
+  "fullName": "����� ������",
+  "nationality": "RU",
+  "reqPhotoPath":"Ershov.jpg"
+}
+
+
+###  �������� ������������ �� ID
+### MapPut("/{id:int:min(1)}",
+
+PUT {{hp}}{{capi}}/10
+Content-Type:application/json
+{
+  "fullName":"����� ������ ��������",
+  "nationality":"RU",
+  "reqPhotoPath":"Ershov.jpg"
+
+}
+
+
+
+### �������� ���� ���������� �� ����� ����� (fname)
+### MapGet("/photo/{fname}"
+
+GET {{hp}}{{capi}}/photo/Ershov.jpg
+
+
+###
+@lapi=/api/Lifeevents
+###
+
+### ��� �������
+### MapGet("/",
+GET {{hp}}{{lapi}}
+
+  
+### ��� ������� �� ID ������������
+### MapGet("/Celebrities/{id:int:min(1)}
+GET {{hp}}{{lapi}}/Celebrities/3
+
+
+### ������� ������� �� ID
+### MapDelete("/{id:int:min(1)}"
+DELETE {{hp}}{{lapi}}/10
+
+  
+### �������� ����� �������
+### MapPost("/",
+POST {{hp}}{{lapi}}
+Content-Type:application/json
+{
+"celebrityId": 9,
+"date": "1931-04-19T00:00:00",
+"description": "���� ��������",
+"reqPhotoPath": null
+}
