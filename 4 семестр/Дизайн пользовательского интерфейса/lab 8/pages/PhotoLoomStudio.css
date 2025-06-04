@@ -1,0 +1,772 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 1430px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 162px;
+  border-bottom: 2px dashed #262626;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  order: 2;
+}
+
+.nav-left {
+  order: 1;
+}
+
+.nav-right {
+  order: 3;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  padding: 18px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  text-align: center;
+  color: #b3b2b1;
+  text-decoration: none;
+  border: 2px solid #262626;
+}
+
+.nav-link.active {
+  background-color: #191919;
+  color: #ffffff;
+}
+
+.nav-link.contact {
+  background-color: #fd8737;
+  color: #0f0f0f;
+  font-weight: 500;
+}
+
+/* Бургер-меню по умолчанию скрыто */
+.burger-menu {
+  display: none;
+  font-size: 32px;
+  color: #fd8737;
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+}
+
+/* Мобильное меню */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Медиа-запрос для мобильных */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .logo {
+    text-align: left;
+    order: 1;
+    flex: unset;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    order: 2;
+  }
+
+  .mobile-nav.show {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 33px;
+}
+
+.logo span {
+  color: #fd8737;
+}
+
+.main-content {
+  padding: 0 162px;
+}
+
+.studio-info {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed #262626;
+  border-radius: 20px 20px 0 0;
+  border-bottom: none;
+  padding: 74px 80px 50px 74px;
+}
+
+.studio-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+
+.studio-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #676664;
+}
+
+.studio-gallery {
+  display: flex;
+  padding: 30px;
+  margin: 0 auto;
+  gap: 30px;
+
+  border: 2px dashed #262626;
+  border-bottom: none;
+  padding: 74px 80px 50px 74px;
+}
+
+.main-image {
+  width: 640px;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0;
+  display: block;
+}
+
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.side-image {
+  width: 320px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.booking-section {
+  display: flex;
+  margin-top: -1px;
+  border: 2px dashed #262626;
+  border-radius: 0 0 20px 20px;
+}
+
+.calendar-section {
+  width: 50%;
+  border-right: 2px dashed #262626;
+  padding: 40px;
+}
+
+.month-nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.month-nav-btn {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #fd8737;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.month-name {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.calendar-header {
+  margin-bottom: 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-gap: 7px;
+}
+
+.calendar-day {
+  width: 60px;
+  height: 60px;
+  border: 2px dashed #262626;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.calendar-day span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.calendar-day.selected span {
+  color: #fd8737;
+}
+
+.time-selector {
+  margin: 60px 0;
+}
+
+.time-label {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.time-input {
+  width: 150px;
+  height: 50px;
+  background-color: #191919;
+  border-radius: 12px;
+  border: none;
+  padding: 0 24px;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  line-height: 24px;
+  color: #676664;
+}
+
+.time-separator {
+  margin: 0 20px;
+}
+
+.features-section {
+  width: 50%;
+  padding: 40px;
+}
+
+.features-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.features-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #807f7e;
+  margin-bottom: 40px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.rent-btn {
+  background-color: #1e1e1e;
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 30px;
+  margin: 0;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input {
+  width: 100%;
+  height: 55px;
+  background-color: #191919;
+  border-radius: 12px;
+  border: none;
+  padding: 0 24px;
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  line-height: 24px;
+  color: #676664;
+  position: relative;
+}
+
+.form-input-container {
+  position: relative;
+}
+
+.form-input-icon {
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.photographers-section {
+  border: 2px dashed #262626;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.photographers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photographer-card {
+  width: 367px;
+  border-right: 2px dashed #262626;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photographer-card:last-child {
+  border-right: none;
+}
+
+.photographer-image {
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.photographer-name {
+  font-size: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.photographer-bio {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #807f7e;
+  margin-bottom: 20px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.moneyPhoto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+}
+
+.price-label {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #807f7e;
+  margin-right: 8px;
+}
+
+.price-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.price-value {
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  color: #dddddd;
+}
+
+.rent-photographer-btn {
+  background-color: #1e1e1e;
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.footer {
+  padding: 0px 162px 30px;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 110px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-logo span {
+  color: #fd8737;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 0;
+}
+
+.social-link {
+  width: 66px;
+  height: 66px;
+  background-color: #fd8737;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.footer-nav-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-nav-link {
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  line-height: 27px;
+  color: #676664;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #262626;
+  border-radius: 3px;
+  margin: 0 16px;
+}
+.custom-hr {
+  border: none;
+  border-top: 2px dashed #262626;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-input {
+  width: 478px;
+  height: 63px;
+  background-color: #191919;
+  border-radius: 12px;
+  border: none;
+  padding: 0 24px;
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  line-height: 24px;
+  color: #676664;
+}
+
+.newsletter-btn {
+  position: absolute;
+  right: 19px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.newsletter-container {
+  position: relative;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin: 80px 0;
+  padding: 50px 0 50px 0;
+  border-top: 2px dashed #262626;
+  border-bottom: 2px dashed #262626;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.marquee-text {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-right: 16px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 358px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    padding: 0 20px;
+  }
+
+  .studio-info {
+    padding: 40px 20px;
+  }
+
+  .studio-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .studio-subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .studio-gallery {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .main-image,
+  .side-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-images {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .booking-section {
+    flex-direction: column;
+  }
+
+  .calendar-section,
+  .features-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .calendar-section {
+    border-right: none;
+  }
+  .calendar {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  .calendar-day {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .time-inputs {
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+  }
+
+  .time-separator {
+    display: none;
+  }
+
+  .photographers-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photographer-card {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px dashed #262626;
+  }
+
+  .photographer-card:last-child {
+    border-bottom: none;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-text,
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+
+  .social-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+
+  .newsletter-btn {
+    right: 10px;
+  }
+
+  .marquee-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer-nav-column {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./PhotoLoomStudio.css" />
+    <title>Photo Loom Studio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-links nav-left desktop-nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link active">Studios</a>
+      </nav>
+
+      <div class="logo">Photo<span>.</span>Loom</div>
+
+      <nav class="nav-links nav-right desktop-nav">
+        <a href="#" class="nav-link">En</a>
+        <a href="#" class="nav-link contact">Contact</a>
+      </nav>
+
+      <div class="burger-menu" id="burger">☰</div>
+
+      <nav class="nav-links mobile-nav" id="mobileMenu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link active">Studios</a>
+        <a href="#" class="nav-link">En</a>
+        <a href="#" class="nav-link contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="studio-info">
+        <h1 class="studio-title">Yellow Mood</h1>
+        <p class="studio-subtitle">Just a text for a yellow studio</p>
+      </section>
+
+      <section class="studio-gallery">
+        <img
+          src="../assets/images/img_image.png"
+          alt="Yellow studio with photography equipment"
+          class="main-image"
+        />
+        <div class="side-images">
+          <img
+            src="../assets/images/img_image_287x485.png"
+            alt="Studio lighting setup"
+            class="side-image"
+          />
+          <img
+            src="../assets/images/img_image_1.png"
+            alt="Yellow backdrop with photography equipment"
+            class="side-image"
+          />
+        </div>
+      </section>
+
+      <div class="booking-section">
+        <section class="calendar-section">
+          <div class="calendar-header">
+            <button class="month-nav-btn">&lt;</button>
+            <span class="month-name"></span>
+            <button class="month-nav-btn">&gt;</button>
+          </div>
+
+          <div class="calendar"></div>
+
+          <div class="time-selector">
+            <h3 class="time-label">Time</h3>
+            <div class="time-inputs">
+              <input type="text" class="time-input" placeholder="From" />
+              <img
+                src="../assets/images/img_icon_deep_orange_400.svg"
+                alt="Arrow"
+                class="time-separator"
+              />
+              <input type="text" class="time-input" placeholder="To" />
+            </div>
+          </div>
+        </section>
+
+        <section class="features-section">
+          <h2 class="features-title">Features</h2>
+          <p class="features-description">
+            Natural light floods through large windows, creating soft,
+            flattering illumination. Custom yellow photon lighting adds warm,
+            sun-kissed tones to every shot. High-end strobes, modifiers, and
+            reflectors included for versatile setups. Clean white, warm beige,
+            and textured yellow options for cohesive aesthetics. Room for
+            full-body portraits, group shots, and creative compositions.
+            Comfortable environment for models and clients during long sessions.
+            Modular furniture and movable partitions for quick scene changes.
+          </p>
+
+          <div class="price">
+            <p class="money">$12.99</p>
+            <button class="rent-btn">Rent it now</button>
+          </div>
+
+          <form class="booking-form">
+            <div class="form-input-container">
+              <input type="text" class="form-input" placeholder="Name" />
+              <img
+                src="../assets/images/img_icon_deep_orange_400.svg"
+                alt="Arrow"
+                class="form-input-icon"
+              />
+            </div>
+
+            <div class="form-input-container">
+              <input type="email" class="form-input" placeholder="Email" />
+              <img
+                src="../assets/images/img_icon_deep_orange_400.svg"
+                alt="Arrow"
+                class="form-input-icon"
+              />
+            </div>
+
+            <div class="form-input-container">
+              <input type="tel" class="form-input" placeholder="Phone" />
+              <img
+                src="../assets/images/img_icon_deep_orange_400.svg"
+                alt="Arrow"
+                class="form-input-icon"
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <section class="photographers-section">
+        <div class="photographers-grid">
+          <div class="photographer-card">
+            <img
+              src="../assets/images/img_shape.png"
+              alt="Jessica Widhow"
+              class="photographer-image"
+            />
+            <h3 class="photographer-name">Jessica Widhow</h3>
+            <p class="photographer-bio">
+              A passionate portrait and fashion photographer with a keen eye for
+              detail and emotion. Her work blends elegance with authenticity,
+              capturing the unique beauty in every subject. Whether shooting
+              soft, ethereal looks or bold editorial concepts, Anna creates a
+              comfortable atmosphere that brings out the best in front of the
+              camera.
+            </p>
+            <div class="moneyPhoto">
+              <div class="price-tag">
+                <span class="price-label">Price</span>
+                <div class="price-dot"></div>
+                <span class="price-value">$15.99</span>
+              </div>
+              <button class="rent-photographer-btn">Rent</button>
+            </div>
+          </div>
+
+          <div class="photographer-card">
+            <img
+              src="../assets/images/img_shape_386x472.png"
+              alt="Mari Low"
+              class="photographer-image"
+            />
+            <h3 class="photographer-name">Mari Low</h3>
+            <p class="photographer-bio">
+              A creative photographer specializing in lifestyle and conceptual
+              imagery. Her style balances natural warmth with artistic flair,
+              turning moments into timeless visuals. Maria excels at guiding
+              even camera-shy clients, resulting in photos that feel
+              effortlessly genuine and visually striking.
+            </p>
+            <div class="moneyPhoto">
+              <div class="price-tag">
+                <span class="price-label">Price</span>
+                <div class="price-dot"></div>
+                <span class="price-value">$15.99</span>
+              </div>
+              <button class="rent-photographer-btn">Rent</button>
+            </div>
+          </div>
+
+          <div class="photographer-card">
+            <img
+              src="../assets/images/img_shape_2.png"
+              alt="Dossy Brown"
+              class="photographer-image"
+            />
+            <h3 class="photographer-name">Dossy Brown</h3>
+            <p class="photographer-bio">
+              A lighting expert and dynamic storyteller behind the lens. His
+              technical mastery and unconventional angles produce vibrant,
+              high-energy shots—from portraits to commercial work. Maxim's
+              sessions are fueled by innovation, transforming simple setups into
+              captivating visual narratives.
+            </p>
+            <div class="moneyPhoto">
+              <div class="price-tag">
+                <span class="price-label">Price</span>
+                <div class="price-dot"></div>
+                <span class="price-value">$15.99</span>
+              </div>
+              <button class="rent-photographer-btn">Rent</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="marquee">
+      <div class="marquee-content">
+        <div class="marquee-item">
+          <span class="marquee-text">PORTRAIT SESSIONS</span>
+          <img
+            src="../assets/images/img_abstract_design.svg"
+            alt="Design element"
+          />
+        </div>
+        <div class="marquee-item">
+          <span class="marquee-text">PRODUCT PHOTOGRAPHY</span>
+          <img
+            src="../assets/images/img_abstract_design.svg"
+            alt="Design element"
+          />
+        </div>
+        <div class="marquee-item">
+          <span class="marquee-text">LIGHTING SETUPS</span>
+          <img
+            src="../assets/images/img_abstract_design.svg"
+            alt="Design element"
+          />
+        </div>
+        <div class="marquee-item">
+          <span class="marquee-text">CREATIVE WORKSHOPS</span>
+          <img
+            src="../assets/images/img_abstract_design.svg"
+            alt="Design element"
+          />
+        </div>
+        <div class="marquee-item">
+          <span class="marquee-text">EDITING SUITES</span>
+          <img
+            src="../assets/images/img_abstract_design.svg"
+            alt="Design element"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <div class="footer-logo">Photo<span>.</span>Loom</div>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <img
+              src="../assets/images/img_icon_black_900.svg"
+              alt="Instagram"
+              width="34"
+              height="34"
+            />
+          </a>
+          <a href="#" class="social-link">
+            <img
+              src="../assets/images/img_icon_black_900_34x34.svg"
+              alt="Twitter"
+              width="34"
+              height="34"
+            />
+          </a>
+          <a href="#" class="social-link">
+            <img
+              src="../assets/images/img_icon_34x34.svg"
+              alt="Behance"
+              width="34"
+              height="34"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-column">
+          <h4 class="footer-nav-title">Home</h4>
+          <a href="#" class="footer-nav-link">Why Us</a>
+          <a href="#" class="footer-nav-link">About Us</a>
+          <a href="#" class="footer-nav-link">Testimonials</a>
+          <a href="#" class="footer-nav-link">FAQ's</a>
+        </div>
+
+        <div class="footer-nav-column">
+          <h4 class="footer-nav-title">Studios</h4>
+          <a href="#" class="footer-nav-link">All</a>
+          <a href="#" class="footer-nav-link">New</a>
+          <a href="#" class="footer-nav-link">Hot</a>
+        </div>
+
+        <div class="footer-nav-column">
+          <h4 class="footer-nav-title">Subscribe to Newsletter</h4>
+          <div class="newsletter-container">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Your Email"
+            />
+            <img
+              src="../assets/images/img_icon_deep_orange_400.svg"
+              alt="Submit"
+              class="newsletter-btn"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("mobileMenu");
+
+        burger.addEventListener("click", () => {
+          menu.classList.toggle("show");
+        });
+      });
+
+      let basePrice = 12.99;
+      let photographerPrice = 15.99;
+      let selectedPhotographerBtn = null;
+
+      const moneyEl = document.querySelector(".money");
+      moneyEl.textContent = `$${basePrice.toFixed(2)}`;
+
+      const photographerRentBtns = document.querySelectorAll(
+        ".rent-photographer-btn"
+      );
+
+      photographerRentBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          if (selectedPhotographerBtn === this) {
+            this.style.backgroundColor = "";
+            this.style.color = "";
+            selectedPhotographerBtn = null;
+            moneyEl.textContent = `$${basePrice.toFixed(2)}`;
+          } else {
+            if (selectedPhotographerBtn) {
+              selectedPhotographerBtn.style.backgroundColor = "";
+              selectedPhotographerBtn.style.color = "";
+            }
+
+            selectedPhotographerBtn = this;
+            this.style.backgroundColor = "#fd8737";
+            this.style.color = "#ffffff";
+
+            moneyEl.textContent = `$${(basePrice + photographerPrice).toFixed(
+              2
+            )}`;
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const calendarContainer = document.querySelector(".calendar");
+        const monthName = document.querySelector(".month-name");
+        const prevMonthBtn = document.querySelector(
+          ".month-nav-btn:first-child"
+        );
+        const nextMonthBtn = document.querySelector(
+          ".month-nav-btn:last-child"
+        );
+
+        const months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+
+        let currentDate = new Date();
+
+        function renderCalendar() {
+          const year = currentDate.getFullYear();
+          const month = currentDate.getMonth();
+          const firstDay = new Date(year, month, 1).getDay();
+          const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+          calendarContainer.innerHTML = "";
+
+          for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++) {
+            const emptyCell = document.createElement("div");
+            emptyCell.classList.add("calendar-day", "empty");
+            calendarContainer.appendChild(emptyCell);
+          }
+
+          for (let day = 1; day <= daysInMonth; day++) {
+            const dayCell = document.createElement("div");
+            dayCell.classList.add("calendar-day");
+            dayCell.dataset.day = day;
+
+            const span = document.createElement("span");
+            span.textContent = day;
+            dayCell.appendChild(span);
+
+            if (
+              day === new Date().getDate() &&
+              month === new Date().getMonth() &&
+              year === new Date().getFullYear()
+            ) {
+              dayCell.classList.add("today");
+            }
+
+            dayCell.addEventListener("click", function () {
+              document.querySelectorAll(".calendar-day").forEach((d) => {
+                d.classList.remove("selected");
+                const s = d.querySelector("span");
+                if (s) s.style.color = "#ffffff";
+              });
+
+              this.classList.add("selected");
+              span.style.color = "#fd8737";
+
+              updateBookingSummary();
+            });
+
+            calendarContainer.appendChild(dayCell);
+          }
+
+          monthName.textContent = months[month];
+        }
+
+        renderCalendar();
+
+        prevMonthBtn.addEventListener("click", function () {
+          currentDate.setMonth(currentDate.getMonth() - 1);
+          renderCalendar();
+        });
+
+        nextMonthBtn.addEventListener("click", function () {
+          currentDate.setMonth(currentDate.getMonth() + 1);
+          renderCalendar();
+        });
+
+        function updateBookingSummary() {
+          const selectedDay = document.querySelector(".calendar-day.selected");
+          const fromTime = document.querySelector(
+            '.time-input[placeholder="From"]'
+          ).value;
+          const toTime = document.querySelector(
+            '.time-input[placeholder="To"]'
+          ).value;
+
+          if (selectedDay && fromTime && toTime) {
+            console.log(
+              `Booking summary: Yellow Mood studio on ${monthName.textContent} ${selectedDay.dataset.day}, from ${fromTime} to ${toTime}`
+            );
+          }
+        }
+
+        const timeInputs = document.querySelectorAll(".time-input");
+        timeInputs.forEach((input) => {
+          input.addEventListener("focus", function () {
+            this.setAttribute("type", "time");
+            this.style.color = "#ffffff";
+          });
+          input.addEventListener("blur", function () {
+            if (!this.value) {
+              this.setAttribute("type", "text");
+              this.style.color = "#676664";
+            } else {
+              this.style.color = "#ffffff";
+            }
+            updateBookingSummary();
+          });
+        });
+
+        const formInputs = document.querySelectorAll(".form-input");
+        formInputs.forEach((input) => {
+          input.addEventListener("focus", function () {
+            this.style.color = "#ffffff";
+          });
+          input.addEventListener("blur", function () {
+            if (!this.value) {
+              this.style.color = "#676664";
+            } else {
+              this.style.color = "#ffffff";
+            }
+          });
+        });
+
+        const rentBtn = document.querySelector(".rent-btn");
+        rentBtn.addEventListener("click", function () {
+          const nameInput = document.querySelector(
+            '.form-input[placeholder="Name"]'
+          );
+          const emailInput = document.querySelector(
+            '.form-input[placeholder="Email"]'
+          );
+          const phoneInput = document.querySelector(
+            '.form-input[placeholder="Phone"]'
+          );
+
+          let isValid = true;
+
+          if (!nameInput.value) {
+            nameInput.style.borderColor = "#fd8737";
+            isValid = false;
+          } else {
+            nameInput.style.borderColor = "";
+          }
+
+          if (!emailInput.value || !emailInput.value.includes("@")) {
+            emailInput.style.borderColor = "#fd8737";
+            isValid = false;
+          } else {
+            emailInput.style.borderColor = "";
+          }
+
+          if (!phoneInput.value) {
+            phoneInput.style.borderColor = "#fd8737";
+            isValid = false;
+          } else {
+            phoneInput.style.borderColor = "";
+          }
+
+          if (isValid) {
+            alert("Booking successful! We will contact you shortly.");
+            nameInput.value = "";
+            emailInput.value = "";
+            phoneInput.value = "";
+
+            timeInputs.forEach((input) => {
+              input.value = "";
+              input.setAttribute("type", "text");
+              input.style.color = "#676664";
+            });
+          } else {
+            alert("Please fill in all required fields correctly.");
+          }
+        });
+
+        const photographerRentBtns = document.querySelectorAll(
+          ".rent-photographer-btn"
+        );
+        photographerRentBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const photographerName =
+              this.closest(".photographer-card").querySelector(
+                ".photographer-name"
+              ).textContent;
+          });
+        });
+
+        const newsletterBtn = document.querySelector(".newsletter-btn");
+        const newsletterInput = document.querySelector(".newsletter-input");
+        newsletterBtn.addEventListener("click", function () {
+          if (newsletterInput.value && newsletterInput.value.includes("@")) {
+            alert(
+              `Thank you for subscribing with email: ${newsletterInput.value}`
+            );
+            newsletterInput.value = "";
+          } else {
+            alert("Please enter a valid email address.");
+            newsletterInput.focus();
+          }
+        });
+
+        const marqueeContent = document.querySelector(".marquee-content");
+        const marqueeContentClone = marqueeContent.cloneNode(true);
+        document.querySelector(".marquee").appendChild(marqueeContentClone);
+      });
+    </script>
+  </body>
+</html>
