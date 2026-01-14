@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 14</title>
+</head>
+<body>
+    <section>
+    <h2>GET /api/pulpits</h2>
+    <button id="getBtn">Получить кафедры</button>
+    <pre id="getOut"></pre>
+  </section>
+
+  <section>
+    <h2>POST /api/pulpits</h2>
+    <label>
+      Код кафедры (PULPIT):
+      <input id="postPulpit" placeholder="например, P3" />
+    </label>
+    <label>
+      Название (PULPIT_NAME):
+      <input id="postName" placeholder="например, Кафедра 3" />
+    </label>
+    <label>
+      Код факультета (FACULTY):
+      <input id="postFaculty" placeholder="например, F1" />
+    </label>
+    <button id="postBtn">Добавить</button>
+    <pre id="postOut"></pre>
+  </section>
+
+  <section>
+    <h2>PUT /api/pulpits</h2>
+    <label>
+      Код кафедры (PULPIT):
+      <input id="putPulpit" placeholder="существующий код" />
+    </label>
+    <label>
+      Новое название (PULPIT_NAME):
+      <input id="putName" placeholder="обновлённое название" />
+    </label>
+    <label>
+      Код факультета (FACULTY):
+      <input id="putFaculty" placeholder="например, F2" />
+    </label>
+    <button id="putBtn">Изменить</button>
+    <pre id="putOut"></pre>
+  </section>
+
+  <section>
+    <h2>DELETE /api/pulpits/xyz</h2>
+    <label>
+      Код кафедры (xyz = PULPIT):
+      <input id="delId" placeholder="например, P3" />
+    </label>
+    <button id="delBtn">Удалить</button>
+    <pre id="delOut"></pre>
+  </section>
+
+  <script>
+    let show = (el, data) => el.textContent = JSON.stringify(data, null, 2);
+
+    document.getElementById('getBtn').onclick = async () => {
+      try {
+        const res = await fetch('/api/pulpits');
+        const data = await res.json();
+        show(document.getElementById('getOut'), data);
+      } catch (e) {
+        show(document.getElementById('getOut'), { error: e.message });
+      }
+    };
+
+    document.getElementById('postBtn').onclick = async () => {
+      const payload = {
+        PULPIT: document.getElementById('postPulpit').value.trim(),
+        PULPIT_NAME: document.getElementById('postName').value.trim(),
+        FACULTY: document.getElementById('postFaculty').value.trim()
+      };
+      try {
+        const res = await fetch('/api/pulpits', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        show(document.getElementById('postOut'), data);
+      } catch (e) {
+        show(document.getElementById('postOut'), { error: e.message });
+      }
+    };
+
+    document.getElementById('putBtn').onclick = async () => {
+      const payload = {
+        PULPIT: document.getElementById('putPulpit').value.trim(),
+        PULPIT_NAME: document.getElementById('putName').value.trim(),
+        FACULTY: document.getElementById('putFaculty').value.trim()
+      };
+      try {
+        const res = await fetch('/api/pulpits', {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        show(document.getElementById('putOut'), data);
+      } catch (e) {
+        show(document.getElementById('putOut'), { error: e.message });
+      }
+    };
+
+    document.getElementById('delBtn').onclick = async () => {
+      const id = document.getElementById('delId').value.trim();
+      try {
+        const res = await fetch(`/api/pulpits/${encodeURIComponent(id)}`, { method: 'DELETE' });
+        const data = await res.json();
+        show(document.getElementById('delOut'), data);
+      } catch (e) {
+        show(document.getElementById('delOut'), { error: e.message });
+      }
+    };
+  </script>
+</body>
+</html>
