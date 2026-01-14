@@ -1,0 +1,21 @@
+﻿Сборка начата 08.10.2025 22:09:09.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\OS11_CREATE\OS11_CREATE.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Обращение к "x64\Debug\OS11_CREATE.tlog\unsuccessfulbuild".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\x64\Debug\OS11_CREATE.exe" /INCREMENTAL /ILK:"x64\Debug\OS11_CREATE.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\x64\Debug\OS11_CREATE.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\x64\Debug\OS11_CREATE.lib" /MACHINE:X64 x64\Debug\main.obj
+         OS11_CREATE.vcxproj -> C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\x64\Debug\OS11_CREATE.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\OS11_CREATE.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\OS11_CREATE.tlog\OS11_CREATE.lastbuildstate".
+     1>Сборка проекта "C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\OS11_CREATE\OS11_CREATE.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.24

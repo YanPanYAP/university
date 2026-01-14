@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BSTU.Results.Collection</id>
+    <version>1.0.0</version>
+    <authors>BSTU.Results.Collection</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="edb8947d41a096dd0e92c7b2b72a153d03856521" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\bin\Release\net8.0\BSTU.Results.Collection.dll" target="lib\net8.0\BSTU.Results.Collection.dll" />
+  </files>
+</package>

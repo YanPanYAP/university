@@ -1,0 +1,25 @@
+﻿Сборка начата 19.11.2025 18:37:09.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\user\Desktop\VS\сп\SP\lab12\Lab_12\SP12_LIB\SP12_LIB.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Создание "x64\Debug\SP12_LIB.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\SP12_LIB.tlog\unsuccessfulbuild".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yu"pch.h" /Fp"x64\Debug\SP12_LIB.pch" /Fo"x64\Debug\\" /Fd"C:\Users\user\Desktop\VS\сп\SP\lab12\Lab_12\x64\Debug\SP12_LIB.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt SP12_LIB.cpp
+         SP12_LIB.cpp
+       Lib:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\Lib.exe /OUT:"C:\Users\user\Desktop\VS\сп\SP\lab12\Lab_12\x64\Debug\SP12_LIB.lib" /NOLOGO /MACHINE:X64 x64\Debug\pch.obj
+         x64\Debug\SP12_LIB.obj
+         SP12_LIB.vcxproj -> C:\Users\user\Desktop\VS\сп\SP\lab12\Lab_12\x64\Debug\SP12_LIB.lib
+       FinalizeBuildStatus:
+         Файл "x64\Debug\SP12_LIB.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\SP12_LIB.tlog\SP12_LIB.lastbuildstate".
+     1>Сборка проекта "C:\Users\user\Desktop\VS\сп\SP\lab12\Lab_12\SP12_LIB\SP12_LIB.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.73

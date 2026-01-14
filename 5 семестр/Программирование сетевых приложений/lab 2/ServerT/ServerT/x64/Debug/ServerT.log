@@ -1,0 +1,22 @@
+﻿Сборка начата 17.10.2025 16:15:55.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\user\Desktop\VS\псп\PSP\лр2\ServerT\ServerT\ServerT.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Создание "x64\Debug\ServerT.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\ServerT.tlog\unsuccessfulbuild".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         Для всех выходных данных обновления не требуется.
+         ServerT.vcxproj -> C:\Users\user\Desktop\VS\псп\PSP\лр2\ServerT\x64\Debug\ServerT.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\ServerT.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\ServerT.tlog\ServerT.lastbuildstate".
+     1>Сборка проекта "C:\Users\user\Desktop\VS\псп\PSP\лр2\ServerT\ServerT\ServerT.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.05

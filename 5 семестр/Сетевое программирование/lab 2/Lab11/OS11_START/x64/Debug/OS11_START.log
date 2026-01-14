@@ -1,0 +1,22 @@
+﻿Сборка начата 19.11.2025 20:31:29.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\OS11_START\OS11_START.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Создание "x64\Debug\OS11_START.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\OS11_START.tlog\unsuccessfulbuild".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         Для всех выходных данных обновления не требуется.
+         OS11_START.vcxproj -> C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\x64\Debug\OS11_START.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\OS11_START.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\OS11_START.tlog\OS11_START.lastbuildstate".
+     1>Сборка проекта "C:\Users\user\Desktop\VS\сп\SP\lab11sp\Lab11\OS11_START\OS11_START.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.21

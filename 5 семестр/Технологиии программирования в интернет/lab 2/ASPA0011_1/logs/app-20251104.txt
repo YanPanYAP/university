@@ -1,0 +1,138 @@
+2025-11-04 08:06:52.247 +03:00 [INF] Application starting up
+2025-11-04 08:20:03.793 +03:00 [VRB] POST /api/channels called with name chanel_1
+2025-11-04 08:20:03.802 +03:00 [VRB] Creating channel with name chanel_1 and capacity 2
+2025-11-04 08:20:03.808 +03:00 [INF] Created channel "b9324aa8-4e59-42b6-8605-1ea13c443e64" with name chanel_1
+2025-11-04 08:20:03.811 +03:00 [DBG] Created channel "b9324aa8-4e59-42b6-8605-1ea13c443e64", returning 201
+2025-11-04 08:20:15.135 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:20:15.136 +03:00 [VRB] Getting all channels
+2025-11-04 08:20:15.141 +03:00 [DBG] Retrieved 1 channels
+2025-11-04 08:20:15.142 +03:00 [DBG] Returning 1 channels
+2025-11-04 08:20:26.084 +03:00 [VRB] POST /api/channels called with name chanel_2
+2025-11-04 08:20:26.084 +03:00 [VRB] Creating channel with name chanel_2 and capacity 3
+2025-11-04 08:20:26.085 +03:00 [INF] Created channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325" with name chanel_2
+2025-11-04 08:20:26.086 +03:00 [DBG] Created channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325", returning 201
+2025-11-04 08:20:29.385 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:20:29.385 +03:00 [VRB] Getting all channels
+2025-11-04 08:20:29.386 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:20:29.386 +03:00 [DBG] Returning 2 channels
+2025-11-04 08:21:00.455 +03:00 [VRB] PUT /api/channels called with command close
+2025-11-04 08:21:00.458 +03:00 [VRB] Changing channel status with command close
+2025-11-04 08:21:00.459 +03:00 [INF] Channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325" closed
+2025-11-04 08:21:00.459 +03:00 [VRB] Getting all channels
+2025-11-04 08:21:00.460 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:21:00.460 +03:00 [DBG] Changed channel status, returning 2 channels
+2025-11-04 08:21:15.092 +03:00 [VRB] GET /api/channels/"f8fdd36c-abd1-46b6-b84c-0fa4510f1325" called
+2025-11-04 08:21:15.093 +03:00 [VRB] Getting channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325"
+2025-11-04 08:21:15.094 +03:00 [DBG] Found channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325" with status CLOSED
+2025-11-04 08:21:15.095 +03:00 [DBG] Returning channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325"
+2025-11-04 08:21:45.594 +03:00 [VRB] POST /api/queue called with operation enqueue on channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325"
+2025-11-04 08:21:45.599 +03:00 [VRB] Executing queue operation enqueue on channel "f8fdd36c-abd1-46b6-b84c-0fa4510f1325"
+2025-11-04 08:21:45.601 +03:00 [WRN] Enqueue operation timed out after 30 seconds
+2025-11-04 08:21:45.634 +03:00 [ERR] Queue operation failed: Enqueue timeout
+2025-11-04 08:22:05.254 +03:00 [VRB] POST /api/queue called with operation enqueue on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:22:05.255 +03:00 [VRB] Executing queue operation enqueue on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:22:05.267 +03:00 [DBG] Enqueued data to channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:22:05.267 +03:00 [DBG] Queue operation enqueue completed successfully
+2025-11-04 08:23:05.703 +03:00 [VRB] POST /api/queue called with operation peek on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:05.703 +03:00 [VRB] Executing queue operation peek on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:05.705 +03:00 [DBG] Peeked data from channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:05.706 +03:00 [DBG] Queue operation peek completed successfully
+2025-11-04 08:23:18.135 +03:00 [VRB] POST /api/queue called with operation dequeue on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:18.135 +03:00 [VRB] Executing queue operation dequeue on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:18.137 +03:00 [DBG] Dequeued data from channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:18.138 +03:00 [DBG] Queue operation dequeue completed successfully
+2025-11-04 08:23:26.321 +03:00 [VRB] POST /api/queue called with operation peek on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:23:26.322 +03:00 [VRB] Executing queue operation peek on channel "b9324aa8-4e59-42b6-8605-1ea13c443e64"
+2025-11-04 08:24:39.381 +03:00 [VRB] DELETE /api/channels called
+2025-11-04 08:24:39.383 +03:00 [VRB] Deleting channels
+2025-11-04 08:24:39.384 +03:00 [INF] Deleted all 2 channels
+2025-11-04 08:24:39.384 +03:00 [VRB] Getting all channels
+2025-11-04 08:24:39.384 +03:00 [DBG] Retrieved 0 channels
+2025-11-04 08:24:39.385 +03:00 [DBG] Deleted channels, returning 0 remaining channels
+2025-11-04 08:25:14.279 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:25:14.280 +03:00 [VRB] Getting all channels
+2025-11-04 08:25:14.280 +03:00 [DBG] Retrieved 0 channels
+2025-11-04 08:25:14.280 +03:00 [DBG] No channels found, returning 204
+2025-11-04 08:25:22.183 +03:00 [VRB] POST /api/channels called with name chanel_2
+2025-11-04 08:25:22.183 +03:00 [VRB] Creating channel with name chanel_2 and capacity 3
+2025-11-04 08:25:22.183 +03:00 [INF] Created channel "60d334dd-efa7-48f2-8737-d460edbe8933" with name chanel_2
+2025-11-04 08:25:22.183 +03:00 [DBG] Created channel "60d334dd-efa7-48f2-8737-d460edbe8933", returning 201
+2025-11-04 08:25:26.140 +03:00 [VRB] POST /api/channels called with name chanel_1
+2025-11-04 08:25:26.140 +03:00 [VRB] Creating channel with name chanel_1 and capacity 3
+2025-11-04 08:25:26.140 +03:00 [INF] Created channel "1380e8ba-c88a-4361-a6db-3166c5f3a15a" with name chanel_1
+2025-11-04 08:25:26.141 +03:00 [DBG] Created channel "1380e8ba-c88a-4361-a6db-3166c5f3a15a", returning 201
+2025-11-04 08:25:30.168 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:25:30.168 +03:00 [VRB] Getting all channels
+2025-11-04 08:25:30.169 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:25:30.169 +03:00 [DBG] Returning 2 channels
+2025-11-04 08:25:44.811 +03:00 [VRB] PUT /api/channels called with command close
+2025-11-04 08:25:44.811 +03:00 [VRB] Changing channel status with command close
+2025-11-04 08:25:44.811 +03:00 [INF] Channel "60d334dd-efa7-48f2-8737-d460edbe8933" closed
+2025-11-04 08:25:44.812 +03:00 [VRB] Getting all channels
+2025-11-04 08:25:44.812 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:25:44.812 +03:00 [DBG] Changed channel status, returning 2 channels
+2025-11-04 08:26:51.619 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:26:51.619 +03:00 [VRB] Getting all channels
+2025-11-04 08:26:51.620 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:26:51.620 +03:00 [DBG] Returning 2 channels
+2025-11-04 08:30:37.992 +03:00 [INF] Application starting up
+2025-11-04 08:31:02.514 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:31:02.523 +03:00 [VRB] Getting all channels
+2025-11-04 08:31:02.528 +03:00 [DBG] Retrieved 0 channels
+2025-11-04 08:31:02.532 +03:00 [DBG] No channels found, returning 204
+2025-11-04 08:31:17.980 +03:00 [VRB] POST /api/channels called with name chanel_1
+2025-11-04 08:31:17.982 +03:00 [VRB] Creating channel with name chanel_1 and capacity 2
+2025-11-04 08:31:17.987 +03:00 [INF] Created channel "54005f7a-31b0-452a-a237-0ea43fa29d2c" with name chanel_1
+2025-11-04 08:31:17.991 +03:00 [DBG] Created channel "54005f7a-31b0-452a-a237-0ea43fa29d2c", returning 201
+2025-11-04 08:31:22.153 +03:00 [VRB] POST /api/channels called with name chanel_2
+2025-11-04 08:31:22.154 +03:00 [VRB] Creating channel with name chanel_2 and capacity 2
+2025-11-04 08:31:22.155 +03:00 [INF] Created channel "b1d22380-fe24-427d-be6d-e4ac5a03fcc6" with name chanel_2
+2025-11-04 08:31:22.155 +03:00 [DBG] Created channel "b1d22380-fe24-427d-be6d-e4ac5a03fcc6", returning 201
+2025-11-04 08:31:26.421 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:31:26.422 +03:00 [VRB] Getting all channels
+2025-11-04 08:31:26.424 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:31:26.425 +03:00 [DBG] Returning 2 channels
+2025-11-04 08:31:50.392 +03:00 [VRB] PUT /api/channels called with command close
+2025-11-04 08:31:50.400 +03:00 [VRB] Changing channel status with command close
+2025-11-04 08:31:50.402 +03:00 [INF] Channel "54005f7a-31b0-452a-a237-0ea43fa29d2c" closed
+2025-11-04 08:31:50.403 +03:00 [VRB] Getting all channels
+2025-11-04 08:31:50.403 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:31:50.404 +03:00 [DBG] Changed channel status, returning 2 channels
+2025-11-04 08:32:18.136 +03:00 [VRB] DELETE /api/channels called
+2025-11-04 08:32:18.141 +03:00 [VRB] Deleting channels
+2025-11-04 08:32:18.158 +03:00 [INF] Deleted 1 CLOSED channels
+2025-11-04 08:32:18.158 +03:00 [VRB] Getting all channels
+2025-11-04 08:32:18.158 +03:00 [DBG] Retrieved 1 channels
+2025-11-04 08:32:18.158 +03:00 [DBG] Deleted channels, returning 1 remaining channels
+2025-11-04 08:32:24.109 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:32:24.110 +03:00 [VRB] Getting all channels
+2025-11-04 08:32:24.110 +03:00 [DBG] Retrieved 1 channels
+2025-11-04 08:32:24.110 +03:00 [DBG] Returning 1 channels
+2025-11-04 08:32:58.718 +03:00 [VRB] POST /api/channels called with name chanel_1
+2025-11-04 08:32:58.719 +03:00 [VRB] Creating channel with name chanel_1 and capacity 2
+2025-11-04 08:32:58.719 +03:00 [INF] Created channel "355f6f2e-134e-4359-827f-a0da35d80827" with name chanel_1
+2025-11-04 08:32:58.720 +03:00 [DBG] Created channel "355f6f2e-134e-4359-827f-a0da35d80827", returning 201
+2025-11-04 08:33:02.555 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:33:02.557 +03:00 [VRB] Getting all channels
+2025-11-04 08:33:02.557 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:33:02.557 +03:00 [DBG] Returning 2 channels
+2025-11-04 08:34:44.452 +03:00 [VRB] PUT /api/channels called with command close
+2025-11-04 08:34:44.453 +03:00 [VRB] Changing channel status with command close
+2025-11-04 08:34:44.453 +03:00 [INF] Channel "b1d22380-fe24-427d-be6d-e4ac5a03fcc6" closed
+2025-11-04 08:34:44.453 +03:00 [VRB] Getting all channels
+2025-11-04 08:34:44.453 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:34:44.453 +03:00 [DBG] Changed channel status, returning 2 channels
+2025-11-04 08:34:53.597 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:34:53.597 +03:00 [VRB] Getting all channels
+2025-11-04 08:34:53.598 +03:00 [DBG] Retrieved 2 channels
+2025-11-04 08:34:53.598 +03:00 [DBG] Returning 2 channels
+2025-11-04 08:35:22.528 +03:00 [VRB] DELETE /api/channels called
+2025-11-04 08:35:22.528 +03:00 [VRB] Deleting channels
+2025-11-04 08:35:22.528 +03:00 [INF] Deleted 1 CLOSED channels
+2025-11-04 08:35:22.528 +03:00 [VRB] Getting all channels
+2025-11-04 08:35:22.529 +03:00 [DBG] Retrieved 1 channels
+2025-11-04 08:35:22.529 +03:00 [DBG] Deleted channels, returning 1 remaining channels
+2025-11-04 08:35:25.907 +03:00 [VRB] GET /api/channels called
+2025-11-04 08:35:25.907 +03:00 [VRB] Getting all channels
+2025-11-04 08:35:25.908 +03:00 [DBG] Retrieved 1 channels
+2025-11-04 08:35:25.908 +03:00 [DBG] Returning 1 channels

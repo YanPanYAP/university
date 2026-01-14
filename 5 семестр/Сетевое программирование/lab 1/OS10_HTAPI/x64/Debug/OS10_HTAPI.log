@@ -1,0 +1,35 @@
+﻿Сборка начата 16.09.2025 20:00:05.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\OS10_HTAPI.vcxproj" в узле 2 (целевые объекты Build).
+     1>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+     1>InitializeBuildStatus:
+         Создание "x64\Debug\OS10_HTAPI.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\OS10_HTAPI.tlog\unsuccessfulbuild".
+       ClCompile:
+         Файл "x64\Debug\OS10_HTAPI.pch" удаляется.
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"pch.h" /Fp"x64\Debug\OS10_HTAPI.pch" /Fo"x64\Debug\\" /Fd".\x64\Debug\OS10_HTAPI.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yu"pch.h" /Fp"x64\Debug\OS10_HTAPI.pch" /Fo"x64\Debug\\" /Fd".\x64\Debug\OS10_HTAPI.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt HT.cpp OS10_HTAPI.cpp
+         HT.cpp
+         OS10_HTAPI.cpp
+         Создание кода...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\Lib.exe /OUT:".\x64\Debug\OS10_HTAPI.lib" /NOLOGO /MACHINE:X64 x64\Debug\HT.obj
+         x64\Debug\OS10_HTAPI.obj
+         x64\Debug\pch.obj
+         OS10_HTAPI.vcxproj -> C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\x64\Debug\OS10_HTAPI.lib
+       FinalizeBuildStatus:
+         Файл "x64\Debug\OS10_HTAPI.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\OS10_HTAPI.tlog\OS10_HTAPI.lastbuildstate".
+     1>Сборка проекта "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\OS10_HTAPI.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\OS10_HTAPI.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект PrepareForBuild) -> 
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:00.91

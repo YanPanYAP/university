@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>02-04</title>
+  </head>
+  <body>
+    <h1>Ответ от сервера:</h1>
+    <div id="result"></div>
+
+    <script>
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "/api/name", true);
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          document.getElementById("result").textContent = xhr.responseText;
+        }
+      };
+      xhr.send();
+    </script>
+  </body>
+</html>

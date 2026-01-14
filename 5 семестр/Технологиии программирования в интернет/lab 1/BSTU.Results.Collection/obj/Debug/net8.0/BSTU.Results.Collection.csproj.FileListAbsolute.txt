@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\bin\Debug\net8.0\BSTU.Results.Collection.deps.json
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\bin\Debug\net8.0\BSTU.Results.Collection.dll
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\bin\Debug\net8.0\BSTU.Results.Collection.pdb
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.AssemblyInfo.cs
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.sourcelink.json
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.dll
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\refint\BSTU.Results.Collection.dll
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\BSTU.Results.Collection.pdb
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Collection\obj\Debug\net8.0\ref\BSTU.Results.Collection.dll

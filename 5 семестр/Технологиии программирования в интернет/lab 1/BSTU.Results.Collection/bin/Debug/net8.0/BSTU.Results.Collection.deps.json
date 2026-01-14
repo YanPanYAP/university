@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BSTU.Results.Collection/1.0.0": {
+        "runtime": {
+          "BSTU.Results.Collection.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BSTU.Results.Collection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

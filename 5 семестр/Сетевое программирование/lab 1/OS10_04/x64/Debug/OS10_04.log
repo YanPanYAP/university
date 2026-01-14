@@ -1,0 +1,35 @@
+﻿Сборка начата 16.09.2025 20:21:21.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_04\OS10_04.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+         Создание каталога "x64\Debug\OS10_04.tlog\".
+       InitializeBuildStatus:
+         Создание "x64\Debug\OS10_04.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\OS10_04.tlog\unsuccessfulbuild".
+     1>Проект "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_04\OS10_04.vcxproj" (1) выполняет сборку "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\OS10_HTAPI.vcxproj" (2:3) в узле 2 (целевые объекты GetProjectInfoForReference).
+     2>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+     2>Сборка проекта "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\OS10_HTAPI.vcxproj" завершена (целевые объекты GetProjectInfoForReference).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\CL.exe /c /I"C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt OS10_04.cpp
+         OS10_04.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Desktop\VS\сп\SP\lab_10\x64\Debug\OS10_04.exe" /INCREMENTAL /ILK:"x64\Debug\OS10_04.ilk" /NOLOGO /LIBPATH:"C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\x64\Debug" OS10_HTAPI.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\Desktop\VS\сп\SP\lab_10\x64\Debug\OS10_04.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\Desktop\VS\сп\SP\lab_10\x64\Debug\OS10_04.lib" /MACHINE:X64 x64\Debug\OS10_04.obj
+         "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\x64\Debug\OS10_HTAPI.lib"
+         OS10_04.vcxproj -> C:\Users\user\Desktop\VS\сп\SP\lab_10\x64\Debug\OS10_04.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\OS10_04.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\OS10_04.tlog\OS10_04.lastbuildstate".
+     1>Сборка проекта "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_04\OS10_04.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_04\OS10_04.vcxproj" (целевой объект Build ) (1) ->
+       "C:\Users\user\Desktop\VS\сп\SP\lab_10\OS10_HTAPI\OS10_HTAPI.vcxproj" (целевой объект GetProjectInfoForReference ) (2:3) ->
+       (Целевой объект PrepareForBuild) -> 
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:01.09

@@ -1,0 +1,9 @@
+/connection и /connection/set?set=30000
+/headers
+/parameter?x=5&y=2 и /parameter/5/2
+/close
+/socket
+/files
+/upload
+/req-data
+/resp-status?code=201&mess=ok

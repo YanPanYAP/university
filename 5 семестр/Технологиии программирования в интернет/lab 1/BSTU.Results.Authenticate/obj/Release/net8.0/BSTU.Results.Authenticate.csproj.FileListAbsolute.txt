@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\bin\Release\net8.0\BSTU.Results.Authenticate.deps.json
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\bin\Release\net8.0\BSTU.Results.Authenticate.dll
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\bin\Release\net8.0\BSTU.Results.Authenticate.pdb
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.AssemblyInfo.cs
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.sourcelink.json
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.dll
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\refint\BSTU.Results.Authenticate.dll
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\BSTU.Results.Authenticate.pdb
+C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\obj\Release\net8.0\ref\BSTU.Results.Authenticate.dll

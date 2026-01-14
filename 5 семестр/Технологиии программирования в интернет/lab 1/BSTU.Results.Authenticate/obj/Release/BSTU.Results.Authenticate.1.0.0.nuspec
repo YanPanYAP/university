@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BSTU.Results.Authenticate</id>
+    <version>1.0.0</version>
+    <authors>BSTU.Results.Authenticate</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="edb8947d41a096dd0e92c7b2b72a153d03856521" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.Authentication.Cookies" version="2.3.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.3.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity" version="2.3.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\user\Desktop\VS\ТПвИ\сем5\TPvI_Sem5\ASPA_10\BSTU.Results.Authenticate\bin\Release\net8.0\BSTU.Results.Authenticate.dll" target="lib\net8.0\BSTU.Results.Authenticate.dll" />
+  </files>
+</package>

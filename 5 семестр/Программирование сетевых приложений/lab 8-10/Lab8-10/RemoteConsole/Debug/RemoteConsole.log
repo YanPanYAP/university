@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (RemoteConsole.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  RConsole.cpp
+  RemoteConsole.vcxproj -> C:\Lab8-10\Lab8-10\SH_Laba_8_10\Debug\RConsole.exe

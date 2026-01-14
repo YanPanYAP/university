@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>03-03 Results</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        font-size: 18px;
+        padding: 12px;
+      }
+      .line {
+        margin: 6px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Результаты</h2>
+    <pre id="out"></pre>
+
+    <script>
+      const out = document.getElementById("out");
+      const start = Date.now();
+
+      async function run() {
+        for (let k = 0; k < 20; k++) {
+          const resp = await fetch(`/fact?k=${k}`);
+          const text = await resp.text();
+          const [serverTime, rest] = text.split("-");
+          const t = Date.now() - start;
+
+          out.textContent += `${k}. Результат: ${t}-${rest}\n`;
+        }
+
+        const total = Date.now() - start;
+        out.textContent += `Общая продолжительность: ${total} мс\n`;
+      }
+
+      run();
+    </script>
+  </body>
+</html>

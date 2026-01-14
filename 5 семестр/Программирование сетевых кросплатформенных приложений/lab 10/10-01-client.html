@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>10-01</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 16px;
+      }
+      #log {
+        border: 1px solid #ccc;
+        padding: 8px;
+        height: 220px;
+        overflow: auto;
+        white-space: pre-wrap;
+      }
+      button {
+        padding: 8px 12px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>10-01</h1>
+    <button id="startBtn">startWS</button>
+    <div>
+      <strong>Log:</strong>
+      <div id="log"></div>
+    </div>
+
+    <script>
+      (function () {
+        const startBtn = document.getElementById("startBtn");
+
+        const logEl = document.getElementById("log");
+
+        function log(msg) {
+          const time = new Date().toLocaleTimeString();
+          logEl.textContent += `[${time}] ${msg}\n`;
+          logEl.scrollTop = logEl.scrollHeight;
+        }
+
+        startBtn.addEventListener("click", () => {
+          const ws = new WebSocket("ws://localhost:4000");
+          let clientCounter = 0;
+          let sendInterval = null;
+          let stopTimeout = null;
+
+          ws.addEventListener("open", () => {
+            log("WS open — connected to ws://localhost:4000");
+            sendInterval = setInterval(() => {
+              clientCounter += 1;
+              const msg = `10-01-client: ${clientCounter}`;
+              if (ws.readyState === WebSocket.OPEN) {
+                ws.send(msg);
+                log("Sent: " + msg);
+              }
+            }, 3000);
+
+            stopTimeout = setTimeout(() => {
+              if (sendInterval) clearInterval(sendInterval);
+              if (ws.readyState === WebSocket.OPEN) ws.close();
+              log("Auto stopped after 25s and closed WS");
+            }, 25000);
+          });
+
+          ws.addEventListener("message", (evt) => {
+            log("Received: " + evt.data);
+          });
+
+          ws.addEventListener("error", (e) => {
+            log("WS error: " + e.message);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

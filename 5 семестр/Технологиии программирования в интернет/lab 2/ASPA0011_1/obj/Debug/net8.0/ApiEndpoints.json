@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "ASPA0011_1.Controllers.ChannelsController",
+    "Method": "GetChannels",
+    "RelativePath": "api/Channels",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASPA0011_1.Controllers.ChannelsController",
+    "Method": "CreateChannel",
+    "RelativePath": "api/Channels",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ASPA0011_1.Models.CreateChannelRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASPA0011_1.Controllers.ChannelsController",
+    "Method": "ChangeChannelStatus",
+    "RelativePath": "api/Channels",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ASPA0011_1.Models.ChangeStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASPA0011_1.Controllers.ChannelsController",
+    "Method": "DeleteChannel",
+    "RelativePath": "api/Channels",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ASPA0011_1.Models.DeleteChannelRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASPA0011_1.Controllers.ChannelsController",
+    "Method": "GetChannel",
+    "RelativePath": "api/Channels/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASPA0011_1.Controllers.QueueController",
+    "Method": "ExecuteQueueOperation",
+    "RelativePath": "api/Queue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ASPA0011_1.Models.QueueOperationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

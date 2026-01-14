@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>05-01 — Клиент для /api/db</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input,
+      button {
+        margin: 4px;
+        padding: 6px 8px;
+      }
+      pre {
+        padding: 10px;
+        background: #f5f5f5;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>05-01</h1>
+
+    <section>
+      <h3>GET</h3>
+      <button id="getAll">GET /api/db</button>
+    </section>
+
+    <section>
+      <h3>POST</h3>
+      <input id="postName" placeholder="Имя" />
+      <input id="postBday" placeholder="Дата рождения (YYYY-MM-DD)" />
+      <button id="postBtn">POST /api/db</button>
+    </section>
+
+    <section>
+      <h3>PUT</h3>
+      <input id="putId" placeholder="ID" />
+      <input id="putName" placeholder="Новое имя" />
+      <input id="putBday" placeholder="Новая дата рождения (YYYY-MM-DD)" />
+      <button id="putBtn">PUT /api/db</button>
+    </section>
+
+    <section>
+      <h3>DELETE</h3>
+      <input id="delId" placeholder="ID для удаления" />
+      <button id="delBtn">DELETE /api/db?id=</button>
+    </section>
+
+    <h3>Ответ сервера:</h3>
+    <pre id="output">...</pre>
+
+    <script>
+      const out = document.getElementById("output");
+      const show = (d) => (out.textContent = JSON.stringify(d, null, 2));
+
+      document.getElementById("putId").addEventListener("change", async () => {
+        const id = Number(putId.value.trim());
+        if (!id) return;
+
+        const res = await fetch(`/api/db/${id}`);
+        const data = await res.json();
+
+        if (res.ok) {
+          putName.value = data.name || "";
+          putBday.value = data.bday || "";
+        } else {
+          putName.value = "";
+          putBday.value = "";
+          putName.placeholder = "—";
+          putBday.placeholder = "—";
+        }
+      });
+
+      function isValidName(name) {
+        return /^[A-Za-zА-Яа-яЁё\s-]+$/.test(name);
+      }
+
+      function isValidDate(dateStr) {
+        const regex = /^\d{4}-\d{2}-\d{2}$/;
+        if (!regex.test(dateStr)) return false;
+        const date = new Date(dateStr);
+        const now = new Date();
+        return !isNaN(date) && date <= now;
+      }
+
+      function isValidId(id) {
+        return /^\d+$/.test(id) && Number(id) > 0;
+      }
+
+      document.getElementById("getAll").onclick = async () => {
+        const res = await fetch("/api/db");
+        const data = await res.json();
+        if (!res.ok)
+          alert(`Ошибка: ${data.error || "Не удалось получить данные."}`);
+        show(data);
+      };
+
+      document.getElementById("postBtn").onclick = async () => {
+        const name = postName.value.trim();
+        const bday = postBday.value.trim();
+
+        if (!isValidName(name))
+          return alert(
+            "Имя указано неверно (допустимы только буквы и дефисы)."
+          );
+        if (!isValidDate(bday))
+          return alert(
+            "Дата указана неверно. Формат: YYYY-MM-DD, не позднее сегодняшнего дня."
+          );
+
+        const res = await fetch("/api/db", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, bday }),
+        });
+
+        const data = await res.json();
+        if (!res.ok)
+          alert(`Ошибка: ${data.error || "Не удалось добавить запись."}`);
+        show(data);
+      };
+
+      document.getElementById("putBtn").onclick = async () => {
+        const id = putId.value.trim();
+        const name = putName.value.trim();
+        const bday = putBday.value.trim();
+
+        if (!isValidId(id))
+          return alert("ID должен быть положительным числом.");
+        if (name && !isValidName(name))
+          return alert("Имя указано неверно (только буквы и дефисы).");
+        if (bday && !isValidDate(bday))
+          return alert(
+            "Дата указана неверно. Формат: YYYY-MM-DD, не позднее сегодняшнего дня."
+          );
+
+        const res = await fetch("/api/db", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: Number(id), name, bday }),
+        });
+
+        const data = await res.json();
+        if (!res.ok)
+          alert(`Ошибка: ${data.error || "Не удалось обновить запись."}`);
+        show(data);
+      };
+
+      document.getElementById("delBtn").onclick = async () => {
+        const id = delId.value.trim();
+        if (!isValidId(id))
+          return alert("ID должен быть положительным числом.");
+
+        const res = await fetch(`/api/db?id=${id}`, { method: "DELETE" });
+        const data = await res.json();
+        if (!res.ok)
+          alert(`Ошибка: ${data.error || "Не удалось удалить запись."}`);
+        show(data);
+      };
+    </script>
+  </body>
+</html>
