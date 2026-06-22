@@ -1,0 +1,175 @@
+{
+  "cipher": "Шифр замены по формулам (2.1) и (2.2)",
+  "sourceFile": "/Users/yanpaulovich/Documents/fit/ИБ/lab 4/data/source_german.txt",
+  "alphabet": "abcdefghijklmnopqrstuvwxyzäöüß",
+  "sourceLength": 5997,
+  "onlyGermanLetters": 5158,
+  "encryptionTimeMs": 1.522683,
+  "decryptionTimeMs": 1.199788,
+  "decryptedMatchesSource": true,
+  "originalSummary": {
+    "totalLetters": 5158,
+    "top10": [
+      {
+        "symbol": "e",
+        "count": 919,
+        "frequency": 0.1781698332687088
+      },
+      {
+        "symbol": "n",
+        "count": 445,
+        "frequency": 0.08627374951531601
+      },
+      {
+        "symbol": "i",
+        "count": 415,
+        "frequency": 0.0804575416828228
+      },
+      {
+        "symbol": "s",
+        "count": 397,
+        "frequency": 0.07696781698332687
+      },
+      {
+        "symbol": "r",
+        "count": 383,
+        "frequency": 0.0742535866614967
+      },
+      {
+        "symbol": "t",
+        "count": 363,
+        "frequency": 0.0703761147731679
+      },
+      {
+        "symbol": "a",
+        "count": 283,
+        "frequency": 0.054866227219852653
+      },
+      {
+        "symbol": "h",
+        "count": 254,
+        "frequency": 0.04924389298177588
+      },
+      {
+        "symbol": "d",
+        "count": 229,
+        "frequency": 0.04439705312136487
+      },
+      {
+        "symbol": "u",
+        "count": 214,
+        "frequency": 0.04148894920511826
+      }
+    ]
+  },
+  "encryptedSummary": {
+    "totalLetters": 5158,
+    "top10": [
+      {
+        "symbol": "l",
+        "count": 919,
+        "frequency": 0.1781698332687088
+      },
+      {
+        "symbol": "u",
+        "count": 445,
+        "frequency": 0.08627374951531601
+      },
+      {
+        "symbol": "p",
+        "count": 415,
+        "frequency": 0.0804575416828228
+      },
+      {
+        "symbol": "z",
+        "count": 397,
+        "frequency": 0.07696781698332687
+      },
+      {
+        "symbol": "y",
+        "count": 383,
+        "frequency": 0.0742535866614967
+      },
+      {
+        "symbol": "ä",
+        "count": 363,
+        "frequency": 0.0703761147731679
+      },
+      {
+        "symbol": "h",
+        "count": 283,
+        "frequency": 0.054866227219852653
+      },
+      {
+        "symbol": "o",
+        "count": 254,
+        "frequency": 0.04924389298177588
+      },
+      {
+        "symbol": "k",
+        "count": 229,
+        "frequency": 0.04439705312136487
+      },
+      {
+        "symbol": "ö",
+        "count": 214,
+        "frequency": 0.04148894920511826
+      }
+    ]
+  },
+  "decryptedSummary": {
+    "totalLetters": 5158,
+    "top10": [
+      {
+        "symbol": "e",
+        "count": 919,
+        "frequency": 0.1781698332687088
+      },
+      {
+        "symbol": "n",
+        "count": 445,
+        "frequency": 0.08627374951531601
+      },
+      {
+        "symbol": "i",
+        "count": 415,
+        "frequency": 0.0804575416828228
+      },
+      {
+        "symbol": "s",
+        "count": 397,
+        "frequency": 0.07696781698332687
+      },
+      {
+        "symbol": "r",
+        "count": 383,
+        "frequency": 0.0742535866614967
+      },
+      {
+        "symbol": "t",
+        "count": 363,
+        "frequency": 0.0703761147731679
+      },
+      {
+        "symbol": "a",
+        "count": 283,
+        "frequency": 0.054866227219852653
+      },
+      {
+        "symbol": "h",
+        "count": 254,
+        "frequency": 0.04924389298177588
+      },
+      {
+        "symbol": "d",
+        "count": 229,
+        "frequency": 0.04439705312136487
+      },
+      {
+        "symbol": "u",
+        "count": 214,
+        "frequency": 0.04148894920511826
+      }
+    ]
+  }
+}

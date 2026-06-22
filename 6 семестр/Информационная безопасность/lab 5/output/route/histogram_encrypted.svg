@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fafafa" />
+      <stop offset="55%" stop-color="#e8e8e8" />
+      <stop offset="100%" stop-color="#cfcfcf" />
+    </linearGradient>
+    <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a" />
+      <stop offset="100%" stop-color="#7d7d7d" />
+    </linearGradient>
+    <pattern id="verticalGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#c6c6c6" stroke-width="1"/>
+    </pattern>
+    <style>
+      .title { font: italic 700 34px Georgia, serif; fill: #202020; text-anchor: middle; }
+      .axis { font: 18px 'Times New Roman', serif; fill: #333; text-anchor: end; }
+      .symbol { font: 22px 'Times New Roman', serif; fill: #111; text-anchor: middle; }
+      .value { font: 17px 'Times New Roman', serif; fill: #111; text-anchor: middle; }
+      .grid { stroke: #b5b5b5; stroke-width: 1; stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+  <rect width="1500" height="650" fill="url(#bg)" />
+  <rect x="60" y="95" width="1400" height="445" fill="url(#bg)" stroke="#8c8c8c" stroke-width="1.2"/>
+  <rect x="60" y="95" width="1400" height="445" fill="url(#verticalGrid)" opacity="0.8" />
+  
+      <line x1="60" y1="540.00" x2="1460" y2="540.00" class="grid" />
+      <text x="48" y="544.00" class="axis">0.00</text>
+    
+      <line x1="60" y1="502.92" x2="1460" y2="502.92" class="grid" />
+      <text x="48" y="506.92" class="axis">0.02</text>
+    
+      <line x1="60" y1="465.83" x2="1460" y2="465.83" class="grid" />
+      <text x="48" y="469.83" class="axis">0.03</text>
+    
+      <line x1="60" y1="428.75" x2="1460" y2="428.75" class="grid" />
+      <text x="48" y="432.75" class="axis">0.05</text>
+    
+      <line x1="60" y1="391.67" x2="1460" y2="391.67" class="grid" />
+      <text x="48" y="395.67" class="axis">0.06</text>
+    
+      <line x1="60" y1="354.58" x2="1460" y2="354.58" class="grid" />
+      <text x="48" y="358.58" class="axis">0.08</text>
+    
+      <line x1="60" y1="317.50" x2="1460" y2="317.50" class="grid" />
+      <text x="48" y="321.50" class="axis">0.09</text>
+    
+      <line x1="60" y1="280.42" x2="1460" y2="280.42" class="grid" />
+      <text x="48" y="284.42" class="axis">0.11</text>
+    
+      <line x1="60" y1="243.33" x2="1460" y2="243.33" class="grid" />
+      <text x="48" y="247.33" class="axis">0.13</text>
+    
+      <line x1="60" y1="206.25" x2="1460" y2="206.25" class="grid" />
+      <text x="48" y="210.25" class="axis">0.14</text>
+    
+      <line x1="60" y1="169.17" x2="1460" y2="169.17" class="grid" />
+      <text x="48" y="173.17" class="axis">0.16</text>
+    
+      <line x1="60" y1="132.08" x2="1460" y2="132.08" class="grid" />
+      <text x="48" y="136.08" class="axis">0.17</text>
+    
+      <line x1="60" y1="95.00" x2="1460" y2="95.00" class="grid" />
+      <text x="48" y="99.00" class="axis">0.19</text>
+    
+  <text x="750" y="56" class="title">Гистограмма шифрованного текста</text>
+  
+        <rect x="65.00" y="433.92" width="36.67" height="106.08" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="83.33" y="423.92" class="value">0.047</text>
+        <text x="83.33" y="575.00" class="symbol">a</text>
+      
+        <rect x="111.67" y="500.22" width="36.67" height="39.78" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="130.00" y="490.22" class="value">0.018</text>
+        <text x="130.00" y="575.00" class="symbol">b</text>
+      
+        <rect x="158.33" y="470.21" width="36.67" height="69.79" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="176.67" y="460.21" class="value">0.031</text>
+        <text x="176.67" y="575.00" class="symbol">c</text>
+      
+        <rect x="205.00" y="426.95" width="36.67" height="113.05" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="223.33" y="416.95" class="value">0.050</text>
+        <text x="223.33" y="575.00" class="symbol">d</text>
+      
+        <rect x="251.67" y="115.00" width="36.67" height="425.00" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="270.00" y="105.00" class="value">0.188</text>
+        <text x="270.00" y="575.00" class="symbol">e</text>
+      
+        <rect x="298.33" y="509.29" width="36.67" height="30.71" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="316.67" y="499.29" class="value">0.014</text>
+        <text x="316.67" y="575.00" class="symbol">f</text>
+      
+        <rect x="345.00" y="473.70" width="36.67" height="66.30" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="363.33" y="463.70" class="value">0.029</text>
+        <text x="363.33" y="575.00" class="symbol">g</text>
+      
+        <rect x="391.67" y="445.79" width="36.67" height="94.21" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="410.00" y="435.79" class="value">0.042</text>
+        <text x="410.00" y="575.00" class="symbol">h</text>
+      
+        <rect x="438.33" y="347.39" width="36.67" height="192.61" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="456.67" y="337.39" class="value">0.085</text>
+        <text x="456.67" y="575.00" class="symbol">i</text>
+      
+        <rect x="485.00" y="537.21" width="36.67" height="2.79" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="503.33" y="527.21" class="value">0.001</text>
+        <text x="503.33" y="575.00" class="symbol">j</text>
+      
+        <rect x="531.67" y="514.18" width="36.67" height="25.82" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="550.00" y="504.18" class="value">0.011</text>
+        <text x="550.00" y="575.00" class="symbol">k</text>
+      
+        <rect x="578.33" y="453.46" width="36.67" height="86.54" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="596.67" y="443.46" class="value">0.038</text>
+        <text x="596.67" y="575.00" class="symbol">l</text>
+      
+        <rect x="625.00" y="490.45" width="36.67" height="49.55" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="643.33" y="480.45" class="value">0.022</text>
+        <text x="643.33" y="575.00" class="symbol">m</text>
+      
+        <rect x="671.67" y="331.34" width="36.67" height="208.66" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="690.00" y="321.34" class="value">0.092</text>
+        <text x="690.00" y="575.00" class="symbol">n</text>
+      
+        <rect x="718.33" y="474.40" width="36.67" height="65.60" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="736.67" y="464.40" class="value">0.029</text>
+        <text x="736.67" y="575.00" class="symbol">o</text>
+      
+        <rect x="765.00" y="517.67" width="36.67" height="22.33" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="783.33" y="507.67" class="value">0.010</text>
+        <text x="783.33" y="575.00" class="symbol">p</text>
+      
+        <rect x="811.67" y="540.00" width="36.67" height="0.00" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="830.00" y="530.00" class="value">0.000</text>
+        <text x="830.00" y="575.00" class="symbol">q</text>
+      
+        <rect x="858.33" y="370.42" width="36.67" height="169.58" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="876.67" y="360.42" class="value">0.075</text>
+        <text x="876.67" y="575.00" class="symbol">r</text>
+      
+        <rect x="905.00" y="392.75" width="36.67" height="147.25" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="923.33" y="382.75" class="value">0.065</text>
+        <text x="923.33" y="575.00" class="symbol">s</text>
+      
+        <rect x="951.67" y="383.68" width="36.67" height="156.32" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="970.00" y="373.68" class="value">0.069</text>
+        <text x="970.00" y="575.00" class="symbol">t</text>
+      
+        <rect x="998.33" y="452.77" width="36.67" height="87.23" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1016.67" y="442.77" class="value">0.039</text>
+        <text x="1016.67" y="575.00" class="symbol">u</text>
+      
+        <rect x="1045.00" y="518.37" width="36.67" height="21.63" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1063.33" y="508.37" class="value">0.010</text>
+        <text x="1063.33" y="575.00" class="symbol">v</text>
+      
+        <rect x="1091.67" y="504.41" width="36.67" height="35.59" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1110.00" y="494.41" class="value">0.016</text>
+        <text x="1110.00" y="575.00" class="symbol">w</text>
+      
+        <rect x="1138.33" y="533.02" width="36.67" height="6.98" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1156.67" y="523.02" class="value">0.003</text>
+        <text x="1156.67" y="575.00" class="symbol">x</text>
+      
+        <rect x="1185.00" y="534.42" width="36.67" height="5.58" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1203.33" y="524.42" class="value">0.002</text>
+        <text x="1203.33" y="575.00" class="symbol">y</text>
+      
+        <rect x="1231.67" y="511.39" width="36.67" height="28.61" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1250.00" y="501.39" class="value">0.013</text>
+        <text x="1250.00" y="575.00" class="symbol">z</text>
+      
+        <rect x="1278.33" y="540.00" width="36.67" height="0.00" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1296.67" y="530.00" class="value">0.000</text>
+        <text x="1296.67" y="575.00" class="symbol">ä</text>
+      
+        <rect x="1325.00" y="540.00" width="36.67" height="0.00" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1343.33" y="530.00" class="value">0.000</text>
+        <text x="1343.33" y="575.00" class="symbol">ö</text>
+      
+        <rect x="1371.67" y="540.00" width="36.67" height="0.00" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1390.00" y="530.00" class="value">0.000</text>
+        <text x="1390.00" y="575.00" class="symbol">ü</text>
+      
+        <rect x="1418.33" y="540.00" width="36.67" height="0.00" fill="url(#barGradient)" stroke="#111" stroke-width="1.2" />
+        <text x="1436.67" y="530.00" class="value">0.000</text>
+        <text x="1436.67" y="575.00" class="symbol">ß</text>
+      
+  <line x1="60" y1="540" x2="1460" y2="540" stroke="#111" stroke-width="2" />
+</svg>

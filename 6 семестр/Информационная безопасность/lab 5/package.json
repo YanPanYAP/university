@@ -1,0 +1,16 @@
+{
+  "name": "ib-lab-5-transposition-ciphers",
+  "version": "1.0.0",
+  "description": "Лабораторная работа по исследованию криптографических шифров перестановки для немецкого языка",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js run-all",
+    "run-all": "node src/cli.js run-all",
+    "verify": "node src/cli.js verify",
+    "encrypt:route": "node src/cli.js encrypt --cipher route",
+    "decrypt:route": "node src/cli.js decrypt --cipher route",
+    "encrypt:multiple": "node src/cli.js encrypt --cipher multiple",
+    "decrypt:multiple": "node src/cli.js decrypt --cipher multiple"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+node app.js --text "Павлович Ян Андрійович" --alphabet ukrainian
+node app.js --text "Pavlovich Jan Andreevich" --alphabet dutch
+
+node app.js --text "Pavlovich Yan Andreevich" --alphabet latin
+node app.js --text "Павлович Ян Андреевич" --alphabet russian
+
+node app.js --file ukr.txt --alphabet ukrainian
+node app.js --file english.txt --alphabet latin
+node app.js --file dutch.txt --alphabet dutch
+node app.js --file rus.txt --alphabet russian
+node app.js --binary-file ukr.bin

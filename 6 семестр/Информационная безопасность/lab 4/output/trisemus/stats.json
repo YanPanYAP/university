@@ -1,0 +1,175 @@
+{
+  "cipher": "Шифр таблицы Трисемуса",
+  "sourceFile": "/Users/yanpaulovich/Documents/fit/ИБ/lab 4/data/source_german.txt",
+  "alphabet": "abcdefghijklmnopqrstuvwxyzäöüß",
+  "sourceLength": 5997,
+  "onlyGermanLetters": 5158,
+  "encryptionTimeMs": 1.880103,
+  "decryptionTimeMs": 1.371533,
+  "decryptedMatchesSource": true,
+  "originalSummary": {
+    "totalLetters": 5158,
+    "top10": [
+      {
+        "symbol": "e",
+        "count": 919,
+        "frequency": 0.1781698332687088
+      },
+      {
+        "symbol": "n",
+        "count": 445,
+        "frequency": 0.08627374951531601
+      },
+      {
+        "symbol": "i",
+        "count": 415,
+        "frequency": 0.0804575416828228
+      },
+      {
+        "symbol": "s",
+        "count": 397,
+        "frequency": 0.07696781698332687
+      },
+      {
+        "symbol": "r",
+        "count": 383,
+        "frequency": 0.0742535866614967
+      },
+      {
+        "symbol": "t",
+        "count": 363,
+        "frequency": 0.0703761147731679
+      },
+      {
+        "symbol": "a",
+        "count": 283,
+        "frequency": 0.054866227219852653
+      },
+      {
+        "symbol": "h",
+        "count": 254,
+        "frequency": 0.04924389298177588
+      },
+      {
+        "symbol": "d",
+        "count": 229,
+        "frequency": 0.04439705312136487
+      },
+      {
+        "symbol": "u",
+        "count": 214,
+        "frequency": 0.04148894920511826
+      }
+    ]
+  },
+  "encryptedSummary": {
+    "totalLetters": 5158,
+    "top10": [
+      {
+        "symbol": "b",
+        "count": 919,
+        "frequency": 0.1781698332687088
+      },
+      {
+        "symbol": "c",
+        "count": 445,
+        "frequency": 0.08627374951531601
+      },
+      {
+        "symbol": "d",
+        "count": 415,
+        "frequency": 0.0804575416828228
+      },
+      {
+        "symbol": "y",
+        "count": 397,
+        "frequency": 0.07696781698332687
+      },
+      {
+        "symbol": "x",
+        "count": 383,
+        "frequency": 0.0742535866614967
+      },
+      {
+        "symbol": "z",
+        "count": 363,
+        "frequency": 0.0703761147731679
+      },
+      {
+        "symbol": "j",
+        "count": 283,
+        "frequency": 0.054866227219852653
+      },
+      {
+        "symbol": "q",
+        "count": 254,
+        "frequency": 0.04924389298177588
+      },
+      {
+        "symbol": "o",
+        "count": 229,
+        "frequency": 0.04439705312136487
+      },
+      {
+        "symbol": "ä",
+        "count": 214,
+        "frequency": 0.04148894920511826
+      }
+    ]
+  },
+  "decryptedSummary": {
+    "totalLetters": 5158,
+    "top10": [
+      {
+        "symbol": "e",
+        "count": 919,
+        "frequency": 0.1781698332687088
+      },
+      {
+        "symbol": "n",
+        "count": 445,
+        "frequency": 0.08627374951531601
+      },
+      {
+        "symbol": "i",
+        "count": 415,
+        "frequency": 0.0804575416828228
+      },
+      {
+        "symbol": "s",
+        "count": 397,
+        "frequency": 0.07696781698332687
+      },
+      {
+        "symbol": "r",
+        "count": 383,
+        "frequency": 0.0742535866614967
+      },
+      {
+        "symbol": "t",
+        "count": 363,
+        "frequency": 0.0703761147731679
+      },
+      {
+        "symbol": "a",
+        "count": 283,
+        "frequency": 0.054866227219852653
+      },
+      {
+        "symbol": "h",
+        "count": 254,
+        "frequency": 0.04924389298177588
+      },
+      {
+        "symbol": "d",
+        "count": 229,
+        "frequency": 0.04439705312136487
+      },
+      {
+        "symbol": "u",
+        "count": 214,
+        "frequency": 0.04148894920511826
+      }
+    ]
+  }
+}

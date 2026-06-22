@@ -1,0 +1,17 @@
+{
+  "name": "discrete-entropy-analyzer",
+  "version": "1.0.0",
+  "description": "Simple Node.js application for calculating and analyzing parameters of discrete information systems.",
+  "main": "app.js",
+  "bin": {
+    "entropy-analyzer": "app.js"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.0.1"
+  }
+}

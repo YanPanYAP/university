@@ -1,0 +1,16 @@
+{
+  "name": "ib-lab-4-substitution-ciphers",
+  "version": "1.0.0",
+  "description": "Лабораторная работа по исследованию шифров подстановки для немецкого языка",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js run-all",
+    "run-all": "node src/cli.js run-all",
+    "encrypt:shift": "node src/cli.js encrypt --cipher shift",
+    "decrypt:shift": "node src/cli.js decrypt --cipher shift",
+    "encrypt:trisemus": "node src/cli.js encrypt --cipher trisemus",
+    "decrypt:trisemus": "node src/cli.js decrypt --cipher trisemus",
+    "verify": "node src/cli.js verify"
+  },
+  "license": "ISC"
+}

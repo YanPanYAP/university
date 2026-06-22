@@ -1,0 +1,14 @@
+{
+  "name": "ib-lab-3-number-theory",
+  "version": "1.0.0",
+  "description": "Лабораторная работа по основам теории чисел и их использованию в криптографии",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js run-all",
+    "run-all": "node src/cli.js run-all",
+    "verify": "node src/cli.js verify",
+    "gcd": "node src/cli.js gcd --numbers 399 433",
+    "primes": "node src/cli.js primes --from 399 --to 433"
+  },
+  "license": "ISC"
+}
