@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GO08_01 WebSocket Client</title>
+</head>
+<body>
+  <h1>GO08_01 WebSocket Client</h1>
+  <pre id="log"></pre>
+
+  <script>
+    const logBox = document.getElementById("log");
+    const socket = new WebSocket("ws://localhost:3000/ws");
+    const messages = ["message 1", "message 2", "message 3", "message 4", "message 5"];
+    let index = 0;
+
+    function addLog(text) {
+      logBox.textContent += text + "\n";
+    }
+
+    socket.onopen = function () {
+      addLog("connected");
+
+      const timer = setInterval(function () {
+        if (index >= messages.length) {
+          clearInterval(timer);
+          socket.close();
+          addLog("closed");
+          return;
+        }
+
+        const message = messages[index];
+        socket.send(message);
+        addLog("send: " + message);
+        index++;
+      }, 1000);
+    };
+
+    socket.onmessage = function (event) {
+      addLog("received: " + event.data);
+    };
+
+    socket.onclose = function () {
+      addLog("connection finished");
+    };
+
+    socket.onerror = function () {
+      addLog("error");
+    };
+  </script>
+</body>
+</html>

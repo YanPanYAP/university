@@ -1,0 +1,41 @@
+--
+cd "/Users/yanpaulovich/Documents/fit/пис/lab 9/GO09_01s"
+rm -rf ./webdav-root
+go run . -addr :3000 -root ./webdav-root
+--
+cd "/Users/yanpaulovich/Documents/fit/пис/lab 9/GO09_01c"
+rm -f local.txt out.txt
+echo "hello, world" > local.txt
+
+go run . -url http://localhost:3000 mkcol /docs
+go run . -url http://localhost:3000 put local.txt /docs/a.txt
+go run . -url http://localhost:3000 get /docs/a.txt out.txt
+go run . -url http://localhost:3000 copy /docs/a.txt /docs/b.txt
+go run . -url http://localhost:3000 move /docs/b.txt /docs/c.txt
+go run . -url http://localhost:3000 delete /docs/a.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cd "/Users/yanpaulovich/Documents/fit/пис/lab 9/GO09_01s"
+rm -rf ./webdav-root
+go run . -addr :3000 -root ./webdav-root -user student -pass password
+
+
+cd "/Users/yanpaulovich/Documents/fit/пис/lab 9/GO09_01c"
+go run . -url http://localhost:3000 -user student -pass password mkcol /secure
+
+go run . -url http://localhost:3000 -user student -pass password put local.txt /securea.txt
