@@ -1,0 +1,26 @@
+{
+  "variant": 9,
+  "methods": [
+    "space-count modification",
+    "kerning modification"
+  ],
+  "secretMessage": "PAVLOVICH",
+  "bits": "0000000000001001010100000100000101010110010011000100111101010110010010010100001101001000",
+  "embeddedBits": 88,
+  "container": {
+    "chars": 884,
+    "wordGaps": 129
+  },
+  "results": {
+    "spaces": {
+      "capacity": 129,
+      "extracted": "PAVLOVICH",
+      "ok": true
+    },
+    "kerning": {
+      "capacity": 884,
+      "extracted": "PAVLOVICH",
+      "ok": true
+    }
+  }
+}

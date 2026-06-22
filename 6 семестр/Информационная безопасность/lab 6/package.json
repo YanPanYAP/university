@@ -1,0 +1,12 @@
+{
+  "name": "ib-lab-6-enigma",
+  "version": "1.0.0",
+  "description": "Лабораторная работа № 6. Симулятор шифровальной машины Энигма на Node.js",
+  "main": "src/cli.js",
+  "scripts": {
+    "start": "node src/cli.js run-all",
+    "run-all": "node src/cli.js run-all",
+    "verify": "node src/cli.js verify"
+  },
+  "license": "ISC"
+}

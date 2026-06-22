@@ -1,0 +1,17 @@
+{
+  "name": "lab13-elliptic-curves",
+  "version": "1.0.0",
+  "description": "ЛР №11: исследование криптографических алгоритмов на основе эллиптических кривых",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "report": "node index.js"
+  },
+  "keywords": [
+    "elliptic-curve",
+    "finite-field",
+    "cryptography"
+  ],
+  "license": "MIT"
+}

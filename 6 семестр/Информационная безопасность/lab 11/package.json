@@ -1,0 +1,19 @@
+{
+  "name": "lab11-hash-functions",
+  "version": "1.0.0",
+  "description": "ЛР №9: исследование криптографических хеш-функций",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "report": "node index.js --no-prompt",
+    "test": "node --test"
+  },
+  "keywords": [
+    "sha256",
+    "hash",
+    "crypto",
+    "benchmark"
+  ],
+  "license": "MIT"
+}

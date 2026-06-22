@@ -1,0 +1,558 @@
+{
+  "teacherParam": "1",
+  "sourceText": "asdasdasdad",
+  "k1": "BD073EED16756C30",
+  "k2": "BD073EED16756C30",
+  "blocksHex": [
+    "6173646173646173",
+    "6461640505050505"
+  ],
+  "cipherHex": "E87B52D85E764944A185F55F70E76174",
+  "decryptedText": "asdasdasdad",
+  "speed": {
+    "iterations": 200,
+    "payloadBytes": 11,
+    "encryptMs": 172.280175,
+    "decryptMs": 97.348903,
+    "encryptPerSec": 12769.896478222174,
+    "decryptPerSec": 22599.1247174095
+  },
+  "avalanche": {
+    "sourceBlockHex": "6173646173646173",
+    "baseCipherHex": "E87B52D85E764944",
+    "averageChangedBits": 31.796875,
+    "averageChangedHexChars": 14.953125,
+    "steps": [
+      {
+        "bitPos": 0,
+        "modifiedBlockHex": "E173646173646173",
+        "cipherHex": "88DA714B37388FA9",
+        "changedBits": 30,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 1,
+        "modifiedBlockHex": "2173646173646173",
+        "cipherHex": "C9D952BC65F406C6",
+        "changedBits": 22,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 2,
+        "modifiedBlockHex": "4173646173646173",
+        "cipherHex": "3AA74C34C76B91B6",
+        "changedBits": 35,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 3,
+        "modifiedBlockHex": "7173646173646173",
+        "cipherHex": "57E9D55629FD6FC0",
+        "changedBits": 33,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 4,
+        "modifiedBlockHex": "6973646173646173",
+        "cipherHex": "052D612839D4B134",
+        "changedBits": 34,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 5,
+        "modifiedBlockHex": "6573646173646173",
+        "cipherHex": "B13BAB539CD85786",
+        "changedBits": 30,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 6,
+        "modifiedBlockHex": "6373646173646173",
+        "cipherHex": "DACE84340FC21361",
+        "changedBits": 32,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 7,
+        "modifiedBlockHex": "6073646173646173",
+        "cipherHex": "5898F1836EEE5A89",
+        "changedBits": 30,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 8,
+        "modifiedBlockHex": "61F3646173646173",
+        "cipherHex": "374ECB99B001076A",
+        "changedBits": 37,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 9,
+        "modifiedBlockHex": "6133646173646173",
+        "cipherHex": "23709092D8466AD1",
+        "changedBits": 26,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 10,
+        "modifiedBlockHex": "6153646173646173",
+        "cipherHex": "057E07950F55667E",
+        "changedBits": 31,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 11,
+        "modifiedBlockHex": "6163646173646173",
+        "cipherHex": "1AE5953C45220868",
+        "changedBits": 31,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 12,
+        "modifiedBlockHex": "617B646173646173",
+        "cipherHex": "2BF57F21F4762587",
+        "changedBits": 30,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 13,
+        "modifiedBlockHex": "6177646173646173",
+        "cipherHex": "AA8BD293071F3574",
+        "changedBits": 26,
+        "changedHexChars": 13
+      },
+      {
+        "bitPos": 14,
+        "modifiedBlockHex": "6171646173646173",
+        "cipherHex": "20FFDE2190F5B3D8",
+        "changedBits": 32,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 15,
+        "modifiedBlockHex": "6172646173646173",
+        "cipherHex": "F7F0A155C2065369",
+        "changedBits": 33,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 16,
+        "modifiedBlockHex": "6173E46173646173",
+        "cipherHex": "A449B13BC61B0A54",
+        "changedBits": 28,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 17,
+        "modifiedBlockHex": "6173246173646173",
+        "cipherHex": "B8A78C3A7219B5BA",
+        "changedBits": 39,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 18,
+        "modifiedBlockHex": "6173446173646173",
+        "cipherHex": "6942AFA7B2F98072",
+        "changedBits": 38,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 19,
+        "modifiedBlockHex": "6173746173646173",
+        "cipherHex": "E0E4802615D8E623",
+        "changedBits": 38,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 20,
+        "modifiedBlockHex": "61736C6173646173",
+        "cipherHex": "BA20333ABA942448",
+        "changedBits": 30,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 21,
+        "modifiedBlockHex": "6173606173646173",
+        "cipherHex": "D83C76BBC78E2FCB",
+        "changedBits": 30,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 22,
+        "modifiedBlockHex": "6173666173646173",
+        "cipherHex": "B415D957BA764FAF",
+        "changedBits": 30,
+        "changedHexChars": 13
+      },
+      {
+        "bitPos": 23,
+        "modifiedBlockHex": "6173656173646173",
+        "cipherHex": "BCE9B5BB39EC43AB",
+        "changedBits": 34,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 24,
+        "modifiedBlockHex": "617364E173646173",
+        "cipherHex": "CAAD2F5253D9EF7F",
+        "changedBits": 34,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 25,
+        "modifiedBlockHex": "6173642173646173",
+        "cipherHex": "6D9B408801F05885",
+        "changedBits": 24,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 26,
+        "modifiedBlockHex": "6173644173646173",
+        "cipherHex": "013918582DF32615",
+        "changedBits": 28,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 27,
+        "modifiedBlockHex": "6173647173646173",
+        "cipherHex": "B76FA33806D8A237",
+        "changedBits": 35,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 28,
+        "modifiedBlockHex": "6173646973646173",
+        "cipherHex": "5217BAD2990F6263",
+        "changedBits": 33,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 29,
+        "modifiedBlockHex": "6173646573646173",
+        "cipherHex": "EAA33A402C687084",
+        "changedBits": 25,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 30,
+        "modifiedBlockHex": "6173646373646173",
+        "cipherHex": "9406CEFA8EDA6944",
+        "changedBits": 25,
+        "changedHexChars": 12
+      },
+      {
+        "bitPos": 31,
+        "modifiedBlockHex": "6173646073646173",
+        "cipherHex": "F783C4B1B671A695",
+        "changedBits": 36,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 32,
+        "modifiedBlockHex": "61736461F3646173",
+        "cipherHex": "A7EB1FBD40FD301E",
+        "changedBits": 32,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 33,
+        "modifiedBlockHex": "6173646133646173",
+        "cipherHex": "90EC970958BAFB35",
+        "changedBits": 31,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 34,
+        "modifiedBlockHex": "6173646153646173",
+        "cipherHex": "C3DBEDF787777FD2",
+        "changedBits": 32,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 35,
+        "modifiedBlockHex": "6173646163646173",
+        "cipherHex": "2D87E3DC81D29002",
+        "changedBits": 33,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 36,
+        "modifiedBlockHex": "617364617B646173",
+        "cipherHex": "73ACB5D995A21336",
+        "changedBits": 35,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 37,
+        "modifiedBlockHex": "6173646177646173",
+        "cipherHex": "B9DB8EF1D4C02FA7",
+        "changedBits": 30,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 38,
+        "modifiedBlockHex": "6173646171646173",
+        "cipherHex": "2C7AA10FC223F5D6",
+        "changedBits": 32,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 39,
+        "modifiedBlockHex": "6173646172646173",
+        "cipherHex": "CE3EDE3D7EC334FF",
+        "changedBits": 32,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 40,
+        "modifiedBlockHex": "6173646173E46173",
+        "cipherHex": "143417601A17BF85",
+        "changedBits": 32,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 41,
+        "modifiedBlockHex": "6173646173246173",
+        "cipherHex": "6827C647F4FB9574",
+        "changedBits": 29,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 42,
+        "modifiedBlockHex": "6173646173446173",
+        "cipherHex": "F4078AC7C3E35E30",
+        "changedBits": 34,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 43,
+        "modifiedBlockHex": "6173646173746173",
+        "cipherHex": "6951669441C3C427",
+        "changedBits": 29,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 44,
+        "modifiedBlockHex": "61736461736C6173",
+        "cipherHex": "835C9A23DFA22901",
+        "changedBits": 30,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 45,
+        "modifiedBlockHex": "6173646173606173",
+        "cipherHex": "98D42C744611883E",
+        "changedBits": 34,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 46,
+        "modifiedBlockHex": "6173646173666173",
+        "cipherHex": "FAC5DAF7F1F3DE5E",
+        "changedBits": 32,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 47,
+        "modifiedBlockHex": "6173646173656173",
+        "cipherHex": "759A85C10B1EF2AA",
+        "changedBits": 37,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 48,
+        "modifiedBlockHex": "617364617364E173",
+        "cipherHex": "8296201A76CE97BD",
+        "changedBits": 35,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 49,
+        "modifiedBlockHex": "6173646173642173",
+        "cipherHex": "6C2F8C2DD2D12561",
+        "changedBits": 32,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 50,
+        "modifiedBlockHex": "6173646173644173",
+        "cipherHex": "A161A1C652FCB3A5",
+        "changedBits": 31,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 51,
+        "modifiedBlockHex": "6173646173647173",
+        "cipherHex": "992F7C109B5999FF",
+        "changedBits": 32,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 52,
+        "modifiedBlockHex": "6173646173646973",
+        "cipherHex": "CAA9701E4DF946CE",
+        "changedBits": 27,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 53,
+        "modifiedBlockHex": "6173646173646573",
+        "cipherHex": "A8120CAFDFD9C8AD",
+        "changedBits": 31,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 54,
+        "modifiedBlockHex": "6173646173646373",
+        "cipherHex": "25A381C8B5A4060E",
+        "changedBits": 33,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 55,
+        "modifiedBlockHex": "6173646173646073",
+        "cipherHex": "16CC8CE047BF13D6",
+        "changedBits": 36,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 56,
+        "modifiedBlockHex": "61736461736461F3",
+        "cipherHex": "9685AD5AA1DF254E",
+        "changedBits": 41,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 57,
+        "modifiedBlockHex": "6173646173646133",
+        "cipherHex": "23885909278FBA92",
+        "changedBits": 40,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 58,
+        "modifiedBlockHex": "6173646173646153",
+        "cipherHex": "C5D5C271A1972A9B",
+        "changedBits": 38,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 59,
+        "modifiedBlockHex": "6173646173646163",
+        "cipherHex": "0CEC601A4267174B",
+        "changedBits": 29,
+        "changedHexChars": 15
+      },
+      {
+        "bitPos": 60,
+        "modifiedBlockHex": "617364617364617B",
+        "cipherHex": "9B7130F82542A06F",
+        "changedBits": 29,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 61,
+        "modifiedBlockHex": "6173646173646177",
+        "cipherHex": "F71B00F524667D1D",
+        "changedBits": 27,
+        "changedHexChars": 14
+      },
+      {
+        "bitPos": 62,
+        "modifiedBlockHex": "6173646173646171",
+        "cipherHex": "073400E1086F84D0",
+        "changedBits": 34,
+        "changedHexChars": 16
+      },
+      {
+        "bitPos": 63,
+        "modifiedBlockHex": "6173646173646172",
+        "cipherHex": "BD5A4FD8B06C5598",
+        "changedBits": 27,
+        "changedHexChars": 14
+      }
+    ]
+  },
+  "weakAnalysis": {
+    "baseline": {
+      "keys": "D566B27DB22ED8EB/598F9F834FC1CA47",
+      "cipherHex": "101EAA372173A394",
+      "avgChangedBits": 32.0625,
+      "avgChangedHexChars": 15.015625
+    },
+    "weak": [
+      {
+        "key": "0101010101010101",
+        "cipherHex": "8DE7BF8067118A91",
+        "avgChangedBits": 31.34375,
+        "avgChangedHexChars": 14.71875
+      },
+      {
+        "key": "1F1F1F1F0E0E0E0E",
+        "cipherHex": "7B0E9DFD4ECD594B",
+        "avgChangedBits": 32.46875,
+        "avgChangedHexChars": 15.1875
+      },
+      {
+        "key": "E0E0E0E0F1F1F1F1",
+        "cipherHex": "6EFACC84138052E8",
+        "avgChangedBits": 33.265625,
+        "avgChangedHexChars": 15.109375
+      },
+      {
+        "key": "FEFEFEFEFEFEFEFE",
+        "cipherHex": "426E2F7C31DA5968",
+        "avgChangedBits": 31.5,
+        "avgChangedHexChars": 14.984375
+      }
+    ],
+    "semiWeak": [
+      {
+        "pair": "01FE01FE01FE01FE/FE01FE01FE01FE01",
+        "cipherHex": "080208C367325D68",
+        "avgChangedBits": 31.546875,
+        "avgChangedHexChars": 14.890625
+      },
+      {
+        "pair": "1FE01FE00EF10EF1/E01FE01FF10EF10E",
+        "cipherHex": "7404EB6F3384142D",
+        "avgChangedBits": 32.015625,
+        "avgChangedHexChars": 14.890625
+      },
+      {
+        "pair": "01E001E001F101F1/E001E001F101F101",
+        "cipherHex": "11BC80F89883CF08",
+        "avgChangedBits": 32.125,
+        "avgChangedHexChars": 15.078125
+      },
+      {
+        "pair": "1FFE1FFE0EFE0EFE/FE1FFE1FFE0EFE0E",
+        "cipherHex": "18C4E378F2DE2465",
+        "avgChangedBits": 31.390625,
+        "avgChangedHexChars": 15.015625
+      },
+      {
+        "pair": "011F011F010E010E/1F011F010E010E01",
+        "cipherHex": "FA9D3ED53358137C",
+        "avgChangedBits": 31.640625,
+        "avgChangedHexChars": 15.203125
+      },
+      {
+        "pair": "E0FEE0FEF1FEF1FE/FEE0FEE0FEF1FEF1",
+        "cipherHex": "27FADEA51939FDE2",
+        "avgChangedBits": 32.015625,
+        "avgChangedHexChars": 14.9375
+      }
+    ]
+  },
+  "compression": {
+    "plainBytes": 11,
+    "cipherBytes": 16,
+    "gzPlainBytes": 26,
+    "gzCipherBytes": 36,
+    "plainCompressionPercent": -136.36363636363637,
+    "cipherCompressionPercent": -125,
+    "plainRatioPercent": 236.36363636363637,
+    "cipherRatioPercent": 225
+  }
+}

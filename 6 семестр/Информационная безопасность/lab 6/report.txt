@@ -1,0 +1,498 @@
+Лабораторная работа № 6
+Тема: моделирование шифровальной машины Энигма
+
+Вариант: 9
+Роторы: VIII-II-IV
+Отражатель: B
+Схема сдвига: 1-0-1
+Начальные кольцевые установки: AAA
+
+Исходное сообщение: Pavlovich Yan Andreevich
+Нормализованное сообщение: PAVLOVICHYANANDREEVICH
+
+Частотные свойства исходного текста:
+Индекс совпадений: 0.047619
+Энтропия Шеннона: 3.572624
+Топ-10 символов: A:3, V:3, C:2, E:2, H:2, I:2, N:2, D:1, L:1, O:1
+
+Пункт 1. Шифрование при 10 различных настройках:
+AAA -> YTWICTXZBOFCPWEAKYJRKD; IC=0.021645; H=4.004886
+  Пути шифрования:
+    1. pos=BAB; P -> IV:P->Q->N->M | II:M->M->W->W | VIII:W->X->Y->X | REF:X->J | VIII:J->K->B->A | II:A->A->A->A | IV:A->B->Z->Y -> Y
+    2. pos=CAC; A -> IV:A->C->O->M | II:M->M->W->W | VIII:W->Y->G->E | REF:E->Q | VIII:Q->S->L->J | II:J->J->B->B | IV:B->D->V->T -> T
+    3. pos=DAD; V -> IV:V->Y->W->T | II:T->T->N->N | VIII:N->Q->A->X | REF:X->J | VIII:J->M->R->O | II:O->O->Y->Y | IV:Y->B->Z->W -> W
+    4. pos=EAE; L -> IV:L->P->L->H | II:H->H->U->U | VIII:U->Y->G->C | REF:C->U | VIII:U->Y->X->T | II:T->T->N->N | IV:N->R->M->I -> I
+    5. pos=FAF; O -> IV:O->T->G->B | II:B->B->J->J | VIII:J->O->Z->U | REF:U->C | VIII:C->H->D->Y | II:Y->Y->V->V | IV:V->A->H->C -> C
+    6. pos=GAG; V -> IV:V->B->S->M | II:M->M->W->W | VIII:W->C->Q->K | REF:K->N | VIII:N->T->E->Y | II:Y->Y->V->V | IV:V->B->Z->T -> T
+    7. pos=HAH; I -> IV:I->P->L->E | II:E->E->S->S | VIII:S->Z->V->O | REF:O->M | VIII:M->T->E->X | II:X->X->I->I | IV:I->P->E->X -> X
+    8. pos=IAI; C -> IV:C->K->U->M | II:M->M->W->W | VIII:W->E->T->L | REF:L->G | VIII:G->O->H->Z | II:Z->Z->S->S | IV:S->A->H->Z -> Z
+    9. pos=JAJ; H -> IV:H->Q->N->E | II:E->E->S->S | VIII:S->B->K->B | REF:B->R | VIII:R->A->Q->H | II:H->H->L->L | IV:L->U->K->B -> B
+    10. pos=KAK; Y -> IV:Y->I->Y->O | II:O->O->M->M | VIII:M->W->U->K | REF:K->N | VIII:N->X->G->W | II:W->W->M->M | IV:M->W->Y->O -> O
+    11. pos=LAL; A -> IV:A->L->I->X | II:X->X->V->V | VIII:V->G->X->M | REF:M->O | VIII:O->Z->O->D | II:D->D->C->C | IV:C->N->Q->F -> F
+    12. pos=MAM; N -> IV:N->Z->B->P | II:P->P->C->C | VIII:C->O->Z->N | REF:N->K | VIII:K->W->T->H | II:H->H->L->L | IV:L->X->O->C -> C
+    13. pos=NAN; A -> IV:A->N->H->U | II:U->U->P->P | VIII:P->C->Q->D | REF:D->H | VIII:H->U->W->J | II:J->J->B->B | IV:B->O->C->P -> P
+    14. pos=OAO; N -> IV:N->B->S->E | II:E->E->S->S | VIII:S->G->X->J | REF:J->X | VIII:X->L->F->R | II:R->R->G->G | IV:G->U->K->W -> W
+    15. pos=PAP; D -> IV:D->S->T->E | II:E->E->S->S | VIII:S->H->O->Z | REF:Z->T | VIII:T->I->V->G | II:G->G->R->R | IV:R->G->T->E -> E
+    16. pos=QAQ; R -> IV:R->H->A->K | II:K->K->L->L | VIII:L->B->K->U | REF:U->C | VIII:C->S->L->V | II:V->V->X->X | IV:X->N->Q->A -> A
+    17. pos=RAR; E -> IV:E->V->D->M | II:M->M->W->W | VIII:W->N->D->M | REF:M->O | VIII:O->F->A->J | II:J->J->B->B | IV:B->S->B->K -> K
+    18. pos=SAS; E -> IV:E->W->C->K | II:K->K->L->L | VIII:L->D->H->P | REF:P->I | VIII:I->A->Q->Y | II:Y->Y->V->V | IV:V->N->Q->Y -> Y
+    19. pos=TAT; V -> IV:V->O->X->E | II:E->E->S->S | VIII:S->L->S->Z | REF:Z->T | VIII:T->M->R->Y | II:Y->Y->V->V | IV:V->O->C->J -> J
+    20. pos=UAU; I -> IV:I->C->O->U | II:U->U->P->P | VIII:P->J->B->H | REF:H->D | VIII:D->X->G->M | II:M->M->O->O | IV:O->I->L->R -> R
+    21. pos=VAV; C -> IV:C->X->M->R | II:R->R->G->G | VIII:G->B->K->P | REF:P->I | VIII:I->D->N->S | II:S->S->E->E | IV:E->Z->F->K -> K
+    22. pos=WAW; H -> IV:H->D->V->Z | II:Z->Z->E->E | VIII:E->A->F->J | REF:J->X | VIII:X->T->E->I | II:I->I->F->F | IV:F->B->Z->D -> D
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=BAB; Y -> IV:Y->Z->B->A | II:A->A->A->A | VIII:A->B->K->J | REF:J->X | VIII:X->Y->X->W | II:W->W->M->M | IV:M->N->Q->P -> P
+    2. pos=CAC; T -> IV:T->V->D->B | II:B->B->J->J | VIII:J->L->S->Q | REF:Q->E | VIII:E->G->Y->W | II:W->W->M->M | IV:M->O->C->A -> A
+    3. pos=DAD; W -> IV:W->Z->B->Y | II:Y->Y->O->O | VIII:O->R->M->J | REF:J->X | VIII:X->A->Q->N | II:N->N->T->T | IV:T->W->Y->V -> V
+    4. pos=EAE; I -> IV:I->M->R->N | II:N->N->T->T | VIII:T->X->Y->U | REF:U->C | VIII:C->G->Y->U | II:U->U->H->H | IV:H->L->P->L -> L
+    5. pos=FAF; C -> IV:C->H->A->V | II:V->V->Y->Y | VIII:Y->D->H->C | REF:C->U | VIII:U->Z->O->J | II:J->J->B->B | IV:B->G->T->O -> O
+    6. pos=GAG; T -> IV:T->Z->B->V | II:V->V->Y->Y | VIII:Y->E->T->N | REF:N->K | VIII:K->Q->C->W | II:W->W->M->M | IV:M->S->B->V -> V
+    7. pos=HAH; X -> IV:X->E->P->I | II:I->I->X->X | VIII:X->E->T->M | REF:M->O | VIII:O->V->Z->S | II:S->S->E->E | IV:E->L->P->I -> I
+    8. pos=IAI; Z -> IV:Z->H->A->S | II:S->S->Z->Z | VIII:Z->H->O->G | REF:G->L | VIII:L->T->E->W | II:W->W->M->M | IV:M->U->K->C -> C
+    9. pos=JAJ; B -> IV:B->K->U->L | II:L->L->H->H | VIII:H->Q->A->R | REF:R->B | VIII:B->K->B->S | II:S->S->E->E | IV:E->N->Q->H -> H
+    10. pos=KAK; O -> IV:O->Y->W->M | II:M->M->W->W | VIII:W->G->X->N | REF:N->K | VIII:K->U->W->M | II:M->M->O->O | IV:O->Y->I->Y -> Y
+    11. pos=LAL; F -> IV:F->Q->N->C | II:C->C->D->D | VIII:D->O->Z->O | REF:O->M | VIII:M->X->G->V | II:V->V->X->X | IV:X->I->L->A -> A
+    12. pos=MAM; C -> IV:C->O->X->L | II:L->L->H->H | VIII:H->T->W->K | REF:K->N | VIII:N->Z->O->C | II:C->C->P->P | IV:P->B->Z->N -> N
+    13. pos=NAN; P -> IV:P->C->O->B | II:B->B->J->J | VIII:J->W->U->H | REF:H->D | VIII:D->Q->C->P | II:P->P->U->U | IV:U->H->N->A -> A
+    14. pos=OAO; W -> IV:W->K->U->G | II:G->G->R->R | VIII:R->F->L->X | REF:X->J | VIII:J->X->G->S | II:S->S->E->E | IV:E->S->B->N -> N
+    15. pos=PAP; E -> IV:E->T->G->R | II:R->R->G->G | VIII:G->V->I->T | REF:T->Z | VIII:Z->O->H->S | II:S->S->E->E | IV:E->T->S->D -> D
+    16. pos=QAQ; A -> IV:A->Q->N->X | II:X->X->V->V | VIII:V->L->S->C | REF:C->U | VIII:U->K->B->L | II:L->L->K->K | IV:K->A->H->R -> R
+    17. pos=RAR; K -> IV:K->B->S->B | II:B->B->J->J | VIII:J->A->F->O | REF:O->M | VIII:M->D->N->W | II:W->W->M->M | IV:M->D->V->E -> E
+    18. pos=SAS; Y -> IV:Y->Q->N->V | II:V->V->Y->Y | VIII:Y->Q->A->I | REF:I->P | VIII:P->H->D->L | II:L->L->K->K | IV:K->C->W->E -> E
+    19. pos=TAT; J -> IV:J->C->O->V | II:V->V->Y->Y | VIII:Y->R->M->T | REF:T->Z | VIII:Z->S->L->S | II:S->S->E->E | IV:E->X->O->V -> V
+    20. pos=UAU; R -> IV:R->L->I->O | II:O->O->M->M | VIII:M->G->X->D | REF:D->H | VIII:H->B->J->P | II:P->P->U->U | IV:U->O->C->I -> I
+    21. pos=VAV; K -> IV:K->F->Z->E | II:E->E->S->S | VIII:S->N->D->I | REF:I->P | VIII:P->K->B->G | II:G->G->R->R | IV:R->M->X->C -> C
+    22. pos=WAW; D -> IV:D->Z->B->F | II:F->F->I->I | VIII:I->E->T->X | REF:X->J | VIII:J->F->A->E | II:E->E->Z->Z | IV:Z->V->D->H -> H
+ABC -> BBGEHMDWLIBQCPMQQWODVO; IC=0.043290; H=3.663533
+  Пути шифрования:
+    1. pos=BBD; P -> IV:P->S->T->Q | II:Q->R->G->F | VIII:F->G->X->W | REF:W->V | VIII:V->W->T->S | II:S->T->N->M | IV:M->P->E->B -> B
+    2. pos=CBE; A -> IV:A->E->P->L | II:L->M->W->V | VIII:V->X->Y->W | REF:W->V | VIII:V->X->G->E | II:E->F->W->V | IV:V->Z->F->B -> B
+    3. pos=DBF; V -> IV:V->A->E->Z | II:Z->A->A->Z | VIII:Z->C->Q->N | REF:N->K | VIII:K->N->U->R | II:R->S->E->D | IV:D->I->L->G -> G
+    4. pos=EBG; L -> IV:L->R->F->Z | II:Z->A->A->Z | VIII:Z->D->H->D | REF:D->H | VIII:H->L->F->B | II:B->C->P->O | IV:O->U->K->E -> E
+    5. pos=FBH; O -> IV:O->V->D->W | II:W->X->V->U | VIII:U->Z->V->Q | REF:Q->E | VIII:E->J->K->F | II:F->G->R->Q | IV:Q->X->O->H -> H
+    6. pos=GBI; V -> IV:V->D->V->N | II:N->O->M->L | VIII:L->R->M->G | REF:G->L | VIII:L->R->P->J | II:J->K->D->C | IV:C->K->U->M -> M
+    7. pos=HBJ; I -> IV:I->R->F->W | II:W->X->V->U | VIII:U->B->K->D | REF:D->H | VIII:H->O->H->A | II:A->B->J->I | IV:I->R->M->D -> D
+    8. pos=IBK; C -> IV:C->M->R->H | II:H->I->X->W | VIII:W->E->T->L | REF:L->G | VIII:G->O->H->Z | II:Z->A->A->Z | IV:Z->J->G->W -> W
+    9. pos=JBL; H -> IV:H->S->T->I | II:I->J->B->A | VIII:A->J->B->S | REF:S->F | VIII:F->O->H->Y | II:Y->Z->S->R | IV:R->C->W->L -> L
+    10. pos=KBM; Y -> IV:Y->K->U->I | II:I->J->B->A | VIII:A->K->J->Z | REF:Z->T | VIII:T->D->N->D | II:D->E->Z->Y | IV:Y->K->U->I -> I
+    11. pos=LBN; A -> IV:A->N->H->U | II:U->V->Y->X | VIII:X->I->C->R | REF:R->B | VIII:B->M->R->G | II:G->H->L->K | IV:K->X->O->B -> B
+    12. pos=MBO; N -> IV:N->B->S->E | II:E->F->I->H | VIII:H->T->W->K | REF:K->N | VIII:N->Z->O->C | II:C->D->C->B | IV:B->P->E->Q -> Q
+    13. pos=NBP; A -> IV:A->P->L->W | II:W->X->V->U | VIII:U->H->O->B | REF:B->R | VIII:R->E->S->F | II:F->G->R->Q | IV:Q->F->R->C -> C
+    14. pos=OBQ; N -> IV:N->D->V->F | II:F->G->R->Q | VIII:Q->E->T->F | REF:F->S | VIII:S->G->Y->K | II:K->L->K->J | IV:J->Z->F->P -> P
+    15. pos=PBR; D -> IV:D->U->K->T | II:T->U->P->O | VIII:O->D->H->S | REF:S->F | VIII:F->U->W->H | II:H->I->F->E | IV:E->V->D->M -> M
+    16. pos=QBS; R -> IV:R->J->Q->Y | II:Y->Z->E->D | VIII:D->T->W->G | REF:G->L | VIII:L->B->J->T | II:T->U->H->G | IV:G->Y->I->Q -> Q
+    17. pos=RBT; E -> IV:E->X->M->T | II:T->U->P->O | VIII:O->F->L->U | REF:U->C | VIII:C->T->E->N | II:N->O->Y->X | IV:X->Q->J->Q -> Q
+    18. pos=SBU; E -> IV:E->Y->W->C | II:C->D->K->J | VIII:J->B->K->S | REF:S->F | VIII:F->X->G->O | II:O->P->U->T | IV:T->N->Q->W -> W
+    19. pos=TBV; V -> IV:V->Q->N->S | II:S->T->N->M | VIII:M->F->L->S | REF:S->F | VIII:F->Y->X->E | II:E->F->W->V | IV:V->Q->J->O -> O
+    20. pos=UBW; I -> IV:I->E->P->T | II:T->U->P->O | VIII:O->I->C->I | REF:I->P | VIII:P->J->K->Q | II:Q->R->G->F | IV:F->B->Z->D -> D
+    21. pos=VBX; C -> IV:C->Z->B->E | II:E->F->I->H | VIII:H->C->Q->V | REF:V->W | VIII:W->R->P->U | II:U->V->X->W | IV:W->T->S->V -> V
+    22. pos=WBY; H -> IV:H->F->Z->B | II:B->C->D->C | VIII:C->Y->G->K | REF:K->N | VIII:N->J->K->O | II:O->P->U->T | IV:T->R->M->O -> O
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=BBD; B -> IV:B->E->P->M | II:M->N->T->S | VIII:S->T->W->V | REF:V->W | VIII:W->X->G->F | II:F->G->R->Q | IV:Q->T->S->P -> P
+    2. pos=CBE; B -> IV:B->F->Z->V | II:V->W->F->E | VIII:E->G->X->V | REF:V->W | VIII:W->Y->X->V | II:V->W->M->L | IV:L->P->E->A -> A
+    3. pos=DBF; G -> IV:G->L->I->D | II:D->E->S->R | VIII:R->U->N->K | REF:K->N | VIII:N->Q->C->Z | II:Z->A->A->Z | IV:Z->E->A->V -> V
+    4. pos=EBG; E -> IV:E->K->U->O | II:O->P->C->B | VIII:B->F->L->H | REF:H->D | VIII:D->H->D->Z | II:Z->A->A->Z | IV:Z->F->R->L -> L
+    5. pos=FBH; H -> IV:H->O->X->Q | II:Q->R->G->F | VIII:F->K->J->E | REF:E->Q | VIII:Q->V->Z->U | II:U->V->X->W | IV:W->D->V->O -> O
+    6. pos=GBI; M -> IV:M->U->K->C | II:C->D->K->J | VIII:J->P->R->L | REF:L->G | VIII:G->M->R->L | II:L->M->O->N | IV:N->V->D->V -> V
+    7. pos=HBJ; D -> IV:D->M->R->I | II:I->J->B->A | VIII:A->H->O->H | REF:H->D | VIII:D->K->B->U | II:U->V->X->W | IV:W->F->R->I -> I
+    8. pos=IBK; W -> IV:W->G->J->Z | II:Z->A->A->Z | VIII:Z->H->O->G | REF:G->L | VIII:L->T->E->W | II:W->X->I->H | IV:H->R->M->C -> C
+    9. pos=JBL; L -> IV:L->W->C->R | II:R->S->Z->Y | VIII:Y->H->O->F | REF:F->S | VIII:S->B->J->A | II:A->B->J->I | IV:I->T->S->H -> H
+    10. pos=KBM; I -> IV:I->U->K->Y | II:Y->Z->E->D | VIII:D->N->D->T | REF:T->Z | VIII:Z->J->K->A | II:A->B->J->I | IV:I->U->K->Y -> Y
+    11. pos=LBN; B -> IV:B->O->X->K | II:K->L->H->G | VIII:G->R->M->B | REF:B->R | VIII:R->C->I->X | II:X->Y->V->U | IV:U->H->N->A -> A
+    12. pos=MBO; Q -> IV:Q->E->P->B | II:B->C->D->C | VIII:C->O->Z->N | REF:N->K | VIII:K->W->T->H | II:H->I->F->E | IV:E->S->B->N -> N
+    13. pos=NBP; C -> IV:C->R->F->Q | II:Q->R->G->F | VIII:F->S->E->R | REF:R->B | VIII:B->O->H->U | II:U->V->X->W | IV:W->L->P->A -> A
+    14. pos=OBQ; P -> IV:P->F->Z->J | II:J->K->L->K | VIII:K->Y->G->S | REF:S->F | VIII:F->T->E->Q | II:Q->R->G->F | IV:F->V->D->N -> N
+    15. pos=PBR; M -> IV:M->D->V->E | II:E->F->I->H | VIII:H->W->U->F | REF:F->S | VIII:S->H->D->O | II:O->P->U->T | IV:T->K->U->D -> D
+    16. pos=QBS; Q -> IV:Q->I->Y->G | II:G->H->U->T | VIII:T->J->B->L | REF:L->G | VIII:G->W->T->D | II:D->E->Z->Y | IV:Y->Q->J->R -> R
+    17. pos=RBT; Q -> IV:Q->J->Q->X | II:X->Y->O->N | VIII:N->E->T->C | REF:C->U | VIII:U->L->F->O | II:O->P->U->T | IV:T->M->X->E -> E
+    18. pos=SBU; W -> IV:W->Q->N->T | II:T->U->P->O | VIII:O->G->X->F | REF:F->S | VIII:S->K->B->J | II:J->K->D->C | IV:C->W->Y->E -> E
+    19. pos=TBV; O -> IV:O->J->Q->V | II:V->W->F->E | VIII:E->X->Y->F | REF:F->S | VIII:S->L->F->M | II:M->N->T->S | IV:S->N->Q->V -> V
+    20. pos=UBW; D -> IV:D->Z->B->F | II:F->G->R->Q | VIII:Q->K->J->P | REF:P->I | VIII:I->C->I->O | II:O->P->U->T | IV:T->P->E->I -> I
+    21. pos=VBX; V -> IV:V->S->T->W | II:W->X->V->U | VIII:U->P->R->W | REF:W->V | VIII:V->Q->C->H | II:H->I->F->E | IV:E->B->Z->C -> C
+    22. pos=WBY; O -> IV:O->M->R->T | II:T->U->P->O | VIII:O->K->J->N | REF:N->K | VIII:K->G->Y->C | II:C->D->C->B | IV:B->Z->F->H -> H
+DOG -> FPKZCQFBKSDQVUJMZDNLPS; IC=0.030303; H=3.823068
+  Пути шифрования:
+    1. pos=EOH; P -> IV:P->W->C->V | II:V->J->B->N | VIII:N->R->M->I | REF:I->P | VIII:P->T->E->A | II:A->O->Y->K | IV:K->R->M->F -> F
+    2. pos=FOI; A -> IV:A->I->Y->Q | II:Q->E->S->E | VIII:E->J->B->W | REF:W->V | VIII:V->A->Q->L | II:L->Z->S->E | IV:E->M->X->P -> P
+    3. pos=GOJ; V -> IV:V->E->P->G | II:G->U->P->B | VIII:B->H->O->I | REF:I->P | VIII:P->V->Z->T | II:T->H->L->X | IV:X->G->T->K -> K
+    4. pos=HOK; L -> IV:L->V->D->T | II:T->H->U->G | VIII:G->N->D->W | REF:W->V | VIII:V->C->I->B | II:B->P->U->G | IV:G->Q->J->Z -> Z
+    5. pos=IOL; O -> IV:O->Z->B->Q | II:Q->E->S->E | VIII:E->M->P->H | REF:H->D | VIII:D->L->F->X | II:X->L->K->W | IV:W->H->N->C -> C
+    6. pos=JOM; V -> IV:V->H->A->O | II:O->C->D->P | VIII:P->Y->G->X | REF:X->J | VIII:J->S->L->C | II:C->Q->Q->C | IV:C->O->C->Q -> Q
+    7. pos=KON; I -> IV:I->V->D->Q | II:Q->E->S->E | VIII:E->O->Z->P | REF:P->I | VIII:I->S->L->B | II:B->P->U->G | IV:G->T->S->F -> F
+    8. pos=LOO; C -> IV:C->Q->N->Z | II:Z->N->T->F | VIII:F->Q->A->P | REF:P->I | VIII:I->T->E->T | II:T->H->L->X | IV:X->L->P->B -> B
+    9. pos=MOP; H -> IV:H->W->C->N | II:N->B->J->V | VIII:V->H->O->C | REF:C->U | VIII:U->G->Y->M | II:M->A->A->M | IV:M->B->Z->K -> K
+    10. pos=NOQ; Y -> IV:Y->O->X->H | II:H->V->Y->K | VIII:K->X->Y->L | REF:L->G | VIII:G->T->E->R | II:R->F->W->I | IV:I->Y->I->S -> S
+    11. pos=OOR; A -> IV:A->R->F->O | II:O->C->D->P | VIII:P->D->H->T | REF:T->Z | VIII:Z->N->U->G | II:G->U->H->T | IV:T->K->U->D -> D
+    12. pos=POS; N -> IV:N->F->Z->H | II:H->V->Y->K | VIII:K->Z->V->G | REF:G->L | VIII:L->A->Q->B | II:B->P->U->G | IV:G->Y->I->Q -> Q
+    13. pos=QOT; A -> IV:A->T->G->N | II:N->B->J->V | VIII:V->L->S->C | REF:C->U | VIII:U->K->B->L | II:L->Z->S->E | IV:E->X->O->V -> V
+    14. pos=ROU; N -> IV:N->H->A->G | II:G->U->P->B | VIII:B->S->E->N | REF:N->K | VIII:K->B->J->S | II:S->G->R->D | IV:D->X->O->U -> U
+    15. pos=SOV; D -> IV:D->Y->W->B | II:B->P->C->O | VIII:O->G->X->F | REF:F->S | VIII:S->K->B->J | II:J->X->I->U | IV:U->P->E->J -> J
+    16. pos=TOW; R -> IV:R->N->H->L | II:L->Z->E->Q | VIII:Q->J->B->I | REF:I->P | VIII:P->I->V->C | II:C->Q->Q->C | IV:C->Y->I->M -> M
+    17. pos=UOX; E -> IV:E->B->S->V | II:V->J->B->N | VIII:N->H->O->U | REF:U->C | VIII:C->W->T->Z | II:Z->N->T->F | IV:F->C->W->Z -> Z
+    18. pos=VOY; E -> IV:E->C->O->Q | II:Q->E->S->E | VIII:E->Z->V->A | REF:A->Y | VIII:Y->T->E->J | II:J->X->I->U | IV:U->S->B->D -> D
+    19. pos=WOZ; V -> IV:V->U->K->L | II:L->Z->E->Q | VIII:Q->M->P->T | REF:T->Z | VIII:Z->V->Z->D | II:D->R->G->S | IV:S->R->M->N -> N
+    20. pos=XPA; I -> IV:I->I->Y->Y | II:Y->N->T->E | VIII:E->B->K->N | REF:N->K | VIII:K->H->D->G | II:G->V->X->I | IV:I->I->L->L -> L
+    21. pos=YPB; C -> IV:C->D->V->U | II:U->J->B->M | VIII:M->K->J->L | REF:L->G | VIII:G->E->S->U | II:U->J->B->M | IV:M->N->Q->P -> P
+    22. pos=ZPC; H -> IV:H->J->Q->O | II:O->D->K->V | VIII:V->U->N->O | REF:O->M | VIII:M->L->F->G | II:G->V->X->I | IV:I->K->U->S -> S
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=EOH; F -> IV:F->M->R->K | II:K->Y->O->A | VIII:A->E->T->P | REF:P->I | VIII:I->M->R->N | II:N->B->J->V | IV:V->C->W->P -> P
+    2. pos=FOI; P -> IV:P->X->M->E | II:E->S->Z->L | VIII:L->Q->A->V | REF:V->W | VIII:W->B->J->E | II:E->S->E->Q | IV:Q->Y->I->A -> A
+    3. pos=GOJ; K -> IV:K->T->G->X | II:X->L->H->T | VIII:T->Z->V->P | REF:P->I | VIII:I->O->H->B | II:B->P->U->G | IV:G->P->E->V -> V
+    4. pos=HOK; Z -> IV:Z->J->Q->G | II:G->U->P->B | VIII:B->I->C->V | REF:V->W | VIII:W->D->N->G | II:G->U->H->T | IV:T->D->V->L -> L
+    5. pos=IOL; C -> IV:C->N->H->W | II:W->K->L->X | VIII:X->F->L->D | REF:D->H | VIII:H->P->M->E | II:E->S->E->Q | IV:Q->B->Z->O -> O
+    6. pos=JOM; Q -> IV:Q->C->O->C | II:C->Q->Q->C | VIII:C->L->S->J | REF:J->X | VIII:X->G->Y->P | II:P->D->C->O | IV:O->A->H->V -> V
+    7. pos=KON; F -> IV:F->S->T->G | II:G->U->P->B | VIII:B->L->S->I | REF:I->P | VIII:P->Z->O->E | II:E->S->E->Q | IV:Q->D->V->I -> I
+    8. pos=LOO; B -> IV:B->P->L->X | II:X->L->H->T | VIII:T->E->T->I | REF:I->P | VIII:P->A->Q->F | II:F->T->N->Z | IV:Z->N->Q->C -> C
+    9. pos=MOP; K -> IV:K->Z->B->M | II:M->A->A->M | VIII:M->Y->G->U | REF:U->C | VIII:C->O->H->V | II:V->J->B->N | IV:N->C->W->H -> H
+    10. pos=NOQ; S -> IV:S->I->Y->I | II:I->W->F->R | VIII:R->E->T->G | REF:G->L | VIII:L->Y->X->K | II:K->Y->V->H | IV:H->X->O->Y -> Y
+    11. pos=OOR; D -> IV:D->U->K->T | II:T->H->U->G | VIII:G->U->N->Z | REF:Z->T | VIII:T->H->D->P | II:P->D->C->O | IV:O->F->R->A -> A
+    12. pos=POS; Q -> IV:Q->I->Y->G | II:G->U->P->B | VIII:B->Q->A->L | REF:L->G | VIII:G->V->Z->K | II:K->Y->V->H | IV:H->Z->F->N -> N
+    13. pos=QOT; V -> IV:V->O->X->E | II:E->S->Z->L | VIII:L->B->K->U | REF:U->C | VIII:C->S->L->V | II:V->J->B->N | IV:N->G->T->A -> A
+    14. pos=ROU; U -> IV:U->O->X->D | II:D->R->G->S | VIII:S->J->B->K | REF:K->N | VIII:N->E->S->B | II:B->P->U->G | IV:G->A->H->N -> N
+    15. pos=SOV; J -> IV:J->E->P->U | II:U->I->X->J | VIII:J->B->K->S | REF:S->F | VIII:F->X->G->O | II:O->C->P->B | IV:B->W->Y->D -> D
+    16. pos=TOW; M -> IV:M->I->Y->C | II:C->Q->Q->C | VIII:C->V->I->P | REF:P->I | VIII:I->B->J->Q | II:Q->E->Z->L | IV:L->H->N->R -> R
+    17. pos=UOX; Z -> IV:Z->W->C->F | II:F->T->N->Z | VIII:Z->T->W->C | REF:C->U | VIII:U->O->H->N | II:N->B->J->V | IV:V->S->B->E -> E
+    18. pos=VOY; D -> IV:D->B->S->U | II:U->I->X->J | VIII:J->E->T->Y | REF:Y->A | VIII:A->V->Z->E | II:E->S->E->Q | IV:Q->O->C->E -> E
+    19. pos=WOZ; N -> IV:N->M->R->S | II:S->G->R->D | VIII:D->Z->V->Z | REF:Z->T | VIII:T->P->M->Q | II:Q->E->Z->L | IV:L->K->U->V -> V
+    20. pos=XPA; L -> IV:L->L->I->I | II:I->X->V->G | VIII:G->D->H->K | REF:K->N | VIII:N->K->B->E | II:E->T->N->Y | IV:Y->Y->I->I -> I
+    21. pos=YPB; P -> IV:P->Q->N->M | II:M->B->J->U | VIII:U->S->E->G | REF:G->L | VIII:L->J->K->M | II:M->B->J->U | IV:U->V->D->C -> C
+    22. pos=ZPC; S -> IV:S->U->K->I | II:I->X->V->G | VIII:G->F->L->M | REF:M->O | VIII:O->N->U->V | II:V->K->D->O | IV:O->Q->J->H -> H
+KEY -> KBXYZDSEXMBXKFXDDOIFBD; IC=0.073593; H=3.334209
+  Пути шифрования:
+    1. pos=LEZ; P -> IV:P->O->X->Y | II:Y->C->D->Z | VIII:Z->K->J->Y | REF:Y->A | VIII:A->L->F->U | II:U->Y->V->R | IV:R->Q->J->K -> K
+    2. pos=MFA; A -> IV:A->A->E->E | II:E->J->B->W | VIII:W->I->C->Q | REF:Q->E | VIII:E->Q->C->Q | II:Q->V->X->S | IV:S->S->B->B -> B
+    3. pos=NFB; V -> IV:V->W->C->B | II:B->G->R->M | VIII:M->Z->V->I | REF:I->P | VIII:P->C->I->V | II:V->A->A->V | IV:V->W->Y->X -> X
+    4. pos=OFC; L -> IV:L->N->H->F | II:F->K->L->G | VIII:G->U->N->Z | REF:Z->T | VIII:T->H->D->P | II:P->U->H->C | IV:C->E->A->Y -> Y
+    5. pos=PFD; O -> IV:O->R->F->C | II:C->H->U->P | VIII:P->E->T->E | REF:E->Q | VIII:Q->F->A->L | II:L->Q->Q->L | IV:L->O->C->Z -> Z
+    6. pos=QFE; V -> IV:V->Z->B->X | II:X->C->D->Y | VIII:Y->O->Z->J | REF:J->X | VIII:X->N->U->E | II:E->J->B->W | IV:W->A->H->D -> D
+    7. pos=RFF; I -> IV:I->N->H->C | II:C->H->U->P | VIII:P->G->X->G | REF:G->L | VIII:L->C->I->R | II:R->W->M->H | IV:H->M->X->S -> S
+    8. pos=SFG; C -> IV:C->I->Y->S | II:S->X->V->Q | VIII:Q->I->C->K | REF:K->N | VIII:N->F->A->I | II:I->N->T->O | IV:O->U->K->E -> E
+    9. pos=TFH; H -> IV:H->O->X->Q | II:Q->V->Y->T | VIII:T->M->P->W | REF:W->V | VIII:V->O->H->O | II:O->T->N->I | IV:I->P->E->X -> X
+    10. pos=UFI; Y -> IV:Y->G->J->B | II:B->G->R->M | VIII:M->G->X->D | REF:D->H | VIII:H->B->J->P | II:P->U->H->C | IV:C->K->U->M -> M
+    11. pos=VFJ; A -> IV:A->J->Q->H | II:H->M->W->R | VIII:R->M->P->U | REF:U->C | VIII:C->X->G->L | II:L->Q->Q->L | IV:L->U->K->B -> B
+    12. pos=WFK; N -> IV:N->X->M->C | II:C->H->U->P | VIII:P->L->S->W | REF:W->V | VIII:V->R->P->T | II:T->Y->V->Q | IV:Q->A->H->X -> X
+    13. pos=XFL; A -> IV:A->L->I->X | II:X->C->D->Y | VIII:Y->V->I->L | REF:L->G | VIII:G->D->N->Q | II:Q->V->X->S | IV:S->D->V->K -> K
+    14. pos=YFM; N -> IV:N->Z->B->P | II:P->U->P->K | VIII:K->I->C->E | REF:E->Q | VIII:Q->O->H->J | II:J->O->Y->T | IV:T->F->R->F -> F
+    15. pos=ZFN; D -> IV:D->Q->N->A | II:A->F->I->D | VIII:D->C->Q->R | REF:R->B | VIII:B->A->Q->R | II:R->W->M->H | IV:H->U->K->X -> X
+    16. pos=AFO; R -> IV:R->F->Z->L | II:L->Q->Q->L | VIII:L->L->S->S | REF:S->F | VIII:F->F->A->A | II:A->F->W->R | IV:R->F->R->D -> D
+    17. pos=BFP; E -> IV:E->T->G->R | II:R->W->F->A | VIII:A->B->K->J | REF:J->X | VIII:X->Y->X->W | II:W->B->J->E | IV:E->T->S->D -> D
+    18. pos=CFQ; E -> IV:E->U->K->U | II:U->Z->E->Z | VIII:Z->B->K->I | REF:I->P | VIII:P->R->P->N | II:N->S->E->Z | IV:Z->P->E->O -> O
+    19. pos=DFR; V -> IV:V->M->R->A | II:A->F->I->D | VIII:D->G->X->U | REF:U->C | VIII:C->F->A->X | II:X->C->P->K | IV:K->B->Z->I -> I
+    20. pos=EFS; I -> IV:I->A->E->M | II:M->R->G->B | VIII:B->F->L->H | REF:H->D | VIII:D->H->D->Z | II:Z->E->Z->U | IV:U->M->X->F -> F
+    21. pos=FFT; C -> IV:C->V->D->K | II:K->P->C->X | VIII:X->C->Q->L | REF:L->G | VIII:G->L->F->A | II:A->F->W->R | IV:R->K->U->B -> B
+    22. pos=GFU; H -> IV:H->B->S->Y | II:Y->D->K->F | VIII:F->L->S->M | REF:M->O | VIII:O->U->W->Q | II:Q->V->X->S | IV:S->M->X->D -> D
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=LEZ; K -> IV:K->J->Q->R | II:R->V->Y->U | VIII:U->F->L->A | REF:A->Y | VIII:Y->J->K->Z | II:Z->D->C->Y | IV:Y->X->O->P -> P
+    2. pos=MFA; B -> IV:B->B->S->S | II:S->X->V->Q | VIII:Q->C->Q->E | REF:E->Q | VIII:Q->C->I->W | II:W->B->J->E | IV:E->E->A->A -> A
+    3. pos=NFB; X -> IV:X->Y->W->V | II:V->A->A->V | VIII:V->I->C->P | REF:P->I | VIII:I->V->Z->M | II:M->R->G->B | IV:B->C->W->V -> V
+    4. pos=OFC; Y -> IV:Y->A->E->C | II:C->H->U->P | VIII:P->D->H->T | REF:T->Z | VIII:Z->N->U->G | II:G->L->K->F | IV:F->H->N->L -> L
+    5. pos=PFD; Z -> IV:Z->C->O->L | II:L->Q->Q->L | VIII:L->A->F->Q | REF:Q->E | VIII:E->T->E->P | II:P->U->H->C | IV:C->F->R->O -> O
+    6. pos=QFE; D -> IV:D->H->A->W | II:W->B->J->E | VIII:E->U->N->X | REF:X->J | VIII:J->Z->O->Y | II:Y->D->C->X | IV:X->B->Z->V -> V
+    7. pos=RFF; S -> IV:S->X->M->H | II:H->M->W->R | VIII:R->I->C->L | REF:L->G | VIII:G->X->G->P | II:P->U->H->C | IV:C->H->N->I -> I
+    8. pos=SFG; E -> IV:E->K->U->O | II:O->T->N->I | VIII:I->A->F->N | REF:N->K | VIII:K->C->I->Q | II:Q->V->X->S | IV:S->Y->I->C -> C
+    9. pos=TFH; X -> IV:X->E->P->I | II:I->N->T->O | VIII:O->H->O->V | REF:V->W | VIII:W->P->M->T | II:T->Y->V->Q | IV:Q->X->O->H -> H
+    10. pos=UFI; M -> IV:M->U->K->C | II:C->H->U->P | VIII:P->J->B->H | REF:H->D | VIII:D->X->G->M | II:M->R->G->B | IV:B->J->G->Y -> Y
+    11. pos=VFJ; B -> IV:B->K->U->L | II:L->Q->Q->L | VIII:L->G->X->C | REF:C->U | VIII:U->P->M->R | II:R->W->M->H | IV:H->Q->J->A -> A
+    12. pos=WFK; X -> IV:X->H->A->Q | II:Q->V->Y->T | VIII:T->P->R->V | REF:V->W | VIII:W->S->L->P | II:P->U->H->C | IV:C->M->X->N -> N
+    13. pos=XFL; K -> IV:K->V->D->S | II:S->X->V->Q | VIII:Q->N->D->G | REF:G->L | VIII:L->I->V->Y | II:Y->D->C->X | IV:X->I->L->A -> A
+    14. pos=YFM; F -> IV:F->R->F->T | II:T->Y->O->J | VIII:J->H->O->Q | REF:Q->E | VIII:E->C->I->K | II:K->P->U->P | IV:P->B->Z->N -> N
+    15. pos=ZFN; X -> IV:X->K->U->H | II:H->M->W->R | VIII:R->Q->A->B | REF:B->R | VIII:R->Q->C->D | II:D->I->F->A | IV:A->N->Q->D -> D
+    16. pos=AFO; D -> IV:D->R->F->R | II:R->W->F->A | VIII:A->A->F->F | REF:F->S | VIII:S->S->L->L | II:L->Q->Q->L | IV:L->Z->F->R -> R
+    17. pos=BFP; D -> IV:D->S->T->E | II:E->J->B->W | VIII:W->X->Y->X | REF:X->J | VIII:J->K->B->A | II:A->F->W->R | IV:R->G->T->E -> E
+    18. pos=CFQ; O -> IV:O->E->P->Z | II:Z->E->S->N | VIII:N->P->R->P | REF:P->I | VIII:I->K->B->Z | II:Z->E->Z->U | IV:U->K->U->E -> E
+    19. pos=DFR; I -> IV:I->Z->B->K | II:K->P->C->X | VIII:X->A->F->C | REF:C->U | VIII:U->X->G->D | II:D->I->F->A | IV:A->R->M->V -> V
+    20. pos=EFS; F -> IV:F->X->M->U | II:U->Z->E->Z | VIII:Z->D->H->D | REF:D->H | VIII:H->L->F->B | II:B->G->R->M | IV:M->E->A->I -> I
+    21. pos=FFT; B -> IV:B->U->K->R | II:R->W->F->A | VIII:A->F->L->G | REF:G->L | VIII:L->Q->C->X | II:X->C->P->K | IV:K->D->V->C -> C
+    22. pos=GFU; D -> IV:D->X->M->S | II:S->X->V->Q | VIII:Q->W->U->O | REF:O->M | VIII:M->S->L->F | II:F->K->D->Y | IV:Y->S->B->H -> H
+LAB -> SPNUXMAFFGDKGVSXVTIAEE; IC=0.030303; H=3.823068
+  Пути шифрования:
+    1. pos=MAC; P -> IV:P->R->F->D | II:D->D->K->K | VIII:K->W->U->I | REF:I->P | VIII:P->B->J->X | II:X->X->I->I | IV:I->K->U->S -> S
+    2. pos=NAD; A -> IV:A->D->V->S | II:S->S->Z->Z | VIII:Z->M->P->C | REF:C->U | VIII:U->H->D->Q | II:Q->Q->Q->Q | IV:Q->T->S->P -> P
+    3. pos=OAE; V -> IV:V->Z->B->X | II:X->X->V->V | VIII:V->J->B->N | REF:N->K | VIII:K->Y->X->J | II:J->J->B->B | IV:B->F->R->N -> N
+    4. pos=PAF; L -> IV:L->Q->N->I | II:I->I->X->X | VIII:X->M->P->A | REF:A->Y | VIII:Y->N->U->F | II:F->F->W->W | IV:W->B->Z->U -> U
+    5. pos=QAG; O -> IV:O->U->K->E | II:E->E->S->S | VIII:S->I->C->M | REF:M->O | VIII:O->E->S->C | II:C->C->P->P | IV:P->V->D->X -> X
+    6. pos=RAH; V -> IV:V->C->O->H | II:H->H->U->U | VIII:U->L->S->B | REF:B->R | VIII:R->I->V->E | II:E->E->Z->Z | IV:Z->G->T->M -> M
+    7. pos=SAI; I -> IV:I->Q->N->F | II:F->F->I->I | VIII:I->A->F->N | REF:N->K | VIII:K->C->I->Q | II:Q->Q->Q->Q | IV:Q->Y->I->A -> A
+    8. pos=TAJ; C -> IV:C->L->I->Z | II:Z->Z->E->E | VIII:E->X->Y->F | REF:F->S | VIII:S->L->F->M | II:M->M->O->O | IV:O->X->O->F -> F
+    9. pos=UAK; H -> IV:H->R->F->V | II:V->V->Y->Y | VIII:Y->S->E->K | REF:K->N | VIII:N->H->D->J | II:J->J->B->B | IV:B->L->P->F -> F
+    10. pos=VAL; Y -> IV:Y->J->Q->F | II:F->F->I->I | VIII:I->D->H->M | REF:M->O | VIII:O->J->K->P | II:P->P->U->U | IV:U->F->R->G -> G
+    11. pos=WAM; A -> IV:A->M->R->F | II:F->F->I->I | VIII:I->E->T->X | REF:X->J | VIII:J->F->A->E | II:E->E->Z->Z | IV:Z->L->P->D -> D
+    12. pos=XAN; N -> IV:N->A->E->R | II:R->R->G->G | VIII:G->D->H->K | REF:K->N | VIII:N->K->B->E | II:E->E->Z->Z | IV:Z->M->X->K -> K
+    13. pos=YAO; A -> IV:A->O->X->J | II:J->J->B->B | VIII:B->Z->V->X | REF:X->J | VIII:J->H->D->F | II:F->F->W->W | IV:W->K->U->G -> G
+    14. pos=ZAP; N -> IV:N->C->O->Z | II:Z->Z->E->E | VIII:E->D->H->I | REF:I->P | VIII:P->O->H->I | II:I->I->F->F | IV:F->U->K->V -> V
+    15. pos=AAQ; D -> IV:D->T->G->Q | II:Q->Q->Q->Q | VIII:Q->Q->A->A | REF:A->Y | VIII:Y->Y->X->X | II:X->X->I->I | IV:I->Y->I->S -> S
+    16. pos=BAR; R -> IV:R->I->Y->H | II:H->H->U->U | VIII:U->V->I->H | REF:H->D | VIII:D->E->S->R | II:R->R->G->G | IV:G->X->O->X -> X
+    17. pos=CAS; E -> IV:E->W->C->K | II:K->K->L->L | VIII:L->N->D->B | REF:B->R | VIII:R->T->E->C | II:C->C->P->P | IV:P->H->N->V -> V
+    18. pos=DAT; E -> IV:E->X->M->T | II:T->T->N->N | VIII:N->Q->A->X | REF:X->J | VIII:J->M->R->O | II:O->O->Y->Y | IV:Y->R->M->T -> T
+    19. pos=EAU; V -> IV:V->P->L->R | II:R->R->G->G | VIII:G->K->J->F | REF:F->S | VIII:S->W->T->P | II:P->P->U->U | IV:U->O->C->I -> I
+    20. pos=FAV; I -> IV:I->D->V->A | II:A->A->A->A | VIII:A->F->L->G | REF:G->L | VIII:L->Q->C->X | II:X->X->I->I | IV:I->D->V->A -> A
+    21. pos=GAW; C -> IV:C->Y->W->A | II:A->A->A->A | VIII:A->G->X->R | REF:R->B | VIII:B->H->D->X | II:X->X->I->I | IV:I->E->A->E -> E
+    22. pos=HAX; H -> IV:H->E->P->S | II:S->S->Z->Z | VIII:Z->G->X->Q | REF:Q->E | VIII:E->L->F->Y | II:Y->Y->V->V | IV:V->S->B->E -> E
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=MAC; S -> IV:S->U->K->I | II:I->I->X->X | VIII:X->J->B->P | REF:P->I | VIII:I->U->W->K | II:K->K->D->D | IV:D->F->R->P -> P
+    2. pos=NAD; P -> IV:P->S->T->Q | II:Q->Q->Q->Q | VIII:Q->D->H->U | REF:U->C | VIII:C->P->M->Z | II:Z->Z->S->S | IV:S->V->D->A -> A
+    3. pos=OAE; N -> IV:N->R->F->B | II:B->B->J->J | VIII:J->X->Y->K | REF:K->N | VIII:N->B->J->V | II:V->V->X->X | IV:X->B->Z->V -> V
+    4. pos=PAF; U -> IV:U->Z->B->W | II:W->W->F->F | VIII:F->U->N->Y | REF:Y->A | VIII:A->P->M->X | II:X->X->I->I | IV:I->N->Q->L -> L
+    5. pos=QAG; X -> IV:X->D->V->P | II:P->P->C->C | VIII:C->S->E->O | REF:O->M | VIII:M->C->I->S | II:S->S->E->E | IV:E->K->U->O -> O
+    6. pos=RAH; M -> IV:M->T->G->Z | II:Z->Z->E->E | VIII:E->V->I->R | REF:R->B | VIII:B->S->L->U | II:U->U->H->H | IV:H->O->C->V -> V
+    7. pos=SAI; A -> IV:A->I->Y->Q | II:Q->Q->Q->Q | VIII:Q->I->C->K | REF:K->N | VIII:N->F->A->I | II:I->I->F->F | IV:F->N->Q->I -> I
+    8. pos=TAJ; F -> IV:F->O->X->O | II:O->O->M->M | VIII:M->F->L->S | REF:S->F | VIII:F->Y->X->E | II:E->E->Z->Z | IV:Z->I->L->C -> C
+    9. pos=UAK; F -> IV:F->P->L->B | II:B->B->J->J | VIII:J->D->H->N | REF:N->K | VIII:K->E->S->Y | II:Y->Y->V->V | IV:V->F->R->H -> H
+    10. pos=VAL; G -> IV:G->R->F->U | II:U->U->P->P | VIII:P->K->J->O | REF:O->M | VIII:M->H->D->I | II:I->I->F->F | IV:F->Q->J->Y -> Y
+    11. pos=WAM; D -> IV:D->P->L->Z | II:Z->Z->E->E | VIII:E->A->F->J | REF:J->X | VIII:X->T->E->I | II:I->I->F->F | IV:F->R->M->A -> A
+    12. pos=XAN; K -> IV:K->X->M->Z | II:Z->Z->E->E | VIII:E->B->K->N | REF:N->K | VIII:K->H->D->G | II:G->G->R->R | IV:R->E->A->N -> N
+    13. pos=YAO; G -> IV:G->U->K->W | II:W->W->F->F | VIII:F->D->H->J | REF:J->X | VIII:X->V->Z->B | II:B->B->J->J | IV:J->X->O->A -> A
+    14. pos=ZAP; V -> IV:V->K->U->F | II:F->F->I->I | VIII:I->H->O->P | REF:P->I | VIII:I->H->D->E | II:E->E->Z->Z | IV:Z->O->C->N -> N
+    15. pos=AAQ; S -> IV:S->I->Y->I | II:I->I->X->X | VIII:X->X->Y->Y | REF:Y->A | VIII:A->A->Q->Q | II:Q->Q->Q->Q | IV:Q->G->T->D -> D
+    16. pos=BAR; X -> IV:X->O->X->G | II:G->G->R->R | VIII:R->S->E->D | REF:D->H | VIII:H->I->V->U | II:U->U->H->H | IV:H->Y->I->R -> R
+    17. pos=CAS; V -> IV:V->N->H->P | II:P->P->C->C | VIII:C->E->T->R | REF:R->B | VIII:B->D->N->L | II:L->L->K->K | IV:K->C->W->E -> E
+    18. pos=DAT; T -> IV:T->M->R->Y | II:Y->Y->O->O | VIII:O->R->M->J | REF:J->X | VIII:X->A->Q->N | II:N->N->T->T | IV:T->M->X->E -> E
+    19. pos=EAU; I -> IV:I->C->O->U | II:U->U->P->P | VIII:P->T->W->S | REF:S->F | VIII:F->J->K->G | II:G->G->R->R | IV:R->L->P->V -> V
+    20. pos=FAV; A -> IV:A->V->D->I | II:I->I->X->X | VIII:X->C->Q->L | REF:L->G | VIII:G->L->F->A | II:A->A->A->A | IV:A->V->D->I -> I
+    21. pos=GAW; E -> IV:E->A->E->I | II:I->I->X->X | VIII:X->D->H->B | REF:B->R | VIII:R->X->G->A | II:A->A->A->A | IV:A->W->Y->C -> C
+    22. pos=HAX; E -> IV:E->B->S->V | II:V->V->Y->Y | VIII:Y->F->L->E | REF:E->Q | VIII:Q->X->G->Z | II:Z->Z->S->S | IV:S->P->E->H -> H
+MNS -> WWEJWFNXKTHAPLWYGVXJME; IC=0.038961; H=3.823068
+  Пути шифрования:
+    1. pos=NNT; P -> IV:P->I->Y->F | II:F->S->Z->M | VIII:M->Z->V->I | REF:I->P | VIII:P->C->I->V | II:V->I->F->S | IV:S->L->P->W -> W
+    2. pos=ONU; A -> IV:A->U->K->Q | II:Q->D->K->X | VIII:X->L->S->E | REF:E->Q | VIII:Q->E->S->E | II:E->R->G->T | IV:T->N->Q->W -> W
+    3. pos=PNV; V -> IV:V->Q->N->S | II:S->F->I->V | VIII:V->K->J->U | REF:U->C | VIII:C->R->P->A | II:A->N->T->G | IV:G->B->Z->E -> E
+    4. pos=QNW; L -> IV:L->H->A->E | II:E->R->G->T | VIII:T->J->B->L | REF:L->G | VIII:G->W->T->D | II:D->Q->Q->D | IV:D->Z->F->J -> J
+    5. pos=RNX; O -> IV:O->L->I->L | II:L->Y->O->B | VIII:B->S->E->N | REF:N->K | VIII:K->B->J->S | II:S->F->W->J | IV:J->G->T->W -> W
+    6. pos=SNY; V -> IV:V->T->G->I | II:I->V->Y->L | VIII:L->D->H->P | REF:P->I | VIII:I->A->Q->Y | II:Y->L->K->X | IV:X->V->D->F -> F
+    7. pos=TNZ; I -> IV:I->H->A->B | II:B->O->M->Z | VIII:Z->S->E->L | REF:L->G | VIII:G->Z->O->V | II:V->I->F->S | IV:S->R->M->N -> N
+    8. pos=UOA; C -> IV:C->C->O->O | II:O->C->D->P | VIII:P->J->B->H | REF:H->D | VIII:D->X->G->M | II:M->A->A->M | IV:M->M->X->X -> X
+    9. pos=VOB; H -> IV:H->I->Y->X | II:X->L->H->T | VIII:T->O->Z->E | REF:E->Q | VIII:Q->L->F->K | II:K->Y->V->H | IV:H->I->L->K -> K
+    10. pos=WOC; Y -> IV:Y->A->E->C | II:C->Q->Q->C | VIII:C->Y->G->K | REF:K->N | VIII:N->J->K->O | II:O->C->P->B | IV:B->D->V->T -> T
+    11. pos=XOD; A -> IV:A->D->V->S | II:S->G->R->D | VIII:D->A->F->I | REF:I->P | VIII:P->M->R->U | II:U->I->F->R | IV:R->U->K->H -> H
+    12. pos=YOE; N -> IV:N->R->F->B | II:B->P->C->O | VIII:O->M->P->R | REF:R->B | VIII:B->Z->O->Q | II:Q->E->Z->L | IV:L->P->E->A -> A
+    13. pos=ZOF; A -> IV:A->F->Z->U | II:U->I->X->J | VIII:J->I->C->D | REF:D->H | VIII:H->G->Y->Z | II:Z->N->T->F | IV:F->K->U->P -> P
+    14. pos=AOG; N -> IV:N->T->G->A | II:A->O->M->Y | VIII:Y->Y->G->G | REF:G->L | VIII:L->L->F->F | II:F->T->N->Z | IV:Z->F->R->L -> L
+    15. pos=BOH; D -> IV:D->K->U->N | II:N->B->J->V | VIII:V->W->U->T | REF:T->Z | VIII:Z->A->Q->P | II:P->D->C->O | IV:O->V->D->W -> W
+    16. pos=COI; R -> IV:R->Z->B->T | II:T->H->U->G | VIII:G->I->C->A | REF:A->Y | VIII:Y->A->Q->O | II:O->C->P->B | IV:B->J->G->Y -> Y
+    17. pos=DOJ; E -> IV:E->N->H->Y | II:Y->M->W->I | VIII:I->L->S->P | REF:P->I | VIII:I->L->F->C | II:C->Q->Q->C | IV:C->L->P->G -> G
+    18. pos=EOK; E -> IV:E->O->X->N | II:N->B->J->V | VIII:V->Z->V->R | REF:R->B | VIII:B->F->A->W | II:W->K->D->P | IV:P->Z->F->V -> V
+    19. pos=FOL; V -> IV:V->G->J->Y | II:Y->M->W->I | VIII:I->N->D->Y | REF:Y->A | VIII:A->F->A->V | II:V->J->B->N | IV:N->Y->I->X -> X
+    20. pos=GOM; I -> IV:I->U->K->Y | II:Y->M->W->I | VIII:I->O->Z->T | REF:T->Z | VIII:Z->F->A->U | II:U->I->F->R | IV:R->D->V->J -> J
+    21. pos=HON; C -> IV:C->P->L->Y | II:Y->M->W->I | VIII:I->P->R->K | REF:K->N | VIII:N->U->W->P | II:P->D->C->O | IV:O->B->Z->M -> M
+    22. pos=IOO; H -> IV:H->V->D->P | II:P->D->K->W | VIII:W->E->T->L | REF:L->G | VIII:G->O->H->Z | II:Z->N->T->F | IV:F->T->S->E -> E
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=NNT; W -> IV:W->P->L->S | II:S->F->I->V | VIII:V->I->C->P | REF:P->I | VIII:I->V->Z->M | II:M->Z->S->F | IV:F->Y->I->P -> P
+    2. pos=ONU; W -> IV:W->Q->N->T | II:T->G->R->E | VIII:E->S->E->Q | REF:Q->E | VIII:E->S->L->X | II:X->K->D->Q | IV:Q->K->U->A -> A
+    3. pos=PNV; E -> IV:E->Z->B->G | II:G->T->N->A | VIII:A->P->R->C | REF:C->U | VIII:U->J->K->V | II:V->I->F->S | IV:S->N->Q->V -> V
+    4. pos=QNW; J -> IV:J->F->Z->D | II:D->Q->Q->D | VIII:D->T->W->G | REF:G->L | VIII:L->B->J->T | II:T->G->R->E | IV:E->A->H->L -> L
+    5. pos=RNX; W -> IV:W->T->G->J | II:J->W->F->S | VIII:S->J->B->K | REF:K->N | VIII:N->E->S->B | II:B->O->Y->L | IV:L->I->L->O -> O
+    6. pos=SNY; F -> IV:F->D->V->X | II:X->K->L->Y | VIII:Y->Q->A->I | REF:I->P | VIII:P->H->D->L | II:L->Y->V->I | IV:I->G->T->V -> V
+    7. pos=TNZ; N -> IV:N->M->R->S | II:S->F->I->V | VIII:V->O->Z->G | REF:G->L | VIII:L->E->S->Z | II:Z->M->O->B | IV:B->A->H->I -> I
+    8. pos=UOA; X -> IV:X->X->M->M | II:M->A->A->M | VIII:M->G->X->D | REF:D->H | VIII:H->B->J->P | II:P->D->C->O | IV:O->O->C->C -> C
+    9. pos=VOB; K -> IV:K->L->I->H | II:H->V->Y->K | VIII:K->F->L->Q | REF:Q->E | VIII:E->Z->O->T | II:T->H->L->X | IV:X->Y->I->H -> H
+    10. pos=WOC; T -> IV:T->V->D->B | II:B->P->C->O | VIII:O->K->J->N | REF:N->K | VIII:K->G->Y->C | II:C->Q->Q->C | IV:C->E->A->Y -> Y
+    11. pos=XOD; H -> IV:H->K->U->R | II:R->F->I->U | VIII:U->R->M->P | REF:P->I | VIII:I->F->A->D | II:D->R->G->S | IV:S->V->D->A -> A
+    12. pos=YOE; A -> IV:A->E->P->L | II:L->Z->E->Q | VIII:Q->O->Z->B | REF:B->R | VIII:R->P->M->O | II:O->C->P->B | IV:B->F->R->N -> N
+    13. pos=ZOF; P -> IV:P->U->K->F | II:F->T->N->Z | VIII:Z->Y->G->H | REF:H->D | VIII:D->C->I->J | II:J->X->I->U | IV:U->Z->F->A -> A
+    14. pos=AOG; L -> IV:L->R->F->Z | II:Z->N->T->F | VIII:F->F->L->L | REF:L->G | VIII:G->G->Y->Y | II:Y->M->O->A | IV:A->G->T->N -> N
+    15. pos=BOH; W -> IV:W->D->V->O | II:O->C->D->P | VIII:P->Q->A->Z | REF:Z->T | VIII:T->U->W->V | II:V->J->B->N | IV:N->U->K->D -> D
+    16. pos=COI; Y -> IV:Y->G->J->B | II:B->P->C->O | VIII:O->Q->A->Y | REF:Y->A | VIII:A->C->I->G | II:G->U->H->T | IV:T->B->Z->R -> R
+    17. pos=DOJ; G -> IV:G->P->L->C | II:C->Q->Q->C | VIII:C->F->L->I | REF:I->P | VIII:P->S->L->I | II:I->W->M->Y | IV:Y->H->N->E -> E
+    18. pos=EOK; V -> IV:V->F->Z->P | II:P->D->K->W | VIII:W->A->F->B | REF:B->R | VIII:R->V->Z->V | II:V->J->B->N | IV:N->X->O->E -> E
+    19. pos=FOL; X -> IV:X->I->Y->N | II:N->B->J->V | VIII:V->A->F->A | REF:A->Y | VIII:Y->D->N->I | II:I->W->M->Y | IV:Y->J->G->V -> V
+    20. pos=GOM; J -> IV:J->V->D->R | II:R->F->I->U | VIII:U->A->F->Z | REF:Z->T | VIII:T->Z->O->I | II:I->W->M->Y | IV:Y->K->U->I -> I
+    21. pos=HON; M -> IV:M->Z->B->O | II:O->C->D->P | VIII:P->W->U->N | REF:N->K | VIII:K->R->P->I | II:I->W->M->Y | IV:Y->L->P->C -> C
+    22. pos=IOO; E -> IV:E->S->T->F | II:F->T->N->Z | VIII:Z->H->O->G | REF:G->L | VIII:L->T->E->W | II:W->K->D->P | IV:P->D->V->H -> H
+QWE -> SCKTFUOFTKEWNGWKOSZQKT; IC=0.056277; H=3.516028
+  Пути шифрования:
+    1. pos=RWF; P -> IV:P->U->K->F | II:F->B->J->N | VIII:N->E->T->C | REF:C->U | VIII:U->L->F->O | II:O->K->D->H | IV:H->M->X->S -> S
+    2. pos=SWG; A -> IV:A->G->J->D | II:D->Z->E->I | VIII:I->A->F->N | REF:N->K | VIII:K->C->I->Q | II:Q->M->O->S | IV:S->Y->I->C -> C
+    3. pos=TWH; V -> IV:V->C->O->H | II:H->D->K->O | VIII:O->H->O->V | REF:V->W | VIII:W->P->M->T | II:T->P->U->Y | IV:Y->F->R->K -> K
+    4. pos=UWI; L -> IV:L->T->G->Y | II:Y->U->P->T | VIII:T->N->D->J | REF:J->X | VIII:X->R->P->V | II:V->R->G->K | IV:K->S->B->T -> T
+    5. pos=VWJ; O -> IV:O->X->M->D | II:D->Z->E->I | VIII:I->D->H->M | REF:M->O | VIII:O->J->K->P | II:P->L->K->O | IV:O->X->O->F -> F
+    6. pos=WWK; V -> IV:V->F->Z->P | II:P->L->H->L | VIII:L->H->O->S | REF:S->F | VIII:F->B->J->N | II:N->J->B->F | IV:F->P->E->U -> U
+    7. pos=XWL; I -> IV:I->T->G->V | II:V->R->G->K | VIII:K->H->O->R | REF:R->B | VIII:B->Y->X->A | II:A->W->M->Q | IV:Q->B->Z->O -> O
+    8. pos=YWM; C -> IV:C->O->X->L | II:L->H->U->Y | VIII:Y->W->U->W | REF:W->V | VIII:V->T->E->G | II:G->C->P->T | IV:T->F->R->F -> F
+    9. pos=ZWN; H -> IV:H->U->K->X | II:X->T->N->R | VIII:R->Q->A->B | REF:B->R | VIII:R->Q->C->D | II:D->Z->S->W | IV:W->J->G->T -> T
+    10. pos=AWO; Y -> IV:Y->M->R->D | II:D->Z->E->I | VIII:I->I->C->C | REF:C->U | VIII:U->U->W->W | II:W->S->E->I | IV:I->W->Y->K -> K
+    11. pos=BWP; A -> IV:A->P->L->W | II:W->S->Z->D | VIII:D->E->T->S | REF:S->F | VIII:F->G->Y->X | II:X->T->N->R | IV:R->G->T->E -> E
+    12. pos=CWQ; N -> IV:N->D->V->F | II:F->B->J->N | VIII:N->P->R->P | REF:P->I | VIII:I->K->B->Z | II:Z->V->X->B | IV:B->R->M->W -> W
+    13. pos=DWR; A -> IV:A->R->F->O | II:O->K->L->P | VIII:P->S->E->B | REF:B->R | VIII:R->U->W->T | II:T->P->U->Y | IV:Y->P->E->N -> N
+    14. pos=EWS; N -> IV:N->F->Z->H | II:H->D->K->O | VIII:O->S->E->A | REF:A->Y | VIII:Y->C->I->E | II:E->A->A->E | IV:E->W->Y->G -> G
+    15. pos=FWT; D -> IV:D->W->C->J | II:J->F->I->M | VIII:M->R->M->H | REF:H->D | VIII:D->I->V->Q | II:Q->M->O->S | IV:S->L->P->W -> W
+    16. pos=GWU; R -> IV:R->L->I->O | II:O->K->L->P | VIII:P->V->I->C | REF:C->U | VIII:U->A->Q->K | II:K->G->R->V | IV:V->P->E->K -> K
+    17. pos=HWV; E -> IV:E->Z->B->G | II:G->C->D->H | VIII:H->O->Z->S | REF:S->F | VIII:F->M->R->K | II:K->G->R->V | IV:V->Q->J->O -> O
+    18. pos=IWW; E -> IV:E->A->E->I | II:I->E->S->W | VIII:W->E->T->L | REF:L->G | VIII:G->O->H->Z | II:Z->V->X->B | IV:B->X->O->S -> S
+    19. pos=JWX; V -> IV:V->S->T->W | II:W->S->Z->D | VIII:D->M->P->G | REF:G->L | VIII:L->U->W->N | II:N->J->B->F | IV:F->C->W->Z -> Z
+    20. pos=KWY; I -> IV:I->G->J->L | II:L->H->U->Y | VIII:Y->I->C->S | REF:S->F | VIII:F->P->M->C | II:C->Y->V->Z | IV:Z->X->O->Q -> Q
+    21. pos=LWZ; C -> IV:C->B->S->T | II:T->P->C->G | VIII:G->R->M->B | REF:B->R | VIII:R->C->I->X | II:X->T->N->R | IV:R->Q->J->K -> K
+    22. pos=MXA; H -> IV:H->H->A->A | II:A->X->V->Y | VIII:Y->K->J->X | REF:X->J | VIII:J->V->Z->N | II:N->K->D->G | IV:G->G->T->T -> T
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=RWF; S -> IV:S->X->M->H | II:H->D->K->O | VIII:O->F->L->U | REF:U->C | VIII:C->T->E->N | II:N->J->B->F | IV:F->K->U->P -> P
+    2. pos=SWG; C -> IV:C->I->Y->S | II:S->O->M->Q | VIII:Q->I->C->K | REF:K->N | VIII:N->F->A->I | II:I->E->Z->D | IV:D->J->G->A -> A
+    3. pos=TWH; K -> IV:K->R->F->Y | II:Y->U->P->T | VIII:T->M->P->W | REF:W->V | VIII:V->O->H->O | II:O->K->D->H | IV:H->O->C->V -> V
+    4. pos=UWI; T -> IV:T->B->S->K | II:K->G->R->V | VIII:V->P->R->X | REF:X->J | VIII:J->D->N->T | II:T->P->U->Y | IV:Y->G->T->L -> L
+    5. pos=VWJ; F -> IV:F->O->X->O | II:O->K->L->P | VIII:P->K->J->O | REF:O->M | VIII:M->H->D->I | II:I->E->Z->D | IV:D->M->X->O -> O
+    6. pos=WWK; U -> IV:U->E->P->F | II:F->B->J->N | VIII:N->J->B->F | REF:F->S | VIII:S->O->H->L | II:L->H->L->P | IV:P->Z->F->V -> V
+    7. pos=XWL; O -> IV:O->Z->B->Q | II:Q->M->W->A | VIII:A->X->Y->B | REF:B->R | VIII:R->O->H->K | II:K->G->R->V | IV:V->G->T->I -> I
+    8. pos=YWM; F -> IV:F->R->F->T | II:T->P->C->G | VIII:G->E->T->V | REF:V->W | VIII:W->U->W->Y | II:Y->U->H->L | IV:L->X->O->C -> C
+    9. pos=ZWN; T -> IV:T->G->J->W | II:W->S->Z->D | VIII:D->C->Q->R | REF:R->B | VIII:B->A->Q->R | II:R->N->T->X | IV:X->K->U->H -> H
+    10. pos=AWO; K -> IV:K->Y->W->I | II:I->E->S->W | VIII:W->W->U->U | REF:U->C | VIII:C->C->I->I | II:I->E->Z->D | IV:D->R->M->Y -> Y
+    11. pos=BWP; E -> IV:E->T->G->R | II:R->N->T->X | VIII:X->Y->G->F | REF:F->S | VIII:S->T->E->D | II:D->Z->S->W | IV:W->L->P->A -> A
+    12. pos=CWQ; W -> IV:W->M->R->B | II:B->X->V->Z | VIII:Z->B->K->I | REF:I->P | VIII:P->R->P->N | II:N->J->B->F | IV:F->V->D->N -> N
+    13. pos=DWR; N -> IV:N->E->P->Y | II:Y->U->P->T | VIII:T->W->U->R | REF:R->B | VIII:B->E->S->P | II:P->L->K->O | IV:O->F->R->A -> A
+    14. pos=EWS; G -> IV:G->Y->W->E | II:E->A->A->E | VIII:E->I->C->Y | REF:Y->A | VIII:A->E->S->O | II:O->K->D->H | IV:H->Z->F->N -> N
+    15. pos=FWT; W -> IV:W->P->L->S | II:S->O->M->Q | VIII:Q->V->I->D | REF:D->H | VIII:H->M->R->M | II:M->I->F->J | IV:J->C->W->D -> D
+    16. pos=GWU; K -> IV:K->E->P->V | II:V->R->G->K | VIII:K->Q->A->U | REF:U->C | VIII:C->I->V->P | II:P->L->K->O | IV:O->I->L->R -> R
+    17. pos=HWV; O -> IV:O->J->Q->V | II:V->R->G->K | VIII:K->R->M->F | REF:F->S | VIII:S->Z->O->H | II:H->D->C->G | IV:G->B->Z->E -> E
+    18. pos=IWW; S -> IV:S->O->X->B | II:B->X->V->Z | VIII:Z->H->O->G | REF:G->L | VIII:L->T->E->W | II:W->S->E->I | IV:I->E->A->E -> E
+    19. pos=JWX; Z -> IV:Z->W->C->F | II:F->B->J->N | VIII:N->W->U->L | REF:L->G | VIII:G->P->M->D | II:D->Z->S->W | IV:W->T->S->V -> V
+    20. pos=KWY; Q -> IV:Q->O->X->Z | II:Z->V->Y->C | VIII:C->M->P->F | REF:F->S | VIII:S->C->I->Y | II:Y->U->H->L | IV:L->J->G->I -> I
+    21. pos=LWZ; K -> IV:K->J->Q->R | II:R->N->T->X | VIII:X->I->C->R | REF:R->B | VIII:B->M->R->G | II:G->C->P->T | IV:T->S->B->C -> C
+    22. pos=MXA; T -> IV:T->T->G->G | II:G->D->K->N | VIII:N->Z->V->J | REF:J->X | VIII:X->J->K->Y | II:Y->V->X->A | IV:A->A->H->H -> H
+RTY -> ZIZXHFJARUTSYPNATBDQBO; IC=0.017316; H=4.095795
+  Пути шифрования:
+    1. pos=STZ; P -> IV:P->O->X->Y | II:Y->R->G->N | VIII:N->F->L->T | REF:T->Z | VIII:Z->R->P->X | II:X->Q->Q->X | IV:X->W->Y->Z -> Z
+    2. pos=TUA; A -> IV:A->A->E->E | II:E->Y->O->U | VIII:U->N->D->K | REF:K->N | VIII:N->G->Y->F | II:F->Z->S->Y | IV:Y->Y->I->I -> I
+    3. pos=UUB; V -> IV:V->W->C->B | II:B->V->Y->E | VIII:E->Y->G->M | REF:M->O | VIII:O->I->V->B | II:B->V->X->D | IV:D->E->A->Z -> Z
+    4. pos=VUC; L -> IV:L->N->H->F | II:F->Z->E->K | VIII:K->F->L->Q | REF:Q->E | VIII:E->Z->O->T | II:T->N->T->Z | IV:Z->B->Z->X -> X
+    5. pos=WUD; O -> IV:O->R->F->C | II:C->W->F->L | VIII:L->H->O->S | REF:S->F | VIII:F->B->J->N | II:N->H->L->R | IV:R->U->K->H -> H
+    6. pos=XUE; V -> IV:V->Z->B->X | II:X->R->G->M | VIII:M->J->B->E | REF:E->Q | VIII:Q->N->U->X | II:X->R->G->M | IV:M->Q->J->F -> F
+    7. pos=YUF; I -> IV:I->N->H->C | II:C->W->F->L | VIII:L->J->B->D | REF:D->H | VIII:H->F->A->C | II:C->W->M->S | IV:S->X->O->J -> J
+    8. pos=ZUG; C -> IV:C->I->Y->S | II:S->M->W->C | VIII:C->B->K->L | REF:L->G | VIII:G->F->A->B | II:B->V->X->D | IV:D->J->G->A -> A
+    9. pos=AUH; H -> IV:H->O->X->Q | II:Q->K->L->R | VIII:R->R->M->M | REF:M->O | VIII:O->O->H->H | II:H->B->J->P | IV:P->W->Y->R -> R
+    10. pos=BUI; Y -> IV:Y->G->J->B | II:B->V->Y->E | VIII:E->F->L->K | REF:K->N | VIII:N->O->H->G | II:G->A->A->G | IV:G->O->C->U -> U
+    11. pos=CUJ; A -> IV:A->J->Q->H | II:H->B->J->P | VIII:P->R->M->K | REF:K->N | VIII:N->P->M->K | II:K->E->Z->F | IV:F->O->C->T -> T
+    12. pos=DUK; N -> IV:N->X->M->C | II:C->W->F->L | VIII:L->O->Z->W | REF:W->V | VIII:V->Y->X->U | II:U->O->Y->E | IV:E->O->C->S -> S
+    13. pos=EUL; A -> IV:A->L->I->X | II:X->R->G->M | VIII:M->Q->A->W | REF:W->V | VIII:V->Z->O->K | II:K->E->Z->F | IV:F->Q->J->Y -> Y
+    14. pos=FUM; N -> IV:N->Z->B->P | II:P->J->B->H | VIII:H->M->P->K | REF:K->N | VIII:N->S->L->G | II:G->A->A->G | IV:G->S->B->P -> P
+    15. pos=GUN; D -> IV:D->Q->N->A | II:A->U->P->V | VIII:V->B->K->E | REF:E->Q | VIII:Q->W->T->N | II:N->H->L->R | IV:R->E->A->N -> N
+    16. pos=HUO; R -> IV:R->F->Z->L | II:L->F->I->O | VIII:O->V->I->B | REF:B->R | VIII:R->Y->X->Q | II:Q->K->D->J | IV:J->X->O->A -> A
+    17. pos=IUP; E -> IV:E->T->G->R | II:R->L->H->N | VIII:N->V->I->A | REF:A->Y | VIII:Y->G->Y->Q | II:Q->K->D->J | IV:J->Y->I->T -> T
+    18. pos=JUQ; E -> IV:E->U->K->U | II:U->O->M->S | VIII:S->B->K->B | REF:B->R | VIII:R->A->Q->H | II:H->B->J->P | IV:P->F->R->B -> B
+    19. pos=KUR; V -> IV:V->M->R->A | II:A->U->P->V | VIII:V->F->L->B | REF:B->R | VIII:R->B->J->Z | II:Z->T->N->T | IV:T->K->U->D -> D
+    20. pos=LUS; I -> IV:I->A->E->M | II:M->G->R->X | VIII:X->I->C->R | REF:R->B | VIII:B->M->R->G | II:G->A->A->G | IV:G->Y->I->Q -> Q
+    21. pos=MUT; C -> IV:C->V->D->K | II:K->E->S->Y | VIII:Y->K->J->X | REF:X->J | VIII:J->V->Z->N | II:N->H->L->R | IV:R->K->U->B -> B
+    22. pos=NUU; H -> IV:H->B->S->Y | II:Y->S->Z->F | VIII:F->S->E->R | REF:R->B | VIII:B->O->H->U | II:U->O->Y->E | IV:E->Y->I->O -> O
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=STZ; Z -> IV:Z->Y->W->X | II:X->Q->Q->X | VIII:X->P->R->Z | REF:Z->T | VIII:T->L->F->N | II:N->G->R->Y | IV:Y->X->O->P -> P
+    2. pos=TUA; I -> IV:I->I->Y->Y | II:Y->S->Z->F | VIII:F->Y->G->N | REF:N->K | VIII:K->D->N->U | II:U->O->Y->E | IV:E->E->A->A -> A
+    3. pos=UUB; Z -> IV:Z->A->E->D | II:D->X->V->B | VIII:B->V->I->O | REF:O->M | VIII:M->G->Y->E | II:E->Y->V->B | IV:B->C->W->V -> V
+    4. pos=VUC; X -> IV:X->Z->B->Z | II:Z->T->N->T | VIII:T->O->Z->E | REF:E->Q | VIII:Q->L->F->K | II:K->E->Z->F | IV:F->H->N->L -> L
+    5. pos=WUD; H -> IV:H->K->U->R | II:R->L->H->N | VIII:N->J->B->F | REF:F->S | VIII:S->O->H->L | II:L->F->W->C | IV:C->F->R->O -> O
+    6. pos=XUE; F -> IV:F->J->Q->M | II:M->G->R->X | VIII:X->U->N->Q | REF:Q->E | VIII:E->B->J->M | II:M->G->R->X | IV:X->B->Z->V -> V
+    7. pos=YUF; J -> IV:J->O->X->S | II:S->M->W->C | VIII:C->A->F->H | REF:H->D | VIII:D->B->J->L | II:L->F->W->C | IV:C->H->N->I -> I
+    8. pos=ZUG; A -> IV:A->G->J->D | II:D->X->V->B | VIII:B->A->F->G | REF:G->L | VIII:L->K->B->C | II:C->W->M->S | IV:S->Y->I->C -> C
+    9. pos=AUH; R -> IV:R->Y->W->P | II:P->J->B->H | VIII:H->H->O->O | REF:O->M | VIII:M->M->R->R | II:R->L->K->Q | IV:Q->X->O->H -> H
+    10. pos=BUI; U -> IV:U->C->O->G | II:G->A->A->G | VIII:G->H->O->N | REF:N->K | VIII:K->L->F->E | II:E->Y->V->B | IV:B->J->G->Y -> Y
+    11. pos=CUJ; T -> IV:T->C->O->F | II:F->Z->E->K | VIII:K->M->P->N | REF:N->K | VIII:K->M->R->P | II:P->J->B->H | IV:H->Q->J->A -> A
+    12. pos=DUK; S -> IV:S->C->O->E | II:E->Y->O->U | VIII:U->X->Y->V | REF:V->W | VIII:W->Z->O->L | II:L->F->W->C | IV:C->M->X->N -> N
+    13. pos=EUL; Y -> IV:Y->J->Q->F | II:F->Z->E->K | VIII:K->O->Z->V | REF:V->W | VIII:W->A->Q->M | II:M->G->R->X | IV:X->I->L->A -> A
+    14. pos=FUM; P -> IV:P->B->S->G | II:G->A->A->G | VIII:G->L->S->N | REF:N->K | VIII:K->P->M->H | II:H->B->J->P | IV:P->B->Z->N -> N
+    15. pos=GUN; N -> IV:N->A->E->R | II:R->L->H->N | VIII:N->T->W->Q | REF:Q->E | VIII:E->K->B->V | II:V->P->U->A | IV:A->N->Q->D -> D
+    16. pos=HUO; A -> IV:A->O->X->J | II:J->D->K->Q | VIII:Q->X->Y->R | REF:R->B | VIII:B->I->V->O | II:O->I->F->L | IV:L->Z->F->R -> R
+    17. pos=IUP; T -> IV:T->I->Y->J | II:J->D->K->Q | VIII:Q->Y->G->Y | REF:Y->A | VIII:A->I->V->N | II:N->H->L->R | IV:R->G->T->E -> E
+    18. pos=JUQ; B -> IV:B->R->F->P | II:P->J->B->H | VIII:H->Q->A->R | REF:R->B | VIII:B->K->B->S | II:S->M->O->U | IV:U->K->U->E -> E
+    19. pos=KUR; D -> IV:D->U->K->T | II:T->N->T->Z | VIII:Z->J->B->R | REF:R->B | VIII:B->L->F->V | II:V->P->U->A | IV:A->R->M->V -> V
+    20. pos=LUS; Q -> IV:Q->I->Y->G | II:G->A->A->G | VIII:G->R->M->B | REF:B->R | VIII:R->C->I->X | II:X->R->G->M | IV:M->E->A->I -> I
+    21. pos=MUT; B -> IV:B->U->K->R | II:R->L->H->N | VIII:N->Z->V->J | REF:J->X | VIII:X->J->K->Y | II:Y->S->E->K | IV:K->D->V->C -> C
+    22. pos=NUU; O -> IV:O->I->Y->E | II:E->Y->O->U | VIII:U->H->O->B | REF:B->R | VIII:R->E->S->F | II:F->Z->S->Y | IV:Y->S->B->H -> H
+SUN -> KOXCYQELMOPOBQVPSYLAGR; IC=0.030303; H=3.879664
+  Пути шифрования:
+    1. pos=TUO; P -> IV:P->D->V->H | II:H->B->J->P | VIII:P->I->C->J | REF:J->X | VIII:X->Q->C->J | II:J->D->C->I | IV:I->W->Y->K -> K
+    2. pos=UUP; A -> IV:A->P->L->W | II:W->Q->Q->W | VIII:W->Q->A->G | REF:G->L | VIII:L->F->A->G | II:G->A->A->G | IV:G->V->D->O -> O
+    3. pos=VUQ; V -> IV:V->L->I->S | II:S->M->W->C | VIII:C->X->Y->D | REF:D->H | VIII:H->C->I->N | II:N->H->L->R | IV:R->H->N->X -> X
+    4. pos=WUR; L -> IV:L->C->O->X | II:X->R->G->M | VIII:M->I->C->G | REF:G->L | VIII:L->H->D->H | II:H->B->J->P | IV:P->G->T->C -> C
+    5. pos=XUS; O -> IV:O->G->J->R | II:R->L->H->N | VIII:N->K->J->M | REF:M->O | VIII:O->L->F->I | II:I->C->P->V | IV:V->N->Q->Y -> Y
+    6. pos=YUT; V -> IV:V->O->X->E | II:E->Y->O->U | VIII:U->S->E->G | REF:G->L | VIII:L->J->K->M | II:M->G->R->X | IV:X->Q->J->Q -> Q
+    7. pos=ZUU; I -> IV:I->C->O->U | II:U->O->M->S | VIII:S->R->M->N | REF:N->K | VIII:K->J->K->L | II:L->F->W->C | IV:C->W->Y->E -> E
+    8. pos=AUV; C -> IV:C->X->M->R | II:R->L->H->N | VIII:N->N->D->D | REF:D->H | VIII:H->H->D->D | II:D->X->I->O | IV:O->J->G->L -> L
+    9. pos=BUW; H -> IV:H->D->V->Z | II:Z->T->N->T | VIII:T->U->N->M | REF:M->O | VIII:O->P->M->L | II:L->F->W->C | IV:C->Y->I->M -> M
+    10. pos=CUX; Y -> IV:Y->V->D->G | II:G->A->A->G | VIII:G->I->C->A | REF:A->Y | VIII:Y->A->Q->O | II:O->I->F->L | IV:L->I->L->O -> O
+    11. pos=DUY; A -> IV:A->Y->W->Y | II:Y->S->Z->F | VIII:F->I->C->Z | REF:Z->T | VIII:T->W->T->Q | II:Q->K->D->J | IV:J->H->N->P -> P
+    12. pos=EUZ; N -> IV:N->M->R->S | II:S->M->W->C | VIII:C->G->X->T | REF:T->Z | VIII:Z->D->N->J | II:J->D->C->I | IV:I->H->N->O -> O
+    13. pos=FVA; A -> IV:A->A->E->E | II:E->Z->E->J | VIII:J->O->Z->U | REF:U->C | VIII:C->H->D->Y | II:Y->T->N->S | IV:S->S->B->B -> B
+    14. pos=GVB; N -> IV:N->O->X->W | II:W->R->G->L | VIII:L->R->M->G | REF:G->L | VIII:L->R->P->J | II:J->E->Z->E | IV:E->F->R->Q -> Q
+    15. pos=HVC; D -> IV:D->F->Z->X | II:X->S->Z->E | VIII:E->L->S->L | REF:L->G | VIII:G->N->U->N | II:N->I->F->K | IV:K->M->X->V -> V
+    16. pos=IVD; R -> IV:R->U->K->H | II:H->C->D->I | VIII:I->Q->A->S | REF:S->F | VIII:F->N->U->M | II:M->H->L->Q | IV:Q->T->S->P -> P
+    17. pos=JVE; E -> IV:E->I->Y->U | II:U->P->C->H | VIII:H->Q->A->R | REF:R->B | VIII:B->K->B->S | II:S->N->T->Y | IV:Y->C->W->S -> S
+    18. pos=KVF; E -> IV:E->J->Q->L | II:L->G->R->W | VIII:W->G->X->N | REF:N->K | VIII:K->U->W->M | II:M->H->L->Q | IV:Q->V->D->Y -> Y
+    19. pos=LVG; V -> IV:V->B->S->M | II:M->H->U->Z | VIII:Z->K->J->Y | REF:Y->A | VIII:A->L->F->U | II:U->P->U->Z | IV:Z->F->R->L -> L
+    20. pos=MVH; I -> IV:I->P->L->E | II:E->Z->E->J | VIII:J->V->I->W | REF:W->V | VIII:V->H->D->R | II:R->M->O->T | IV:T->A->H->A -> A
+    21. pos=NVI; C -> IV:C->K->U->M | II:M->H->U->Z | VIII:Z->M->P->C | REF:C->U | VIII:U->H->D->Q | II:Q->L->K->P | IV:P->X->O->G -> G
+    22. pos=OVJ; H -> IV:H->Q->N->E | II:E->Z->E->J | VIII:J->X->Y->K | REF:K->N | VIII:N->B->J->V | II:V->Q->Q->V | IV:V->E->A->R -> R
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=TUO; K -> IV:K->Y->W->I | II:I->C->D->J | VIII:J->C->Q->X | REF:X->J | VIII:J->C->I->P | II:P->J->B->H | IV:H->V->D->P -> P
+    2. pos=UUP; O -> IV:O->D->V->G | II:G->A->A->G | VIII:G->A->F->L | REF:L->G | VIII:G->A->Q->W | II:W->Q->Q->W | IV:W->L->P->A -> A
+    3. pos=VUQ; X -> IV:X->N->H->R | II:R->L->H->N | VIII:N->I->C->H | REF:H->D | VIII:D->Y->X->C | II:C->W->M->S | IV:S->I->L->V -> V
+    4. pos=WUR; C -> IV:C->T->G->P | II:P->J->B->H | VIII:H->D->H->L | REF:L->G | VIII:G->C->I->M | II:M->G->R->X | IV:X->O->C->L -> L
+    5. pos=XUS; Y -> IV:Y->Q->N->V | II:V->P->C->I | VIII:I->F->L->O | REF:O->M | VIII:M->J->K->N | II:N->H->L->R | IV:R->J->G->O -> O
+    6. pos=YUT; Q -> IV:Q->J->Q->X | II:X->R->G->M | VIII:M->K->J->L | REF:L->G | VIII:G->E->S->U | II:U->O->Y->E | IV:E->X->O->V -> V
+    7. pos=ZUU; E -> IV:E->Y->W->C | II:C->W->F->L | VIII:L->K->J->K | REF:K->N | VIII:N->M->R->S | II:S->M->O->U | IV:U->O->C->I -> I
+    8. pos=AUV; L -> IV:L->G->J->O | II:O->I->X->D | VIII:D->D->H->H | REF:H->D | VIII:D->D->N->N | II:N->H->L->R | IV:R->M->X->C -> C
+    9. pos=BUW; M -> IV:M->I->Y->C | II:C->W->F->L | VIII:L->M->P->O | REF:O->M | VIII:M->N->U->T | II:T->N->T->Z | IV:Z->V->D->H -> H
+    10. pos=CUX; O -> IV:O->L->I->L | II:L->F->I->O | VIII:O->Q->A->Y | REF:Y->A | VIII:A->C->I->G | II:G->A->A->G | IV:G->D->V->Y -> Y
+    11. pos=DUY; P -> IV:P->N->H->J | II:J->D->K->Q | VIII:Q->T->W->T | REF:T->Z | VIII:Z->C->I->F | II:F->Z->S->Y | IV:Y->W->Y->A -> A
+    12. pos=EUZ; O -> IV:O->N->H->I | II:I->C->D->J | VIII:J->N->D->Z | REF:Z->T | VIII:T->X->G->C | II:C->W->M->S | IV:S->R->M->N -> N
+    13. pos=FVA; B -> IV:B->B->S->S | II:S->N->T->Y | VIII:Y->D->H->C | REF:C->U | VIII:U->Z->O->J | II:J->E->Z->E | IV:E->E->A->A -> A
+    14. pos=GVB; Q -> IV:Q->R->F->E | II:E->Z->E->J | VIII:J->P->R->L | REF:L->G | VIII:G->M->R->L | II:L->G->R->W | IV:W->X->O->N -> N
+    15. pos=HVC; V -> IV:V->X->M->K | II:K->F->I->N | VIII:N->U->N->G | REF:G->L | VIII:L->S->L->E | II:E->Z->S->X | IV:X->Z->F->D -> D
+    16. pos=IVD; P -> IV:P->S->T->Q | II:Q->L->H->M | VIII:M->U->N->F | REF:F->S | VIII:S->A->Q->I | II:I->D->C->H | IV:H->K->U->R -> R
+    17. pos=JVE; S -> IV:S->W->C->Y | II:Y->T->N->S | VIII:S->B->K->B | REF:B->R | VIII:R->A->Q->H | II:H->C->P->U | IV:U->Y->I->E -> E
+    18. pos=KVF; Y -> IV:Y->D->V->Q | II:Q->L->H->M | VIII:M->W->U->K | REF:K->N | VIII:N->X->G->W | II:W->R->G->L | IV:L->Q->J->E -> E
+    19. pos=LVG; L -> IV:L->R->F->Z | II:Z->U->P->U | VIII:U->F->L->A | REF:A->Y | VIII:Y->J->K->Z | II:Z->U->H->M | IV:M->S->B->V -> V
+    20. pos=MVH; A -> IV:A->H->A->T | II:T->O->M->R | VIII:R->D->H->V | REF:V->W | VIII:W->I->V->J | II:J->E->Z->E | IV:E->L->P->I -> I
+    21. pos=NVI; G -> IV:G->O->X->P | II:P->K->L->Q | VIII:Q->D->H->U | REF:U->C | VIII:C->P->M->Z | II:Z->U->H->M | IV:M->U->K->C -> C
+    22. pos=OVJ; R -> IV:R->A->E->V | II:V->Q->Q->V | VIII:V->J->B->N | REF:N->K | VIII:K->Y->X->J | II:J->E->Z->E | IV:E->N->Q->H -> H
+ZEN -> VFXTGZBOKUZVBWTSRFNUSK; IC=0.034632; H=3.732159
+  Пути шифрования:
+    1. pos=AEO; P -> IV:P->D->V->H | II:H->L->H->D | VIII:D->D->H->H | REF:H->D | VIII:D->D->N->N | II:N->R->G->C | IV:C->Q->J->V -> V
+    2. pos=BEP; A -> IV:A->P->L->W | II:W->A->A->W | VIII:W->X->Y->X | REF:X->J | VIII:J->K->B->A | II:A->E->Z->V | IV:V->K->U->F -> F
+    3. pos=CEQ; V -> IV:V->L->I->S | II:S->W->F->B | VIII:B->D->H->F | REF:F->S | VIII:S->U->W->U | II:U->Y->V->R | IV:R->H->N->X -> X
+    4. pos=DER; L -> IV:L->C->O->X | II:X->B->J->F | VIII:F->I->C->Z | REF:Z->T | VIII:T->W->T->Q | II:Q->U->H->D | IV:D->U->K->T -> T
+    5. pos=EES; O -> IV:O->G->J->R | II:R->V->Y->U | VIII:U->Y->G->C | REF:C->U | VIII:U->Y->X->T | II:T->X->I->E | IV:E->W->Y->G -> G
+    6. pos=FET; V -> IV:V->O->X->E | II:E->I->X->T | VIII:T->Y->G->B | REF:B->R | VIII:R->W->T->O | II:O->S->E->A | IV:A->T->S->Z -> Z
+    7. pos=GEU; I -> IV:I->C->O->U | II:U->Y->O->K | VIII:K->Q->A->U | REF:U->C | VIII:C->I->V->P | II:P->T->N->J | IV:J->D->V->B -> B
+    8. pos=HEV; C -> IV:C->X->M->R | II:R->V->Y->U | VIII:U->B->K->D | REF:D->H | VIII:H->O->H->A | II:A->E->Z->V | IV:V->Q->J->O -> O
+    9. pos=IEW; H -> IV:H->D->V->Z | II:Z->D->K->G | VIII:G->O->Z->R | REF:R->B | VIII:B->J->K->C | II:C->G->R->N | IV:N->J->G->K -> K
+    10. pos=JEX; Y -> IV:Y->V->D->G | II:G->K->L->H | VIII:H->Q->A->R | REF:R->B | VIII:B->K->B->S | II:S->W->M->I | IV:I->F->R->U -> U
+    11. pos=KEY; A -> IV:A->Y->W->Y | II:Y->C->D->Z | VIII:Z->J->B->R | REF:R->B | VIII:B->L->F->V | II:V->Z->S->O | IV:O->M->X->Z -> Z
+    12. pos=LEZ; N -> IV:N->M->R->S | II:S->W->F->B | VIII:B->M->P->E | REF:E->Q | VIII:Q->B->J->Y | II:Y->C->P->L | IV:L->K->U->V -> V
+    13. pos=MFA; A -> IV:A->A->E->E | II:E->J->B->W | VIII:W->I->C->Q | REF:Q->E | VIII:E->Q->C->Q | II:Q->V->X->S | IV:S->S->B->B -> B
+    14. pos=NFB; N -> IV:N->O->X->W | II:W->B->J->E | VIII:E->R->M->Z | REF:Z->T | VIII:T->G->Y->L | II:L->Q->Q->L | IV:L->M->X->W -> W
+    15. pos=OFC; D -> IV:D->F->Z->X | II:X->C->D->Y | VIII:Y->M->P->B | REF:B->R | VIII:R->F->A->M | II:M->R->G->B | IV:B->D->V->T -> T
+    16. pos=PFD; R -> IV:R->U->K->H | II:H->M->W->R | VIII:R->G->X->I | REF:I->P | VIII:P->E->S->D | II:D->I->F->A | IV:A->D->V->S -> S
+    17. pos=QFE; E -> IV:E->I->Y->U | II:U->Z->E->Z | VIII:Z->P->R->B | REF:B->R | VIII:R->H->D->N | II:N->S->E->Z | IV:Z->D->V->R -> R
+    18. pos=RFF; E -> IV:E->J->Q->L | II:L->Q->Q->L | VIII:L->C->Q->Z | REF:Z->T | VIII:T->K->B->K | II:K->P->U->P | IV:P->U->K->F -> F
+    19. pos=SFG; V -> IV:V->B->S->M | II:M->R->G->B | VIII:B->T->W->E | REF:E->Q | VIII:Q->I->V->D | II:D->I->F->A | IV:A->G->T->N -> N
+    20. pos=TFH; I -> IV:I->P->L->E | II:E->J->B->W | VIII:W->P->R->Y | REF:Y->A | VIII:A->T->E->L | II:L->Q->Q->L | IV:L->S->B->U -> U
+    21. pos=UFI; C -> IV:C->K->U->M | II:M->R->G->B | VIII:B->V->I->O | REF:O->M | VIII:M->G->Y->E | II:E->J->B->W | IV:W->E->A->S -> S
+    22. pos=VFJ; H -> IV:H->Q->N->E | II:E->J->B->W | VIII:W->R->M->R | REF:R->B | VIII:B->W->T->Y | II:Y->D->C->X | IV:X->G->T->K -> K
+  decrypt=PAVLOVICHYANANDREEVICH; match=true;
+  Пути дешифрования:
+    1. pos=AEO; V -> IV:V->J->Q->C | II:C->G->R->N | VIII:N->N->D->D | REF:D->H | VIII:H->H->D->D | II:D->H->L->H | IV:H->V->D->P -> P
+    2. pos=BEP; F -> IV:F->U->K->V | II:V->Z->E->A | VIII:A->B->K->J | REF:J->X | VIII:X->Y->X->W | II:W->A->A->W | IV:W->L->P->A -> A
+    3. pos=CEQ; X -> IV:X->N->H->R | II:R->V->Y->U | VIII:U->W->U->S | REF:S->F | VIII:F->H->D->B | II:B->F->W->S | IV:S->I->L->V -> V
+    4. pos=DER; T -> IV:T->K->U->D | II:D->H->U->Q | VIII:Q->T->W->T | REF:T->Z | VIII:Z->C->I->F | II:F->J->B->X | IV:X->O->C->L -> L
+    5. pos=EES; G -> IV:G->Y->W->E | II:E->I->X->T | VIII:T->X->Y->U | REF:U->C | VIII:C->G->Y->U | II:U->Y->V->R | IV:R->J->G->O -> O
+    6. pos=FET; Z -> IV:Z->S->T->A | II:A->E->S->O | VIII:O->T->W->R | REF:R->B | VIII:B->G->Y->T | II:T->X->I->E | IV:E->X->O->V -> V
+    7. pos=GEU; B -> IV:B->V->D->J | II:J->N->T->P | VIII:P->V->I->C | REF:C->U | VIII:U->A->Q->K | II:K->O->Y->U | IV:U->O->C->I -> I
+    8. pos=HEV; O -> IV:O->J->Q->V | II:V->Z->E->A | VIII:A->H->O->H | REF:H->D | VIII:D->K->B->U | II:U->Y->V->R | IV:R->M->X->C -> C
+    9. pos=IEW; K -> IV:K->G->J->N | II:N->R->G->C | VIII:C->K->J->B | REF:B->R | VIII:R->Z->O->G | II:G->K->D->Z | IV:Z->V->D->H -> H
+    10. pos=JEX; U -> IV:U->R->F->I | II:I->M->W->S | VIII:S->B->K->B | REF:B->R | VIII:R->A->Q->H | II:H->L->K->G | IV:G->D->V->Y -> Y
+    11. pos=KEY; Z -> IV:Z->X->M->O | II:O->S->Z->V | VIII:V->F->L->B | REF:B->R | VIII:R->B->J->Z | II:Z->D->C->Y | IV:Y->W->Y->A -> A
+    12. pos=LEZ; V -> IV:V->U->K->L | II:L->P->C->Y | VIII:Y->J->B->Q | REF:Q->E | VIII:E->P->M->B | II:B->F->W->S | IV:S->R->M->N -> N
+    13. pos=MFA; B -> IV:B->B->S->S | II:S->X->V->Q | VIII:Q->C->Q->E | REF:E->Q | VIII:Q->C->I->W | II:W->B->J->E | IV:E->E->A->A -> A
+    14. pos=NFB; W -> IV:W->X->M->L | II:L->Q->Q->L | VIII:L->Y->G->T | REF:T->Z | VIII:Z->M->R->E | II:E->J->B->W | IV:W->X->O->N -> N
+    15. pos=OFC; T -> IV:T->V->D->B | II:B->G->R->M | VIII:M->A->F->R | REF:R->B | VIII:B->P->M->Y | II:Y->D->C->X | IV:X->Z->F->D -> D
+    16. pos=PFD; S -> IV:S->V->D->A | II:A->F->I->D | VIII:D->S->E->P | REF:P->I | VIII:I->X->G->R | II:R->W->M->H | IV:H->K->U->R -> R
+    17. pos=QFE; R -> IV:R->V->D->Z | II:Z->E->S->N | VIII:N->D->H->R | REF:R->B | VIII:B->R->P->Z | II:Z->E->Z->U | IV:U->Y->I->E -> E
+    18. pos=RFF; F -> IV:F->K->U->P | II:P->U->P->K | VIII:K->B->K->T | REF:T->Z | VIII:Z->Q->C->L | II:L->Q->Q->L | IV:L->Q->J->E -> E
+    19. pos=SFG; N -> IV:N->T->G->A | II:A->F->I->D | VIII:D->V->I->Q | REF:Q->E | VIII:E->W->T->B | II:B->G->R->M | IV:M->S->B->V -> V
+    20. pos=TFH; U -> IV:U->B->S->L | II:L->Q->Q->L | VIII:L->E->T->A | REF:A->Y | VIII:Y->R->P->W | II:W->B->J->E | IV:E->L->P->I -> I
+    21. pos=UFI; S -> IV:S->A->E->W | II:W->B->J->E | VIII:E->Y->G->M | REF:M->O | VIII:O->I->V->B | II:B->G->R->M | IV:M->U->K->C -> C
+    22. pos=VFJ; K -> IV:K->T->G->X | II:X->C->D->Y | VIII:Y->T->W->B | REF:B->R | VIII:R->M->R->W | II:W->B->J->E | IV:E->N->Q->H -> H

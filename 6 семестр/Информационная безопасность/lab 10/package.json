@@ -1,0 +1,20 @@
+{
+  "name": "lab10-asymmetric-rsa-elgamal",
+  "version": "1.0.0",
+  "description": "ЛР №8: исследование асимметричных шифров RSA и Эль-Гамаля",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "rsa",
+    "elgamal",
+    "crypto",
+    "benchmark",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

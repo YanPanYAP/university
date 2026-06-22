@@ -1,0 +1,92 @@
+[
+  {
+    "inputBytes": 0,
+    "iterations": 1000,
+    "meanMs": 0.0023178699999999936,
+    "minMs": 0.000666,
+    "maxMs": 0.588875,
+    "mbPerSec": 0,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 16,
+    "iterations": 1000,
+    "meanMs": 0.0010419299999999947,
+    "minMs": 0.000583,
+    "maxMs": 0.319166,
+    "mbPerSec": 14.644735310913473,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 64,
+    "iterations": 1000,
+    "meanMs": 0.0007230849999999982,
+    "minMs": 0.000625,
+    "maxMs": 0.011416,
+    "mbPerSec": 84.40937960267486,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 256,
+    "iterations": 1000,
+    "meanMs": 0.0010110730000000008,
+    "minMs": 0.000666,
+    "maxMs": 0.233875,
+    "mbPerSec": 241.46686243228706,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 1024,
+    "iterations": 1000,
+    "meanMs": 0.0010757899999999853,
+    "minMs": 0.001,
+    "maxMs": 0.00175,
+    "mbPerSec": 907.7631322098304,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 4096,
+    "iterations": 1000,
+    "meanMs": 0.0026571679999999567,
+    "minMs": 0.002333,
+    "maxMs": 0.24075,
+    "mbPerSec": 1470.080175585459,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 16384,
+    "iterations": 1000,
+    "meanMs": 0.007816537999999968,
+    "minMs": 0.007625,
+    "maxMs": 0.023958,
+    "mbPerSec": 1998.9668060207807,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 65536,
+    "iterations": 1000,
+    "meanMs": 0.030473038000000188,
+    "minMs": 0.028208,
+    "maxMs": 0.479959,
+    "mbPerSec": 2050.993406039779,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 262144,
+    "iterations": 1000,
+    "meanMs": 0.12144885800000034,
+    "minMs": 0.106875,
+    "maxMs": 2.4285,
+    "mbPerSec": 2058.479627696452,
+    "digestHexLength": 64
+  },
+  {
+    "inputBytes": 1048576,
+    "iterations": 1000,
+    "meanMs": 0.42945191300000046,
+    "minMs": 0.425208,
+    "maxMs": 0.489291,
+    "mbPerSec": 2328.5494131679393,
+    "digestHexLength": 64
+  }
+]

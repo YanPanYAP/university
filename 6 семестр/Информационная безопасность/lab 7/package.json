@@ -1,0 +1,10 @@
+{
+  "name": "ib-lab7-des-eee2",
+  "version": "1.0.0",
+  "description": "Lab 7: Block cipher research (DES-EEE2)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}
