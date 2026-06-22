@@ -1,0 +1,22 @@
+npm run docker:up
+npm run db:init:proxy
+npm run db:dml:proxy
+npm run start:proxy
+
+curl http://localhost:3006/health
+
+curl -s http://localhost:3006/api/celebrities
+
+curl -s -X POST http://localhost:3006/api/celebrities \
+  -H 'Content-Type: application/json' \
+  -d '{"FullName":"Keanu Reeves","Nationality":"CA","ReqPhotoPath":"/photos/keanu.jpg"}'
+
+  curl -s http://localhost:3006/api/celebrities/1
+
+  curl -s -X PUT http://localhost:3006/api/celebrities/1 \
+  -H 'Content-Type: application/json' \
+  -d '{"FullName":"Albert Einstein","Nationality":"DE","ReqPhotoPath":"/photos/einstein-2.jpg"}'
+
+  curl -i -X DELETE http://localhost:3006/api/celebrities/1
+
+  curl -s http://localhost:3006/api/celebrities
