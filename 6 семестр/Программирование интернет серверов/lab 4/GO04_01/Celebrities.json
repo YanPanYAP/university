@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "fullName": "Keanu Reeves",
+    "nationality": "Canadian",
+    "reqPhotoPath": "/photos/keanu.jpg"
+  },
+  {
+    "id": 2,
+    "fullName": "Emma Watson",
+    "nationality": "British",
+    "reqPhotoPath": "/photos/emma.jpg"
+  }
+]
