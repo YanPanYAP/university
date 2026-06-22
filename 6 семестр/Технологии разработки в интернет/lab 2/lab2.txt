@@ -1,0 +1,6 @@
+ls /usr/local/var/www
+
+http://localhost:20000/TDWA02-01.html
+http://localhost:20000/tdwa02-02/index.html
+
+npm run build

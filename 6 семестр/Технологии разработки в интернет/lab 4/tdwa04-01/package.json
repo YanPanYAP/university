@@ -1,0 +1,16 @@
+{
+  "name": "tdwa04-01",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TDWA04-01 REST server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:x": "node server.js X 3001",
+    "start:y": "node server.js Y 3002",
+    "start:z": "node server.js Z 3003"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "trvp-lab4-ocelot-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:node": "npm i --prefix ./tdwa04-01",
+    "start:x": "npm run start:x --prefix ./tdwa04-01",
+    "start:y": "npm run start:y --prefix ./tdwa04-01",
+    "start:z": "npm run start:z --prefix ./tdwa04-01",
+    "start:gateway": "DOTNET_CLI_HOME=/tmp NUGET_PACKAGES=/tmp/nuget DOTNET_ROOT=\"../.dotnet8\" PATH=\"../.dotnet8:$PATH\" ASPNETCORE_URLS=\"${ASPNETCORE_URLS:-http://localhost:4000}\" ../.dotnet8/dotnet run --project ./gateway/TDWA04-01-Gateway"
+  }
+}

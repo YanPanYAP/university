@@ -1,0 +1,20 @@
+brew services start nginx
+brew services restart nginx
+brew services stop nginx
+
+nginx -s reload
+
+nano /usr/local/etc/nginx/nginx.conf
+
+ls /usr/local/var/www
+
+server {
+    listen 20000;
+
+    location /api/Save-JSON {
+        proxy_pass http://localhost:40000/NGINX-test;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

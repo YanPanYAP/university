@@ -1,0 +1,17 @@
+dotnet new web -n TDWA04-01-Gateway
+dotnet add package Ocelot
+
+npm run start:x
+npm run start:y
+npm run start:z
+npm run start:gateway
+
+curl -s http://localhost:3001/A
+curl -s -X POST http://localhost:3002/A
+curl -s -X PUT http://localhost:3003/A
+curl -s -X DELETE http://localhost:3003/A
+
+curl -s http://localhost:4000/api
+curl -s -X POST http://localhost:4000/api
+curl -s -X PUT http://localhost:4000/api
+curl -s -X DELETE http://localhost:4000/api
