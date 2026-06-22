@@ -1,0 +1,23 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/lb",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamPathTemplate": "/A",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "localhost", "Port": 3101 },
+        { "Host": "localhost", "Port": 3102 },
+        { "Host": "localhost", "Port": 3103 }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "CookieStickySessions",
+        "Key": "tdwa05_session",
+        "Expiry": 1800000
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}

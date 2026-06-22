@@ -1,0 +1,16 @@
+{
+  "name": "tdwa05-01",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TDWA05-01 REST server with method-dependent delay",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:x": "node server.js X 3101 1000",
+    "start:y": "node server.js Y 3102 2000",
+    "start:z": "node server.js Z 3103 3000"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

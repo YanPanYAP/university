@@ -1,0 +1,35 @@
+npm run start:x
+npm run start:y
+npm run start:z
+
+curl -s http://localhost:3101/A
+curl -s -X POST http://localhost:3102/A
+curl -s -X PUT http://localhost:3103/A
+curl -s -X DELETE http://localhost:3103/A
+
+npm run gateway:roundrobin
+
+curl -s http://localhost:5001/lb
+curl -s -X POST http://localhost:5001/lb
+curl -s -X PUT http://localhost:5001/lb
+curl -s -X DELETE http://localhost:5001/lb
+
+./scripts/lab5-load-test.sh "http://localhost:5001/lb" 5 false
+
+npm run gateway:sticky
+
+curl -s http://localhost:5001/lb
+curl -s -X POST http://localhost:5001/lb
+curl -s -X PUT http://localhost:5001/lb
+curl -s -X DELETE http://localhost:5001/lb
+
+./scripts/lab5-load-test.sh "http://localhost:5001/lb" 5 true
+
+npm run gateway:custom
+
+curl -s http://localhost:5001/lb
+curl -s -X POST http://localhost:5001/lb
+curl -s -X PUT http://localhost:5001/lb
+curl -s -X DELETE http://localhost:5001/lb
+
+./scripts/lab5-load-test.sh "http://localhost:5001/lb" 5 false

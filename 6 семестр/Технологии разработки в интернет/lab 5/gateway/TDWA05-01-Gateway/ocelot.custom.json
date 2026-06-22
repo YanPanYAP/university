@@ -1,0 +1,21 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/lb",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamPathTemplate": "/A",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        { "Host": "localhost", "Port": 3101 },
+        { "Host": "localhost", "Port": 3102 },
+        { "Host": "localhost", "Port": 3103 }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "NickWeightedLoadBalancer"
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}

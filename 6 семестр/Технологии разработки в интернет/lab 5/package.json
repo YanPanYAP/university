@@ -1,0 +1,15 @@
+{
+  "name": "trvp-lab5-ocelot-lb",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:node": "npm i --prefix ./tdwa05-01",
+    "start:x": "npm run start:x --prefix ./tdwa05-01",
+    "start:y": "npm run start:y --prefix ./tdwa05-01",
+    "start:z": "npm run start:z --prefix ./tdwa05-01",
+    "gateway:roundrobin": "cp ./gateway/TDWA05-01-Gateway/ocelot.roundrobin.json ./gateway/TDWA05-01-Gateway/ocelot.json && DOTNET_CLI_HOME=/tmp NUGET_PACKAGES=/tmp/nuget DOTNET_ROOT=\"../.dotnet8\" PATH=\"../.dotnet8:$PATH\" ASPNETCORE_URLS=\"${ASPNETCORE_URLS:-http://localhost:5001}\" ../.dotnet8/dotnet run --project ./gateway/TDWA05-01-Gateway",
+    "gateway:sticky": "cp ./gateway/TDWA05-01-Gateway/ocelot.sticky.json ./gateway/TDWA05-01-Gateway/ocelot.json && DOTNET_CLI_HOME=/tmp NUGET_PACKAGES=/tmp/nuget DOTNET_ROOT=\"../.dotnet8\" PATH=\"../.dotnet8:$PATH\" ASPNETCORE_URLS=\"${ASPNETCORE_URLS:-http://localhost:5001}\" ../.dotnet8/dotnet run --project ./gateway/TDWA05-01-Gateway",
+    "gateway:custom": "cp ./gateway/TDWA05-01-Gateway/ocelot.custom.json ./gateway/TDWA05-01-Gateway/ocelot.json && DOTNET_CLI_HOME=/tmp NUGET_PACKAGES=/tmp/nuget DOTNET_ROOT=\"../.dotnet8\" PATH=\"../.dotnet8:$PATH\" ASPNETCORE_URLS=\"${ASPNETCORE_URLS:-http://localhost:5001}\" ../.dotnet8/dotnet run --project ./gateway/TDWA05-01-Gateway",
+    "test:mac": "bash ./scripts/lab5-load-test.sh"
+  }
+}

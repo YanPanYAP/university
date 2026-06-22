@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "N4v6MdQYJbCuivh3rgCGoHJpiDhPPWHtLVxA7227qB8=",
+  "Source": "TDWA05-01-Gateway",
+  "BasePath": "_content/TDWA05-01-Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
