@@ -1,0 +1,25 @@
+task_id;title;description;creator_id;creator_name;executor_id;executor_name;status_id;status_name;priority;start_date;due_date;created_at
+1;Implement user authentication;Create login/register functionality with JWT tokens;1;John Smith;3;Michael Brown;3;Review;1.0;2024-01-15;2024-01-30;2024-01-15 09:00:00.000
+2;Design database schema;Create ERD and implement tables for the new project;2;Sarah Johnson;5;Robert Wilson;3;Review;2.0;2024-01-16;2024-01-25;2024-01-16 10:30:00.000
+3;Create responsive header;Implement mobile-friendly navigation bar;3;Michael Brown;3;Michael Brown;1;New;5.0;2024-01-17;2024-01-28;2024-01-17 11:15:00.000
+4;Write unit tests for API;Cover all endpoints with unit tests;4;Emily Davis;6;Jennifer Lee;2;In Progress;1.0;2024-01-18;2024-01-22;2024-01-18 14:20:00.000
+5;Optimize SQL queries;Improve performance of slow database queries;5;Robert Wilson;3;Michael Brown;4;Completed;2.0;2024-01-19;2024-02-05;2024-01-19 08:45:00.000
+6;Setup CI/CD pipeline;Configure Jenkins for automated deployment;6;Jennifer Lee;3;Michael Brown;5;On Hold;1.0;2024-01-20;2024-01-27;2024-01-20 13:10:00.000
+7;Create user dashboard;Design and implement user profile page;7;David Miller;3;Michael Brown;6;Cancelled;3.0;2024-01-21;2024-01-26;2024-01-21 15:30:00.000
+8;Document REST API;Write API documentation using Swagger;8;Lisa Anderson;3;Michael Brown;4;Completed;100.0;2024-01-22;2024-02-10;2024-01-22 09:55:00.000
+9;Fix payment gateway bug;Resolve issues with payment processing;9;James Taylor;11;William Jones;2;In Progress;100.0;2024-01-23;2024-01-24;2024-01-23 16:40:00.000
+10;Setup monitoring system;Install and configure Prometheus and Grafana;10;Maria Garcia;12;Elizabeth Martin;3;Review;3.0;2024-01-24;2024-02-15;2024-01-24 11:25:00.000
+11;Implement search functionality;Add full-text search to the application;11;William Jones;13;Charles White;8;Ready for Testing;2.0;2024-02-01;2024-02-20;2024-01-25 10:00:00.000
+12;Add email notifications;Implement email alerts for task updates;12;Elizabeth Martin;14;Patricia Moore;9;Testing;1.0;2024-02-02;2024-02-18;2024-01-26 14:15:00.000
+13;Create export feature;Add ability to export data to Excel;13;Charles White;15;Thomas Jackson;10;Reopened;2.0;2024-02-03;2024-02-12;2024-01-27 12:30:00.000
+14;Update UI components;Refactor frontend components with new design;14;Patricia Moore;16;Susan Thompson;2;In Progress;3.0;2024-02-04;2024-02-25;2024-01-28 09:20:00.000
+15;Implement caching;Add Redis caching for frequently accessed data;15;Thomas Jackson;17;Joseph Harris;3;Review;1.0;2024-02-05;2024-02-09;2024-01-29 15:45:00.000
+16;Create analytics dashboard;Build charts for business metrics;16;Susan Thompson;18;Margaret Clark;1;New;2.0;2024-02-06;2024-02-16;2024-01-30 11:10:00.000
+17;Setup logging system;Implement structured logging with ELK stack;17;Joseph Harris;19;Daniel Lewis;4;Completed;3.0;2024-02-07;2024-02-11;2024-01-31 13:35:00.000
+18;Configure backup strategy;Automate database backups;18;Margaret Clark;20;Nancy Walker;5;On Hold;1.0;2024-02-08;2024-02-14;2024-02-01 08:50:00.000
+19;Load testing;Perform load tests using JMeter;19;Daniel Lewis;21;Christopher Hall;2;In Progress;2.0;2024-02-09;2024-02-13;2024-02-02 16:05:00.000
+20;Add multi-language support;Implement i18n for English and Spanish;20;Nancy Walker;22;Karen Young;6;Cancelled;3.0;2024-02-10;2024-02-28;2024-02-03 10:40:00.000
+21;Implement file upload;Add attachment functionality to tasks;21;Christopher Hall;23;Matthew King;7;Need Clarification;2.0;2024-02-11;2024-02-19;2024-02-04 12:15:00.000
+22;Create user activity log;Track and display user actions;22;Karen Young;24;Betty Wright;8;Ready for Testing;1.0;2024-02-12;2024-02-17;2024-02-05 14:30:00.000
+23;Implement password reset;Add forgot password functionality;23;Matthew King;25;Anthony Scott;9;Testing;2.0;2024-02-13;2024-02-16;2024-02-06 09:55:00.000
+24;Add data validation;Implement server-side validation for all forms;24;Betty Wright;3;Michael Brown;10;Reopened;3.0;2024-02-14;2024-02-21;2024-02-07 11:20:00.000

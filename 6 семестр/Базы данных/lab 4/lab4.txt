@@ -1,0 +1,5 @@
+zsh ./import_countries.sh
+docker compose exec postgis psql -U postgres -d spatial_lab
+
+GDAL/ogr2ogr
+\pset pager off 

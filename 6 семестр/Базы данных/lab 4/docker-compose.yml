@@ -1,0 +1,15 @@
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: lab4-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: spatial_lab
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./sql:/workspace/sql
+      - ./data:/workspace/data
