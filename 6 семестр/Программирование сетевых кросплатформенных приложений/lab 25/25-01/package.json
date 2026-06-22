@@ -1,0 +1,16 @@
+{
+  "name": "25-01",
+  "version": "1.0.0",
+  "description": "PSKP lab 25-01 JSON-RPC server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

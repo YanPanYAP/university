@@ -1,0 +1,19 @@
+{
+  "name": "lab-23",
+  "version": "1.0.0",
+  "description": "PSKP lab 23: Diffie-Hellman and digital signature client-server apps",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start:23-01s": "node ./23-01/23-01s.js",
+    "start:23-01c": "node ./23-01/23-01c.js",
+    "start:23-02s": "node ./23-02/23-02s.js",
+    "start:23-02c": "node ./23-02/23-02c.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

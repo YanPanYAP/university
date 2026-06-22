@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>pskp 18</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        button { margin: 5px; padding: 8px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>ЛР 18 – Node.js + Sequelize</h1>
+
+<h3>Тест GET запросов</h3>
+
+<button onclick="loadData('/api/faculties')">Факультеты</button>
+<button onclick="loadData('/api/pulpits')">Кафедры</button>
+<button onclick="loadData('/api/subjects')">Дисциплины</button>
+<button onclick="loadData('/api/auditoriumstypes')">Типы аудиторий</button>
+<button onclick="loadData('/api/auditoriums')">Аудитории</button>
+
+<h3>Результат:</h3>
+<pre id="result"></pre>
+
+<script>
+async function loadData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+    document.getElementById('result').textContent =
+        JSON.stringify(data, null, 2);
+}
+</script>
+
+</body>
+</html>

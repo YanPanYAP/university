@@ -1,0 +1,27 @@
+<div class="list">
+    {{#each entries}}
+        {{> row disabled=true}}
+    {{/each}}
+</div>
+
+<hr>
+
+<form method="POST" action="/Update">
+    <input type="hidden" name="id" value="{{selected.id}}">
+    <input type="text" name="name" id="editName" value="{{selected.name}}" required>
+    <input type="text" name="phone" id="editPhone" value="{{selected.phone}}" required>
+    <button type="submit">Изменить</button>
+</form>
+
+<form method="POST" action="/Delete">
+    <input type="hidden" name="id" value="{{selected.id}}">
+    <button type="submit" id="deleteBtn">Удалить</button>
+</form>
+
+{{{cancel}}}
+{{#if error}}
+<script>
+    alert("{{error}}");
+</script>
+{{/if}}
+<script src="/js/update.js"></script>

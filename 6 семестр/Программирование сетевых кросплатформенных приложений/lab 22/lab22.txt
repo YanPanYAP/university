@@ -1,0 +1,5 @@
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain "/Users/yanpaulovich/Documents/fit/ПСКП/lab 22/certs/ca.crt.pem"
+sudo nano /etc/hosts
+
+https://LAB22-YAP:3443/
+https://YAP:3443/

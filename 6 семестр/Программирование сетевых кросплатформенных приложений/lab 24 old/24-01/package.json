@@ -1,0 +1,19 @@
+{
+  "name": "24-01",
+  "version": "1.0.0",
+  "description": "PSKP lab 24-01 WebDAV Express server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "webdav": "^5.9.0"
+  }
+}

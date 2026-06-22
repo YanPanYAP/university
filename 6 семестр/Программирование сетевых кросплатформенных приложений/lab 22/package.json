@@ -1,0 +1,13 @@
+{
+  "name": "lab-22",
+  "version": "1.0.0",
+  "description": "PSKP lab 22: CA and HTTPS Resource",
+  "main": "22-01.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node 22-01.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

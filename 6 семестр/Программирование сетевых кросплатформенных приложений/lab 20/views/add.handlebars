@@ -1,0 +1,20 @@
+<div class="list">
+    {{#each entries}}
+        {{> row disabled=true}}
+    {{/each}}
+</div>
+
+<hr>
+
+<form method="POST" action="/Add">
+    <input type="text" name="name" value="{{old.name}}" placeholder="Фамилия-Имя" required>
+    <input type="text" name="phone" value="{{old.phone}}" placeholder="+375291234567 или 8029XXXXXXX" required>
+    <button type="submit">Добавить</button>
+</form>
+
+{{{cancel}}}
+{{#if error}}
+<script>
+    alert("{{error}}");
+</script>
+{{/if}}
