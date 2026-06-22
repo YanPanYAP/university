@@ -1,0 +1,64 @@
+# все
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrities { id fullName nationality reqPhotoPath } }"}'
+
+
+# создать
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"mutation { createCelebrity(input:{ id:1, fullName:\"Keanu Reeves\", nationality:\"Canada\", reqPhotoPath:\"/photos/keanu.jpg\" }) { id fullName nationality reqPhotoPath } }"}'
+
+
+# проверка сохранения
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrities { id fullName nationality reqPhotoPath } }"}'
+
+
+# id
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrity(id:1) { id fullName nationality reqPhotoPath } }"}'
+
+
+# несуществующий id
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrity(id:999) { id fullName nationality reqPhotoPath } }"}'
+
+
+# обновить
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"mutation { updateCelebrity(id:1, input:{ id:1, fullName:\"Keanu Charles Reeves\", nationality:\"Canadian\", reqPhotoPath:\"/photos/new_keanu.jpg\" }) { id fullName nationality reqPhotoPath } }"}'
+
+
+# проверка обновления
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrity(id:1) { id fullName nationality reqPhotoPath } }"}'
+
+
+# удалить
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"mutation { deleteCelebrity(id:1) }"}'
+
+
+# проверка удаления
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrity(id:1) { id fullName nationality reqPhotoPath } }"}'
+
+
+# ошибки
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrities { unknownField } }"}'
+
+
+# пустой базы
+curl -s http://localhost:3000/graphql \
+-H "Content-Type: application/json" \
+-d '{"query":"{ celebrities { id fullName } }"}'
